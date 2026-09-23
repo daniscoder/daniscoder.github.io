@@ -1,0 +1,52 @@
+site_name: Программы для сейсмообработки
+site_url: https://daniscoder.github.io/
+site_author: Danis Arslanov
+site_description: >-
+  Небольшие настольные программы для обработки сейсморазведочных данных:
+  классы удалений для регуляризации, контур съемки, модель ВЧР по первым
+  вступлениям. Windows и Linux, без установки.
+copyright: '&copy; 2026 Danis Arslanov'
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Темная тема
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Светлая тема
+  features:
+    - navigation.top
+    - toc.follow
+
+nav:
+  - Главная: index.md
+  - histogram_for_reg: histogram_for_reg.md
+  - polygon: polygon.md
+  - lmoToXY: lmotoxy.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/daniscoder

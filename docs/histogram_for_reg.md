@@ -11,6 +11,9 @@
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/histogram_for_reg/histogram_for_reg.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/histogram_for_reg/histogram_for_reg){ .md-button }
 
+Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.04+, Debian 13,
+Fedora 39+ ([подробнее](index.md#run)).
+
 Версия 1.3.0. Примеры для пробы - синтетические распределения удалений:
 [synth_offsets_1.txt](examples/synth_offsets_1.txt) (на нем нарисованы картинки
 ниже) и [synth_offsets_2.txt](examples/synth_offsets_2.txt).

@@ -12,6 +12,9 @@
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/polygon/polygon.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/polygon/polygon){ .md-button }
 
+Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.04+, Debian 13,
+Fedora 39+ ([подробнее](index.md#run)).
+
 Версия 2.5.0. Пример для пробы: [synth_bins_two_areas.txt](examples/synth_bins_two_areas.txt) -
 синтетическая выгрузка бинов, две площади.
 

@@ -10,6 +10,9 @@
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/lmoToXY/lmoToXY.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/lmoToXY/lmoToXY){ .md-button }
 
+Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.04+, Debian 13,
+Fedora 39+ ([подробнее](index.md#run)).
+
 Версия 1.0.0. Пример для пробы - синтетическая пара: [synth_lmo.txt](examples/synth_lmo.txt)
 и [synth_sps.txt](examples/synth_sps.txt), 270 ПВ, трехслойная модель.
 

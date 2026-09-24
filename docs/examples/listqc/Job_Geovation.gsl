@@ -1,0 +1,133 @@
+** LEVEL 6401
+*GEOMOD /softs/geovation/lv6401/patch/geovation_latest_mod
+*GEOLIB /softs/geovation/lv6401/patch/geovation_latest_lib
+* DLOOP            1
+* GETRA               AA      SELECT=(DATA)
+                              FROM=(
+                                  PROJECT=GEOTEST,
+                                  VERSION=2D_test,
+                                       ID=Demo1_sgy_W),
+                              
+* HMATH FC    AA      AB      TR_WFTIME=0
+* MNGTY       AB      AC      Y=(SP_NB,)
+* DUPLI       AC      02      B2,NT1,
+* SELTR       AC      AD      NOTRACE=ERROR,
+                              SELECT=(ACQ_CHN=1,),
+* LISTE LA    AD              ATT=(
+                                  SP_X,
+                                  SP_Y,
+                                  SP_RECNB,
+                                  SP_NB,),
+                              FLAG11,
+* ENDLP
+* DLOOP            2
+* MNGTY       02      AE      Y=(SP_NB,)
+* DUPLI       AE      03      B3,NT1,
+* DUPLI       AE      05      B5,NT1,
+* DUPLI       AE      10      B10,NT1,
+* SELTR       AE      AF      NOTRACE=ERROR,
+                              SELECT=(OFF_NB=(550TO900),),
+* QCAMP       AF      13      NT3000,FTWO1,INCT1,
+                              SPECT,COEF1000,W100-W700,B13,
+* HISTA       AF      AG      DP100,RL600,
+* QCAMP       AG      14      NT3000,FTWO1,INCT1,
+  MOY,
+                              WOVRLAP0,NWIN3,B14,
+* QCAMP       AF      15      NT3000,FTWO1,INCT1,
+                              SPECT,COEF1000,W2300-W2900,B15,
+* HISTA       AF      AH      DP2300,RL600,
+* QCAMP       AH      16      NT3000,FTWO1,INCT1,
+  MOY,
+                              WOVRLAP0,NWIN3,B16,
+* ENDLP
+* DLOOP            3
+* SELTR       03      AI      NOTRACE=ERROR,
+                              SELECT=(ACQ_CHN=(0TO5000),),
+* HISTA       AI      AJ      DP100,RL600,
+
+* QCAMP       AJ      04      NT3000,FTWO1,INCT1,
+  MOY,
+                              WOVRLAP0,NWIN3,B4,
+* ENDLP
+* DLOOP            4
+* LISTE LA    04              ATT=(
+                                  QCAMP_MOY,),
+                              FLAG10,
+* ENDLP
+* DLOOP            5
+* SELTR       05      AK      NOTRACE=ERROR,
+                              SELECT=(OFF_NB=(1500TO2500),),
+* HISTA       AK      AL      DP2300,RL600,
+* QCAMP       AL      06      NT3000,FTWO1,INCT1,
+  MOY,
+                              WOVRLAP0,NWIN3,B6,
+* QCAMP       AK      07      NT3000,FTWO1,INCT1,
+                              SPECT,COEF1000,W2300-W2900,B7,
+* HISTA       AK      AM      DP100,RL600,
+* QCAMP       AM      08      NT3000,FTWO1,INCT1,
+  MOY,
+                              WOVRLAP0,NWIN3,B8,
+* QCAMP       AK      09      NT3000,FTWO1,INCT1,
+                              SPECT,COEF1000,W100-W700,B9,
+* ENDLP
+* DLOOP            6
+* LISTE LA    06              ATT=(
+                                  QCAMP_MOY,),
+                              FLAG4,
+* ENDLP
+* DLOOP            7
+* LISTE LA    07              ATT=(
+                                  QCAMP_ACF,),
+                              FLAG5,
+* ENDLP
+* DLOOP            8
+* LISTE LA    08              ATT=(
+                                  QCAMP_MOY,),
+                              FLAG6,MAP,
+* ENDLP
+* DLOOP            9
+* LISTE LA    09              ATT=(
+                                  QCAMP_ACF,),
+                              FLAG7,
+* ENDLP
+* DLOOP            10
+* SELTR       10      AN      NOTRACE=ERROR,
+                              SELECT=(OFF_NB=(0TO550),),
+* HISTA       AN      AO      DP2300,RL600,
+* QCAMP       AO      11      NT3000,FTWO1,INCT1,
+  MOY,
+                              WOVRLAP0,NWIN3,B11,
+* QCAMP       AN      12      NT3000,FTWO1,INCT1,
+                              SPECT,COEF1000,W2300-W2900,B12,
+* ENDLP
+* DLOOP            11
+* LISTE LA    11              ATT=(
+                                  QCAMP_MOY,),
+                              FLAG8,
+* ENDLP
+* DLOOP            12
+* LISTE LA    12              ATT=(
+                                  QCAMP_ACF,),
+                              FLAG9,
+* ENDLP
+* DLOOP            13
+* LISTE LA    13              ATT=(
+                                  QCAMP_ACF,),
+                              FLAG3,
+* ENDLP
+* DLOOP            14
+* LISTE LA    14              ATT=(
+                                  QCAMP_MOY,),
+                              FLAG2,
+* ENDLP
+* DLOOP            15
+* LISTE LA    15              ATT=(
+                                  QCAMP_ACF,),
+                              FLAG1,
+* ENDLP
+* DLOOP            16
+* LISTE LA    16              ATT=(
+                                  QCAMP_MOY,),
+                              FLAG0,
+* ENDLP
+* PROCS                       X(YB1)

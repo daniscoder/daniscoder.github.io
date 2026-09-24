@@ -39,6 +39,7 @@ nav:
       - polygon: polygon.md
       - lmoToXY: lmotoxy.md
       - gPad: gpad.md
+      - ListQC: listqc.md
   - Об авторе: author.md
 
 markdown_extensions:

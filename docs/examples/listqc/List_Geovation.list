@@ -1,0 +1,843 @@
+-- Post Pr -- Normal completion of POST-PROCESSING on nd7 at LAB
+-- Execute -- Normal completion of EXECUTION on nd01.example at LAB (Level 6401 used)
++--------------------------------------------------------------------------------------------------------------------------------+
+|  SUB INFO  :    Project GEOTEST                                                                  Start Wed Jan 14 09:43:12 2015|
+|  GVT SETUP :    Site LAB                 Level 6401          Host nd01           Type PC           End Wed Jan 14 09:43:23 2015|
+|  JOB INFO  :    Owner user_two           Number 030346       Name FINAL_ATT_lv6401                                             |
+|  CPU USAGE :    Elapse  11.00 s          User   2.27 s       System   0.39 s     Avg 0.0 %                                     |
+|  MEM USAGE :    Rss. max      0 KB       Max 0.0 %                                                                             |
+|  DSK USAGE :    Disk max  50823 KB       In  calls 0         Out calls 19296                                                   |
++--------------------------------------------------------------------------------------------------------------------------------+
+ 
+ 
+ 
+>>>>>>>>>>>>>>  GEOPHYSICIST INFORMATION  <<<<<<<<<<<<<<<<
+ 
+ 
+ 
+-- JOB nd8:/proj/GEOTEST/USER02_TEST/Test_DEMO01/FINAL_ATT_lv6401.gsl submitted on nd01.example:/fscr/nd01e1              
+ 
+ 
+>>>>>>>>>>>>>>>>>>  PREANALYSIS PHASE  <<<<<<<<<<<<<<<<<<<
+ 
+
+------------------------------------------------------------------------------------------------------------------------
+[Wed Jan 14 09:43:09 2015] PREANALYZING FINAL_ATT_lv6401 (Level 6401 used) (Message received and posted)                
+------------------------------------------------------------------------------------------------------------------------
+
+PATCHDEF: *** Default patches to apply (OS = Linux2.6-x86_64   CPU = PIV) ***
+ 
+------------------------------------------------------------------------------------------------------------------------
+General default Patches :
+/softs/geovation/lv6401/patch/patchdefaults/patches
+
+------------------------------------------------------------------------------------------------------------------------
+ 
+GVRPATLIST: $Id: //gct/infrastructure/src/jobmgr/branches/RELEASE/5067.8/Jobmanager/bin/gvrpatlist#1 $ - 6401 - Linux2.6-x86_64/PIV
+GVRPATLIST: default patch path: /softs/geovation/lv6401/patch
+
+GVRPATLIST:	-------------------------------------------------------------------------------------------------------------------------------------------
+GVRPATLIST:	| Type    | Version        | Path                              | Components    | Source filename                                          |
+GVRPATLIST:	-------------------------------------------------------------------------------------------------------------------------------------------
+GVRPATLIST:	| Module  | HISTA_v5.16    | /softs/geovation/lv6401/patch [o] | librist:hista | /app/geovation/lv6401/patch/geovation6401_mod.2014-07-28 |
+GVRPATLIST:	| Module  | SDS_v2.20      | /softs/geovation/lv6401/patch [o] | setra:getra   | /app/geovation/lv6401/patch/geovation6401_mod.2014-07-28 |
+GVRPATLIST:	|*****************************************************************************************************************************************|
+GVRPATLIST:	| Library | HAL_v3.25      | /softs/geovation/lv6401/patch [o] | hal           | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | IMG_v1.08      | /softs/geovation/lv6401/patch [o] | img           | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | LIBCIG_v2.00   | /softs/geovation/lv6401/patch [o] | libcig        | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | LIBSDS_v3.40   | /softs/geovation/lv6401/patch [o] | libsds        | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | LIBXPS_v5.02   | /softs/geovation/lv6401/patch [o] | xps           | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | MODUTILS_v2.18 | /softs/geovation/lv6401/patch [o] | modutils      | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | OCTOPUS_v4.30  | /softs/geovation/lv6401/patch [o] | octopus       | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | SLITE_v2.05    | /softs/geovation/lv6401/patch [o] | slite         | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | TAPEIO_v2.05   | /softs/geovation/lv6401/patch [o] | tapeio        | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	| Library | WLITE_v1.25    | /softs/geovation/lv6401/patch [o] | wlite         | /app/geovation/lv6401/patch/geovation6401_lib.2014-07-28 |
+GVRPATLIST:	-------------------------------------------------------------------------------------------------------------------------------------------
+
+GVRPATLIST: INFO: creating a common object for each patch (ld -r)
+GVRPATLIST: Default tangolite: tangolite0028
+GVRPATLIST: End of patch analysis
+ 
+>>>>>>>>>>>> END OF PREANALYSIS PHASE  <<<<<<<<<<<<<<<<<<<
+ 
+ 
+ 
+>>>>>>>>>>>>>>>>>>>    ANALYSIS PHASE  <<<<<<<<<<<<<<<<<<<
+ 
+ 
+ 
+ 
+ 
+                                                                                  tttt     ii                                      
+                                                                                 tttt    iiii                                      
+                                                                                tttt     ii                                        
+                                                                               tttt                                                
+                gggg ggg    eeeee       ooooo    vvvv     vvvv    aaaa aaa tttttttttt iiii    ooooo    nnn nnn                     
+             gggggggggg  eeeeeeeee   ooooooooo  vvvv     vvvv  aaaaaaaaaa tttttttttt iiii  ooooooooo  nnnnnnnnn    tmcggveritas2009
+           ggggggggggg eeeeeeeeeee ooooooooooo vvvv     vvvv aaaaaaaaaaa tttttttttt iiii ooooooooooo nnnnnnnnnn   tmcggveritas2009 
+          gggg   gggg eeee   eeee oooo   oooo vvvv     vvvv aaaa   aaaa    tttt    iiii oooo   oooo nnnn   nnnn                    
+         gggg   gggg eeeeeeeeeee oooo   oooo vvvv     vvvv aaaa   aaaa    tttt    iiii oooo   oooo nnnn   nnnn                     
+        gggg   gggg eeeeeeeee   oooo   oooo vvvv     vvvv aaaa   aaaa    tttt    iiii oooo   oooo nnnn   nnnn  tmcggveritas2009    
+       gggg   gggg eeee        oooo   oooo  vvvv   vvvv  aaaa   aaaa    tttt    iiii oooo   oooo nnnn   nnnn  tmcggveritas2009     
+      gggg   gggg eeee   eeee oooo   oooo   vvvv vvvv   aaaa   aaaa    tttt    iiii oooo   oooo nnnn   nnnn                        
+     ggggggggggg eeeeeeeeeee ooooooooooo    vvvvvvv    aaaaaaaaaaa    tttt    iiii ooooooooooo nnnn   nnnn                         
+     gggggggggg  eeeeeeeee   ooooooooo      vvvvv      aaaaaaaaaa    tttt    iiii  ooooooooo  nnnn   nnnn  tmcggveritas2009        
+      gggggggg    eeeee       ooooo         vvv         aaaa aaa    tttt    iiii    ooooo    nnnn   nnnn  tmcggveritas2009         
+         gggg                                                                                                                      
+        gggg                                                                                                                       
+ ggg   gggg                                                                                                                        
+gggggggggg                                                                                                                         
+gggggggg                                                                                                                           
+ ggggg                                                                                                                             
+ 
+ 
+ 
+ 
+                                         DATA PROCESSING SYSTEM
+                                         DATA PROCESSING SYSTEM
+                                         DATA PROCESSING SYSTEM
+
+        ********************************************************************************
+        *                                                                              *
+        *                         RELEASE geovation  LEVEL 6401                        *
+        *                                 SITE LAB                                     *
+        *                                                                              *
+        *                          ************************                            *
+        *                          *    SEISMIC  CARDS    *                            *
+        *                          *----------------------*                            *
+        *                                      II                                      *
+        *                                      II                                      *
+        *                                      II                                      *
+        *                                    IIIIII                                    *
+        *                                     IIII                                     *
+        *                                      II                                      *
+        *                                                                              *
+                 1         2         3         4         5         6         7         8
+        12345678901234567890123456789012345678901234567890123456789012345678901234567890 LINE NUMBER
+        ** LEVEL 6401                                                                          1
+        **GEOMOD /softs/geovation/lv6401/patch/geovation_latest_mod                            2
+        **GEOLIB /softs/geovation/lv6401/patch/geovation_latest_lib                            3
+        * DLOOP            1                                                                   4
+        * GETRA               AA      SELECT=(DATA)                                            5
+                                      FROM=(                                                   6
+                                          PROJECT=GEOTEST,                                     7
+                                          VERSION=2D_test,                                     8
+                                               ID=Demo1_sgy_W),                                9
+                                                                                              10
+        * HMATH FC    AA      AB      TR_WFTIME=0                                             11
+        * MNGTY       AB      AC      Y=(SP_NB,)                                              12
+        * DUPLI       AC      02      B2,NT1,                                                 13
+        * SELTR       AC      AD      NOTRACE=ERROR,                                          14
+                                      SELECT=(ACQ_CHN=1,),                                    15
+        * LISTE LA    AD              ATT=(                                                   16
+                                          SP_X,                                               17
+                                          SP_Y,                                               18
+                                          SP_RECNB,                                           19
+                                          SP_NB,),                                            20
+                                      FLAG11,                                                 21
+        * ENDLP                                                                               22
+        * DLOOP            2                                                                  23
+        * MNGTY       02      AE      Y=(SP_NB,)                                              24
+        * DUPLI       AE      03      B3,NT1,                                                 25
+        * DUPLI       AE      05      B5,NT1,                                                 26
+        * DUPLI       AE      10      B10,NT1,                                                27
+        * SELTR       AE      AF      NOTRACE=ERROR,                                          28
+                                      SELECT=(OFF_NB=(550TO900),),                            29
+        * QCAMP       AF      13      NT3000,FTWO1,INCT1,                                     30
+                                      SPECT,COEF1000,W100-W700,B13,                           31
+        * HISTA       AF      AG      DP100,RL600,                                            32
+        * QCAMP       AG      14      NT3000,FTWO1,INCT1,                                     33
+          MOY,                                                                                34
+                                      WOVRLAP0,NWIN3,B14,                                     35
+        * QCAMP       AF      15      NT3000,FTWO1,INCT1,                                     36
+                                      SPECT,COEF1000,W2300-W2900,B15,                         37
+        * HISTA       AF      AH      DP2300,RL600,                                           38
+        * QCAMP       AH      16      NT3000,FTWO1,INCT1,                                     39
+          MOY,                                                                                40
+                                      WOVRLAP0,NWIN3,B16,                                     41
+        * ENDLP                                                                               42
+        * DLOOP            3                                                                  43
+        * SELTR       03      AI      NOTRACE=ERROR,                                          44
+                                      SELECT=(ACQ_CHN=(0TO5000),),                            45
+        * HISTA       AI      AJ      DP100,RL600,                                            46
+                                                                                              47
+        * QCAMP       AJ      04      NT3000,FTWO1,INCT1,                                     48
+          MOY,                                                                                49
+                                      WOVRLAP0,NWIN3,B4,                                      50
+        * ENDLP                                                                               51
+        * DLOOP            4                                                                  52
+        * LISTE LA    04              ATT=(                                                   53
+                                          QCAMP_MOY,),                                        54
+                                      FLAG10,                                                 55
+        * ENDLP                                                                               56
+        * DLOOP            5                                                                  57
+        * SELTR       05      AK      NOTRACE=ERROR,                                          58
+                                      SELECT=(OFF_NB=(1500TO2500),),                          59
+        * HISTA       AK      AL      DP2300,RL600,                                           60
+        * QCAMP       AL      06      NT3000,FTWO1,INCT1,                                     61
+          MOY,                                                                                62
+                                      WOVRLAP0,NWIN3,B6,                                      63
+        * QCAMP       AK      07      NT3000,FTWO1,INCT1,                                     64
+                                      SPECT,COEF1000,W2300-W2900,B7,                          65
+        * HISTA       AK      AM      DP100,RL600,                                            66
+        * QCAMP       AM      08      NT3000,FTWO1,INCT1,                                     67
+          MOY,                                                                                68
+                                      WOVRLAP0,NWIN3,B8,                                      69
+        * QCAMP       AK      09      NT3000,FTWO1,INCT1,                                     70
+                                      SPECT,COEF1000,W100-W700,B9,                            71
+        * ENDLP                                                                               72
+        * DLOOP            6                                                                  73
+        * LISTE LA    06              ATT=(                                                   74
+                                          QCAMP_MOY,),                                        75
+                                      FLAG4,                                                  76
+        * ENDLP                                                                               77
+        * DLOOP            7                                                                  78
+        * LISTE LA    07              ATT=(                                                   79
+                                          QCAMP_ACF,),                                        80
+                                      FLAG5,                                                  81
+        * ENDLP                                                                               82
+        * DLOOP            8                                                                  83
+        * LISTE LA    08              ATT=(                                                   84
+                                          QCAMP_MOY,),                                        85
+                                      FLAG6,MAP,                                              86
+        * ENDLP                                                                               87
+        * DLOOP            9                                                                  88
+        * LISTE LA    09              ATT=(                                                   89
+                                          QCAMP_ACF,),                                        90
+                                      FLAG7,                                                  91
+        * ENDLP                                                                               92
+        * DLOOP            10                                                                 93
+        * SELTR       10      AN      NOTRACE=ERROR,                                          94
+                                      SELECT=(OFF_NB=(0TO550),),                              95
+        * HISTA       AN      AO      DP2300,RL600,                                           96
+        * QCAMP       AO      11      NT3000,FTWO1,INCT1,                                     97
+          MOY,                                                                                98
+                                      WOVRLAP0,NWIN3,B11,                                     99
+        * QCAMP       AN      12      NT3000,FTWO1,INCT1,                                    100
+                                      SPECT,COEF1000,W2300-W2900,B12,                        101
+        * ENDLP                                                                              102
+        * DLOOP            11                                                                103
+        * LISTE LA    11              ATT=(                                                  104
+                                          QCAMP_MOY,),                                       105
+                                      FLAG8,                                                 106
+        * ENDLP                                                                              107
+        * DLOOP            12                                                                108
+        * LISTE LA    12              ATT=(                                                  109
+                                          QCAMP_ACF,),                                       110
+                                      FLAG9,                                                 111
+        * ENDLP                                                                              112
+        * DLOOP            13                                                                113
+        * LISTE LA    13              ATT=(                                                  114
+                                          QCAMP_ACF,),                                       115
+                                      FLAG3,                                                 116
+        * ENDLP                                                                              117
+        * DLOOP            14                                                                118
+        * LISTE LA    14              ATT=(                                                  119
+                                          QCAMP_MOY,),                                       120
+                                      FLAG2,                                                 121
+        * ENDLP                                                                              122
+        * DLOOP            15                                                                123
+        * LISTE LA    15              ATT=(                                                  124
+                                          QCAMP_ACF,),                                       125
+                                      FLAG1,                                                 126
+        * ENDLP                                                                              127
+        * DLOOP            16                                                                128
+        * LISTE LA    16              ATT=(                                                  129
+                                          QCAMP_MOY,),                                       130
+                                      FLAG0,                                                 131
+        * ENDLP                                                                              132
+        * PROCS                       X(YB1)                                                 133
+
+------------------------------------------------------------------------------------------------------------------------
+[Wed Jan 14 09:43:13 2015] ANALYSING FINAL_ATT_lv6401 (Level 6401 used) (Message received and posted)                   
+------------------------------------------------------------------------------------------------------------------------
+
+******************** GETRA-01 ********************
+
+    Attribute map description:
+    Number of attributes: 38, list of attributes:
+          name              type      #     position
+    #0  : TR_DELAY        : INT32    [1] at 0
+    #1  : TR_FNZ          : INT32    [1] at 4
+    #2  : TR_FORMAT       : INT32    [1] at 8
+    #3  : TR_LENGTH       : INT32    [1] at 12
+    #4  : TR_LNZ          : INT32    [1] at 16
+    #5  : TR_MAXI         : FLOAT32  [1] at 20
+    #6  : TR_SI           : INT32    [1] at 24
+    #7  : TR_TAPER        : INT32    [1] at 28
+    #8  : TR_VALIDITY     : INT32    [1] at 32
+    #10 : ACQ_CHN         : INT32    [1] at 40
+    #26 : ACQ_SPENERG     : INT32    [1] at 124
+    #11 : CRL_NB          : INT32    [1] at 44
+    #36 : FLG_CABAUX      : INT32    [1] at 164
+    #30 : FLG_FWD         : INT32    [1] at 140
+    #29 : FLG_MODE        : INT32    [1] at 136
+    #12 : FOLD_COVER      : INT32    [1] at 48
+    #27 : GRP_NB          : INT32    [1] at 128
+    #21 : INL_NB          : INT32    [1] at 100
+    #14 : OFF_NB          : FLOAT32  [1] at 56
+    #20 : RCV_ST          : FLOAT32  [1] at 96
+    #17 : RCV_X           : FLOAT64  [1] at 76
+    #18 : RCV_Y           : FLOAT64  [1] at 84
+    #31 : RCV_Z           : FLOAT32  [1] at 144
+    #9  : SP_NB           : INT32    [1] at 36
+    #34 : SP_RECNB        : INT32    [1] at 156
+    #19 : SP_ST           : FLOAT32  [1] at 92
+    #37 : SP_UHTM         : FLOAT32  [1] at 168
+    #15 : SP_X            : FLOAT64  [1] at 60
+    #16 : SP_Y            : FLOAT64  [1] at 68
+    #32 : SP_Z            : FLOAT32  [1] at 148
+    #25 : TAPE_FILENB     : INT32    [1] at 120
+    #22 : TAPE_NB         : INT32    [1] at 104
+    #35 : TR_BSHFT        : INT32    [1] at 160
+    #33 : TR_IDCODE       : INT32    [1] at 152
+    #13 : TR_RECTYPE      : INT32    [1] at 52
+    #24 : TR_SEQ          : INT64    [1] at 112
+    #23 : TR_SORTCODE     : INT32    [1] at 108
+    #28 : TR_STKNT        : INT32    [1] at 132
+
+    Y-bit set on: none
+    S-bit set on: none
+**************************************************
+
+******************** GETRA-01 ********************
+    Number of PIVS: 1
+      piv[0]=GEOTEST/Demo1_sgy_W/2D_test, with a maximum of 8640 selectable traces
+    Maximum number of selectable traces: 8640
+
+**************************************************
+% GCT_INFO FROM HMATH RANK = 1 : ATTRIBUTE TR_WFTIME ADDED TO THE ATTRIBUTE MAP
+  
+******************** HISTA-01 ********************
+ HISTA INFO 
+ Nb of points of the filter :           20
+**************************************************
+  
+******************** HISTA-02 ********************
+ HISTA INFO 
+ Nb of points of the filter :           20
+**************************************************
+  
+******************** HISTA-03 ********************
+ HISTA INFO 
+ Nb of points of the filter :           20
+**************************************************
+  
+******************** HISTA-04 ********************
+ HISTA INFO 
+ Nb of points of the filter :           20
+**************************************************
+  
+******************** HISTA-05 ********************
+ HISTA INFO 
+ Nb of points of the filter :           20
+**************************************************
+  
+******************** HISTA-06 ********************
+ HISTA INFO 
+ Nb of points of the filter :           20
+**************************************************
+
+<<<<<<<<<<< geovation license management >>>>>>>>>>
+Module "getra": Version "$Id: //gct/batch/octopus/src/modules/sds/v2.20/getra.c#1 $"
+Module "hmath": Version "$Id: //gct/batch/octopus/src/modules/hmath/v3.02/hmath.c#1 $"
+Module "mngty": Version "$Id: //gct/batch/octopus/src/modules/mngty/v1.02/mngty.F#2 $"
+Module "dupli": Version "$Id: //gct/batch/octopus/src/modules/dupli/v2.03/dupli.c#2 $"
+Module "seltr": Version "$Id: //gct/batch/octopus/src/modules/seltr/v3.08/seltr.F#2 $"
+Module "liste": Version "$Id: //gct/batch/octopus/src/modules/liste/v4.13/liste.F#2 $"
+Module "qcamp": Version "$Id: //gct/batch/octopus/src/modules/qcamp/v1.05/qcamp.F#1 $"
+Module "hista": Version "$Id: //gct/batch/octopus/src/modules/hista/v5.16/hista.F#1 $"
+<<<<<<< end of geovation license management >>>>>>>
+
+<<<<<<<<<<<<<<<<< flexlm list >>>>>>>>>>>>>>>>>>>>>
+getra_geovation1.1@2.200000
+hmath_geovation1.1@3.020000
+mngty_geovation1.1@1.020000
+dupli_geovation1.1@2.030000
+seltr_geovation1.1@3.080000
+liste_geovation1.1@4.130000
+qcamp_geovation1.1@1.050000
+hista_geovation1.1@5.160000
+<<<<<<<<<<<<<<< end of flexlm list >>>>>>>>>>>>>>>>
+
+Analysis time = 2.053650s
+
+ 
+ 
+RESOURCES REQUIRED FOR THE JOB 
+ space required in central memory :       3660 Kbytes
+ space required on disk           :         72 Kbytes
+ number of tape drives            :          0 
+ number of CPUS                   :          1 
+ number of NPES                   :          0 
+ 
+ 
+ 
+>>>>>>>>>>>>>>>>> END OF ANALYSIS PHASE <<<<<<<<<<<<<<<<<<
+ 
+ 
+ 
+ 
+>>>>>>>>>>>>>>>>>>>  EXECUTION PHASE  <<<<<<<<<<<<<<<<<<<<
+ 
+
+------------------------------------------------------------------------------------------------------------------------
+[Wed Jan 14 09:43:15 2015] EXECUTING FINAL_ATT_lv6401 (Level 6401 used) (Message received and posted)                   
+------------------------------------------------------------------------------------------------------------------------
+
+XC1, PM allocated memory: 857444 bytes 
+
+XC1, allocated 11216 byte scratch area through mmap 
+
+ LISTE LISAD#11 at count number,         1
+AD,SP_X                            ,  DOUBLE,value=,               501024.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312250.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      29
+AD,SP_NB                           ,    INTG,value=,                      29
+ LISTE LIS04#10 at count number,         1
+04,QCAMP_MOY                       ,    REAL,value=,                       1.019145
+ LISTE LIS06# 4 at count number,         1
+06,QCAMP_MOY                       ,    REAL,value=,                       0.082785
+ LISTE LIS07# 5 at count number,         1
+07,QCAMP_ACF                       ,    REAL,value=,                   13454.673828
+
+
+DUMP of resource attribute map <QCA0133>,Buffer: QCA0133,  59 definitions
+
+NAME                              TYPE       ARRAY 
+---------------------------------------------------------------------------
+TR_DELAY                          INTG32     1    
+TR_FNZ                            INTG32     1    
+TR_FORMAT                         INTG32     1    
+TR_LENGTH                         INTG32     1    
+TR_LNZ                            INTG32     1    
+TR_MAXI                           REAL32     1    
+TR_SI                             INTG32     1    
+TR_TAPER                          INTG32     1    
+TR_VALIDITY                       INTG32     1    
+SP_NB                             INTG32     1    
+ACQ_CHN                           INTG32     1    
+CRL_NB                            INTG32     1    
+FOLD_COVER                        INTG32     1    
+TR_RECTYPE                        INTG32     1    
+OFF_NB                            REAL32     1    
+SP_X                              REAL64     1    
+SP_Y                              REAL64     1    
+RCV_X                             REAL64     1    
+RCV_Y                             REAL64     1    
+SP_ST                             REAL32     1    
+RCV_ST                            REAL32     1    
+INL_NB                            INTG32     1    
+TAPE_NB                           INTG32     1    
+TR_SORTCODE                       INTG32     1    
+TR_SEQ                            INTG64     1    
+TAPE_FILENB                       INTG32     1    
+ACQ_SPENERG                       INTG32     1    
+GRP_NB                            INTG32     1    
+TR_STKNT                          INTG32     1    
+FLG_MODE                          INTG32     1    
+FLG_FWD                           INTG32     1    
+RCV_Z                             REAL32     1    
+SP_Z                              REAL32     1    
+TR_IDCODE                         INTG32     1    
+SP_RECNB                          INTG32     1    
+TR_BSHFT                          INTG32     1    
+FLG_CABAUX                        INTG32     1    
+SP_UHTM                           REAL32     1    
+TR_WFTIME                         INTG32     1    
+SLICE_STRTTIME                    INTG32     1    
+SLICE_NB                          INTG32     1    
+ONE_ATTR                          STRING32   1    
+TWO_ATTR                          STRING32   1    
+TWO_FNB                           REAL64     1    
+TWO_LNB                           REAL64     1    
+TR_DPST                           REAL32     1    
+JOB_SEQNB                         INTG32     1    
+QCAMP_LTIME                       INTG32     1    
+FLG_QCAMP                         INTG32     1    
+QCAMP_MOY                         REAL32     1    
+QCAMP_RMS                         REAL32     1    
+QCAMP_ET                          REAL32     1    
+QCAMP_MAX                         REAL32     1    
+QCAMP_ALPHA                       REAL32     1    
+QCAMP_DECAY                       REAL32     1    
+QCAMP_QUALITY                     REAL32     1    
+QCAMP_ACF                         REAL32     1    
+QCAMP_MOYA                        REAL32     1    
+QCAMP_RMSD                        REAL32     1    
+ LISTE LIS08# 6 at count number,         1
+08,QCAMP_MOY                       ,    REAL,value=,                       0.002058
+ LISTE LIS09# 7 at count number,         1
+09,QCAMP_ACF                       ,    REAL,value=,                   21975.611328
+ LISTE LIS13# 3 at count number,         1
+13,QCAMP_ACF                       ,    REAL,value=,                    7938.441406
+ LISTE LIS14# 2 at count number,         1
+14,QCAMP_MOY                       ,    REAL,value=,                       1.864280
+ LISTE LIS15# 1 at count number,         1
+15,QCAMP_ACF                       ,    REAL,value=,                   24637.214844
+ LISTE LIS16# 0 at count number,         1
+16,QCAMP_MOY                       ,    REAL,value=,                       0.533782
+ LISTE LIS11# 8 at count number,         1
+11,QCAMP_MOY                       ,    REAL,value=,                       0.733228
+ LISTE LIS12# 9 at count number,         1
+12,QCAMP_ACF                       ,    REAL,value=,                   25172.019531
+ LISTE LISAD#11 at count number,         2
+AD,SP_X                            ,  DOUBLE,value=,               501024.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312250.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      30
+AD,SP_NB                           ,    INTG,value=,                      30
+ LISTE LIS04#10 at count number,         2
+04,QCAMP_MOY                       ,    REAL,value=,                       1.186074
+ LISTE LIS06# 4 at count number,         2
+06,QCAMP_MOY                       ,    REAL,value=,                       0.071479
+ LISTE LIS07# 5 at count number,         2
+07,QCAMP_ACF                       ,    REAL,value=,                   13441.521484
+ LISTE LIS08# 6 at count number,         2
+08,QCAMP_MOY                       ,    REAL,value=,                       0.002416
+ LISTE LIS09# 7 at count number,         2
+09,QCAMP_ACF                       ,    REAL,value=,                   24379.699219
+ LISTE LIS13# 3 at count number,         2
+13,QCAMP_ACF                       ,    REAL,value=,                    7790.480957
+ LISTE LIS14# 2 at count number,         2
+14,QCAMP_MOY                       ,    REAL,value=,                       1.716097
+ LISTE LIS15# 1 at count number,         2
+15,QCAMP_ACF                       ,    REAL,value=,                   23888.755859
+ LISTE LIS16# 0 at count number,         2
+16,QCAMP_MOY                       ,    REAL,value=,                       0.724946
+ LISTE LIS11# 8 at count number,         2
+11,QCAMP_MOY                       ,    REAL,value=,                       0.797426
+ LISTE LIS12# 9 at count number,         2
+12,QCAMP_ACF                       ,    REAL,value=,                   26869.972656
+ LISTE LISAD#11 at count number,         3
+AD,SP_X                            ,  DOUBLE,value=,               501024.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312250.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      31
+AD,SP_NB                           ,    INTG,value=,                      31
+ LISTE LIS04#10 at count number,         3
+04,QCAMP_MOY                       ,    REAL,value=,                       1.878705
+ LISTE LIS06# 4 at count number,         3
+06,QCAMP_MOY                       ,    REAL,value=,                       0.159028
+ LISTE LIS07# 5 at count number,         3
+07,QCAMP_ACF                       ,    REAL,value=,                   14191.140625
+ LISTE LIS08# 6 at count number,         3
+08,QCAMP_MOY                       ,    REAL,value=,                       0.002089
+ LISTE LIS09# 7 at count number,         3
+09,QCAMP_ACF                       ,    REAL,value=,                   24685.492188
+ LISTE LIS13# 3 at count number,         3
+13,QCAMP_ACF                       ,    REAL,value=,                    9040.749023
+ LISTE LIS14# 2 at count number,         3
+14,QCAMP_MOY                       ,    REAL,value=,                       2.898247
+ LISTE LIS15# 1 at count number,         3
+15,QCAMP_ACF                       ,    REAL,value=,                   24829.677734
+ LISTE LIS16# 0 at count number,         3
+16,QCAMP_MOY                       ,    REAL,value=,                       1.106968
+ LISTE LIS11# 8 at count number,         3
+11,QCAMP_MOY                       ,    REAL,value=,                       1.288041
+ LISTE LIS12# 9 at count number,         3
+12,QCAMP_ACF                       ,    REAL,value=,                   26338.031250
+ LISTE LISAD#11 at count number,         4
+AD,SP_X                            ,  DOUBLE,value=,               500124.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312299.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      32
+AD,SP_NB                           ,    INTG,value=,                      32
+ LISTE LIS04#10 at count number,         4
+04,QCAMP_MOY                       ,    REAL,value=,                       0.836447
+ LISTE LIS06# 4 at count number,         4
+06,QCAMP_MOY                       ,    REAL,value=,                       0.074238
+ LISTE LIS07# 5 at count number,         4
+07,QCAMP_ACF                       ,    REAL,value=,                   13503.806641
+ LISTE LIS08# 6 at count number,         4
+08,QCAMP_MOY                       ,    REAL,value=,                       0.002557
+ LISTE LIS09# 7 at count number,         4
+09,QCAMP_ACF                       ,    REAL,value=,                   24313.236328
+ LISTE LIS13# 3 at count number,         4
+13,QCAMP_ACF                       ,    REAL,value=,                    8756.894531
+ LISTE LIS14# 2 at count number,         4
+14,QCAMP_MOY                       ,    REAL,value=,                       1.709047
+ LISTE LIS15# 1 at count number,         4
+15,QCAMP_ACF                       ,    REAL,value=,                   25114.394531
+ LISTE LIS16# 0 at count number,         4
+16,QCAMP_MOY                       ,    REAL,value=,                       0.421188
+ LISTE LIS11# 8 at count number,         4
+11,QCAMP_MOY                       ,    REAL,value=,                       0.996360
+ LISTE LIS12# 9 at count number,         4
+12,QCAMP_ACF                       ,    REAL,value=,                   27358.082031
+ LISTE LISAD#11 at count number,         5
+AD,SP_X                            ,  DOUBLE,value=,               500124.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312299.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      33
+AD,SP_NB                           ,    INTG,value=,                      33
+ LISTE LIS04#10 at count number,         5
+04,QCAMP_MOY                       ,    REAL,value=,                       1.597004
+ LISTE LIS06# 4 at count number,         5
+06,QCAMP_MOY                       ,    REAL,value=,                       0.193723
+ LISTE LIS07# 5 at count number,         5
+07,QCAMP_ACF                       ,    REAL,value=,                   14039.937500
+ LISTE LIS08# 6 at count number,         5
+08,QCAMP_MOY                       ,    REAL,value=,                       0.002778
+ LISTE LIS09# 7 at count number,         5
+09,QCAMP_ACF                       ,    REAL,value=,                   22318.439453
+ LISTE LIS13# 3 at count number,         5
+13,QCAMP_ACF                       ,    REAL,value=,                    9740.441406
+ LISTE LIS14# 2 at count number,         5
+14,QCAMP_MOY                       ,    REAL,value=,                       3.685328
+ LISTE LIS15# 1 at count number,         5
+15,QCAMP_ACF                       ,    REAL,value=,                   28363.558594
+ LISTE LIS16# 0 at count number,         5
+16,QCAMP_MOY                       ,    REAL,value=,                       0.883768
+ LISTE LIS11# 8 at count number,         5
+11,QCAMP_MOY                       ,    REAL,value=,                       1.715239
+ LISTE LIS12# 9 at count number,         5
+12,QCAMP_ACF                       ,    REAL,value=,                   28941.410156
+ LISTE LISAD#11 at count number,         6
+AD,SP_X                            ,  DOUBLE,value=,               500124.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312299.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      34
+AD,SP_NB                           ,    INTG,value=,                      34
+ LISTE LIS04#10 at count number,         6
+04,QCAMP_MOY                       ,    REAL,value=,                       1.209051
+ LISTE LIS06# 4 at count number,         6
+06,QCAMP_MOY                       ,    REAL,value=,                       0.133323
+ LISTE LIS07# 5 at count number,         6
+07,QCAMP_ACF                       ,    REAL,value=,                   14226.876953
+ LISTE LIS08# 6 at count number,         6
+08,QCAMP_MOY                       ,    REAL,value=,                       0.002683
+ LISTE LIS09# 7 at count number,         6
+09,QCAMP_ACF                       ,    REAL,value=,                   23357.416016
+ LISTE LIS13# 3 at count number,         6
+13,QCAMP_ACF                       ,    REAL,value=,                    9850.040039
+ LISTE LIS14# 2 at count number,         6
+14,QCAMP_MOY                       ,    REAL,value=,                       2.492832
+ LISTE LIS15# 1 at count number,         6
+15,QCAMP_ACF                       ,    REAL,value=,                   27474.742188
+ LISTE LIS16# 0 at count number,         6
+16,QCAMP_MOY                       ,    REAL,value=,                       0.654885
+ LISTE LIS11# 8 at count number,         6
+11,QCAMP_MOY                       ,    REAL,value=,                       1.507260
+ LISTE LIS12# 9 at count number,         6
+12,QCAMP_ACF                       ,    REAL,value=,                   28728.521484
+ LISTE LISAD#11 at count number,         7
+AD,SP_X                            ,  DOUBLE,value=,               500250.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312275.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      35
+AD,SP_NB                           ,    INTG,value=,                      35
+ LISTE LIS04#10 at count number,         7
+04,QCAMP_MOY                       ,    REAL,value=,                       0.633611
+ LISTE LIS06# 4 at count number,         7
+06,QCAMP_MOY                       ,    REAL,value=,                       0.065445
+ LISTE LIS07# 5 at count number,         7
+07,QCAMP_ACF                       ,    REAL,value=,                   12234.446289
+ LISTE LIS08# 6 at count number,         7
+08,QCAMP_MOY                       ,    REAL,value=,                       0.003167
+ LISTE LIS09# 7 at count number,         7
+09,QCAMP_ACF                       ,    REAL,value=,                   26445.826172
+ LISTE LIS13# 3 at count number,         7
+13,QCAMP_ACF                       ,    REAL,value=,                    8692.044922
+ LISTE LIS14# 2 at count number,         7
+14,QCAMP_MOY                       ,    REAL,value=,                       1.672692
+ LISTE LIS15# 1 at count number,         7
+15,QCAMP_ACF                       ,    REAL,value=,                   25938.289062
+ LISTE LIS16# 0 at count number,         7
+16,QCAMP_MOY                       ,    REAL,value=,                       0.337278
+ LISTE LIS11# 8 at count number,         7
+11,QCAMP_MOY                       ,    REAL,value=,                       0.553911
+ LISTE LIS12# 9 at count number,         7
+12,QCAMP_ACF                       ,    REAL,value=,                   26088.101562
+ LISTE LISAD#11 at count number,         8
+AD,SP_X                            ,  DOUBLE,value=,               500250.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312275.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      36
+AD,SP_NB                           ,    INTG,value=,                      36
+ LISTE LIS04#10 at count number,         8
+04,QCAMP_MOY                       ,    REAL,value=,                       1.378748
+ LISTE LIS06# 4 at count number,         8
+06,QCAMP_MOY                       ,    REAL,value=,                       0.227543
+ LISTE LIS07# 5 at count number,         8
+07,QCAMP_ACF                       ,    REAL,value=,                   14131.872070
+ LISTE LIS08# 6 at count number,         8
+08,QCAMP_MOY                       ,    REAL,value=,                       0.003295
+ LISTE LIS09# 7 at count number,         8
+09,QCAMP_ACF                       ,    REAL,value=,                   25937.640625
+ LISTE LIS13# 3 at count number,         8
+13,QCAMP_ACF                       ,    REAL,value=,                   10713.459961
+ LISTE LIS14# 2 at count number,         8
+14,QCAMP_MOY                       ,    REAL,value=,                       4.201799
+ LISTE LIS15# 1 at count number,         8
+15,QCAMP_ACF                       ,    REAL,value=,                   30054.628906
+ LISTE LIS16# 0 at count number,         8
+16,QCAMP_MOY                       ,    REAL,value=,                       0.887734
+ LISTE LIS11# 8 at count number,         8
+11,QCAMP_MOY                       ,    REAL,value=,                       1.148159
+ LISTE LIS12# 9 at count number,         8
+12,QCAMP_ACF                       ,    REAL,value=,                   27403.443359
+******************** GETRA-01 ********************
+
+    End of GETRA: 8640 traces read
+
+    Number of PIVS: 1
+      piv[0]=GEOTEST/Demo1_sgy_W/2D_test, with 8640 selected traces
+    Total number of selected traces: 8640
+    Slave used for sorting: shuttle
+    Informations returned by selection slave:
+      total number of selected traces: 8640
+      number of segments selected: 1
+      window size : 1
+      cache hit: 100
+      total number of traces : 8640
+      trace size : 10176
+      free space on disk: 1420761759744
+
+**************************************************
+
+ LISTE LIS04#10 at count number,         9
+04,QCAMP_MOY                       ,    REAL,value=,                       1.091346
+ LISTE LIS06# 4 at count number,         9
+06,QCAMP_MOY                       ,    REAL,value=,                       0.152723
+   QCAMP NUMBER :            7
+   ************   
+   MEAN VALUE FOR SPECT OPTION (IN ms ) :    13.6411073635534     
+ LISTE LIS07# 5 at count number,         9
+07,QCAMP_ACF                       ,    REAL,value=,                   13568.053711
+ LISTE LIS08# 6 at count number,         9
+08,QCAMP_MOY                       ,    REAL,value=,                       0.003086
+   QCAMP NUMBER :            9
+   ************   
+   MEAN VALUE FOR SPECT OPTION (IN ms ) :    24.0444385880094     
+ LISTE LIS09# 7 at count number,         9
+09,QCAMP_ACF                       ,    REAL,value=,                   22892.296875
+ LISTE LIS11# 8 at count number,         9
+11,QCAMP_MOY                       ,    REAL,value=,                       0.995079
+   QCAMP NUMBER :           11
+   ************   
+   MEAN VALUE FOR SPECT OPTION (IN ms ) :    27.2068543583341     
+ LISTE LIS12# 9 at count number,         9
+12,QCAMP_ACF                       ,    REAL,value=,                   27999.484375
+   QCAMP NUMBER :            1
+   ************   
+   MEAN VALUE FOR SPECT OPTION (IN ms ) :    9.21630580368496     
+ LISTE LIS13# 3 at count number,         9
+13,QCAMP_ACF                       ,    REAL,value=,                   10424.201172
+ LISTE LIS14# 2 at count number,         9
+14,QCAMP_MOY                       ,    REAL,value=,                       3.204226
+   QCAMP NUMBER :            3
+   ************   
+   MEAN VALUE FOR SPECT OPTION (IN ms ) :    26.1672445800569     
+ LISTE LIS15# 1 at count number,         9
+15,QCAMP_ACF                       ,    REAL,value=,                   25203.939453
+ LISTE LIS16# 0 at count number,         9
+16,QCAMP_MOY                       ,    REAL,value=,                       0.759352
+ LISTE LISAD#11 at count number,         9
+AD,SP_X                            ,  DOUBLE,value=,               500250.000000000    
+AD,SP_Y                            ,  DOUBLE,value=,               312275.000000000    
+AD,SP_RECNB                        ,    INTG,value=,                      37
+AD,SP_NB                           ,    INTG,value=,                      37
+
+Execution time = 7.266595s
+
+ 
+>>>>>>>>>>>>>>>> END OF EXECUTION PHASE <<<<<<<<<<<<<<<<<<
+    
+
+
+Statistics for module activity according to instance, count number=1 
+
+************************************************************************************************************************************************
+* INSTANCE ! MODULE !   CALLS    !   CPU TIME    !  ELAPSE TIME  !  MIC/CALL  !    READS   !    KB RD   !   WRITES   !    KB WR   !  MEMORY(W) *
+************************************************************************************************************************************************
+*        2 ! GETRA  !       8640 ! 000:00:00.130 ! 000:00:06.132 !         15 !          0 !          0 !          0 !          0 !      10638 *
+************************************************************************************************************************************************
+*        3 ! HMATH  !       8640 ! 000:00:00.070 ! 000:00:00.045 !          8 !          0 !          0 !          0 !          0 !       5096 *
+************************************************************************************************************************************************
+*        4 ! MNGTY  !       8641 ! 000:00:00.120 ! 000:00:00.061 !         13 !          0 !          0 !          0 !          0 !       7688 *
+************************************************************************************************************************************************
+*        7 ! DUPLI  !       8640 ! 000:00:00.010 ! 000:00:00.037 !          1 !          0 !          0 !          0 !          0 !       5094 *
+************************************************************************************************************************************************
+*        8 ! SELTR  !       8640 ! 000:00:00.010 ! 000:00:00.026 !          1 !          0 !          0 !          0 !          0 !       7750 *
+************************************************************************************************************************************************
+*       11 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      62882 *
+************************************************************************************************************************************************
+*       14 ! MNGTY  !       8641 ! 000:00:00.060 ! 000:00:00.060 !          6 !          0 !          0 !          0 !          0 !       7688 *
+************************************************************************************************************************************************
+*       17 ! DUPLI  !       8640 ! 000:00:00.070 ! 000:00:00.039 !          8 !          0 !          0 !          0 !          0 !       5094 *
+************************************************************************************************************************************************
+*       18 ! DUPLI  !       8640 ! 000:00:00.020 ! 000:00:00.046 !          2 !          0 !          0 !          0 !          0 !       5094 *
+************************************************************************************************************************************************
+*       19 ! DUPLI  !       8640 ! 000:00:00.070 ! 000:00:00.048 !          8 !          0 !          0 !          0 !          0 !       5094 *
+************************************************************************************************************************************************
+*       20 ! SELTR  !       8640 ! 000:00:00.010 ! 000:00:00.028 !          1 !          0 !          0 !          0 !          0 !       7772 *
+************************************************************************************************************************************************
+*       23 ! QCAMP  !        504 ! 000:00:00.010 ! 000:00:00.015 !         19 !          0 !          0 !          0 !          0 !      11702 *
+************************************************************************************************************************************************
+*       24 ! HISTA  !        504 ! 000:00:00.000 ! 000:00:00.007 !          0 !          0 !          0 !          0 !          0 !       9265 *
+************************************************************************************************************************************************
+*       25 ! QCAMP  !        504 ! 000:00:00.010 ! 000:00:00.004 !         19 !          0 !          0 !          0 !          0 !       7001 *
+************************************************************************************************************************************************
+*       26 ! QCAMP  !        504 ! 000:00:00.010 ! 000:00:00.013 !         19 !          0 !          0 !          0 !          0 !      11702 *
+************************************************************************************************************************************************
+*       27 ! HISTA  !        504 ! 000:00:00.000 ! 000:00:00.007 !          0 !          0 !          0 !          0 !          0 !       9265 *
+************************************************************************************************************************************************
+*       28 ! QCAMP  !        504 ! 000:00:00.000 ! 000:00:00.003 !          0 !          0 !          0 !          0 !          0 !       7001 *
+************************************************************************************************************************************************
+*       31 ! SELTR  !       8641 ! 000:00:00.070 ! 000:00:00.073 !          8 !          0 !          0 !          0 !          0 !       7750 *
+************************************************************************************************************************************************
+*       34 ! HISTA  !       8640 ! 000:00:00.190 ! 000:00:00.138 !         21 !          0 !          0 !          0 !          0 !       9221 *
+************************************************************************************************************************************************
+*       35 ! QCAMP  !       8640 ! 000:00:00.040 ! 000:00:00.061 !          4 !          0 !          0 !          0 !          0 !       7001 *
+************************************************************************************************************************************************
+*       38 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      60854 *
+************************************************************************************************************************************************
+*       41 ! SELTR  !       8640 ! 000:00:00.060 ! 000:00:00.049 !          6 !          0 !          0 !          0 !          0 !       7772 *
+************************************************************************************************************************************************
+*       44 ! HISTA  !       2910 ! 000:00:00.040 ! 000:00:00.042 !         13 !          0 !          0 !          0 !          0 !       9243 *
+************************************************************************************************************************************************
+*       45 ! QCAMP  !       2910 ! 000:00:00.020 ! 000:00:00.019 !          6 !          0 !          0 !          0 !          0 !       7001 *
+************************************************************************************************************************************************
+*       46 ! QCAMP  !       2910 ! 000:00:00.060 ! 000:00:00.083 !         20 !          0 !          0 !          0 !          0 !      11702 *
+************************************************************************************************************************************************
+*       47 ! HISTA  !       2910 ! 000:00:00.040 ! 000:00:00.042 !         13 !          0 !          0 !          0 !          0 !       9265 *
+************************************************************************************************************************************************
+*       48 ! QCAMP  !       2910 ! 000:00:00.040 ! 000:00:00.019 !         13 !          0 !          0 !          0 !          0 !       7001 *
+************************************************************************************************************************************************
+*       49 ! QCAMP  !       2910 ! 000:00:00.040 ! 000:00:00.075 !         13 !          0 !          0 !          0 !          0 !      11702 *
+************************************************************************************************************************************************
+*       52 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      60854 *
+************************************************************************************************************************************************
+*       55 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      63932 *
+************************************************************************************************************************************************
+*       58 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      60854 *
+************************************************************************************************************************************************
+*       61 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      63932 *
+************************************************************************************************************************************************
+*       64 ! SELTR  !       8640 ! 000:00:00.050 ! 000:00:00.034 !          5 !          0 !          0 !          0 !          0 !       7772 *
+************************************************************************************************************************************************
+*       67 ! HISTA  !        804 ! 000:00:00.030 ! 000:00:00.012 !         37 !          0 !          0 !          0 !          0 !       9243 *
+************************************************************************************************************************************************
+*       68 ! QCAMP  !        804 ! 000:00:00.020 ! 000:00:00.005 !         24 !          0 !          0 !          0 !          0 !       7001 *
+************************************************************************************************************************************************
+*       69 ! QCAMP  !        804 ! 000:00:00.000 ! 000:00:00.023 !          0 !          0 !          0 !          0 !          0 !      11702 *
+************************************************************************************************************************************************
+*       72 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      60854 *
+************************************************************************************************************************************************
+*       75 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      63932 *
+************************************************************************************************************************************************
+*       78 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      63932 *
+************************************************************************************************************************************************
+*       81 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      60854 *
+************************************************************************************************************************************************
+*       84 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      63932 *
+************************************************************************************************************************************************
+*       87 ! LISTE  !          9 ! 000:00:00.000 ! 000:00:00.000 !          0 !          0 !          0 !          0 !          0 !      60854 *
+************************************************************************************************************************************************
+************************************************************************************************************************************************
+*        0 ! _SUM_  !     152607 ! 000:00:01.300 ! 000:00:07.265 !          0 !          0 !          0 !          0 !          0 !     993986 *
+************************************************************************************************************************************************
+
+    
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+[Wed Jan 14 09:43:34 2015] POST PROCESSING (Message received and posted)                                                
+------------------------------------------------------------------------------------------------------------------------
+
+Linking local file /spool1/FINAL_ATT_lv6401.30346.post

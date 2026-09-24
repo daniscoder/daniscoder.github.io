@@ -1,3 +1,4 @@
 # Собранный сайт: его делает mkdocs build, в git он не идет
 /site/
 .idea/
+.venv/

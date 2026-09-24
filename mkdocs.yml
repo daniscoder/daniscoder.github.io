@@ -32,6 +32,7 @@ nav:
   - histogram_for_reg: histogram_for_reg.md
   - polygon: polygon.md
   - lmoToXY: lmotoxy.md
+  - Об авторе: author.md
 
 markdown_extensions:
   - admonition
@@ -48,5 +49,12 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:arslanovdk@gmail.com
+      name: Почта
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/ar_dans
+      name: Telegram
     - icon: fontawesome/brands/github
       link: https://github.com/daniscoder
+      name: GitHub

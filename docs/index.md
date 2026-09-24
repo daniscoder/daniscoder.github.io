@@ -67,4 +67,9 @@ sudo apt install libgl1 libxkbcommon-x11-0 libxcb-cursor0
 
 ## Автор
 
-Danis Arslanov, обработчик сейсморазведочных данных.
+Danis Arslanov, обработчик сейсморазведочных данных. Сделаю утилиту под вашу
+задачу или доработаю программы с сайта - подробнее на странице
+[Об авторе](author.md).
+
+Почта [arslanovdk@gmail.com](mailto:arslanovdk@gmail.com), Telegram
+[@ar_dans](https://t.me/ar_dans).

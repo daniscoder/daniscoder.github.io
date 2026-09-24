@@ -12,7 +12,7 @@ SPS, скорости, статики, координаты - правятся �
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
 
-Версия 2.0 beta.58. Установки нет: один файл, как и остальные программы на
+Версия 2.0. Установки нет: один файл, как и остальные программы на
 сайте. Пример для пробы - [synth.sps](examples/synth.sps), на нем снят скрин.
 
 Linux-версия запускается даже на старых системах вроде CentOS 7, но ей нужна

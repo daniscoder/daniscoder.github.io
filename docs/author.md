@@ -27,7 +27,7 @@ Danis Arslanov, обработчик сейсморазведочных данн
 - **Доработку программ с сайта** - новый формат входных данных, новый параметр,
   вывод под вашу систему.
 
-## Связаться
+## Связаться { #contacts }
 
 - :material-email: Почта: [arslanovdk@gmail.com](mailto:arslanovdk@gmail.com)
 - :fontawesome-brands-telegram: Telegram: [@ar_dans](https://t.me/ar_dans)

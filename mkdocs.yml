@@ -29,6 +29,9 @@ theme:
     - navigation.top
     - toc.follow
 
+extra_css:
+  - stylesheets/extra.css
+
 nav:
   - Главная: index.md
   - Программы:

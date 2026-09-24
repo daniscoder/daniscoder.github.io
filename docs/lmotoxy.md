@@ -5,6 +5,8 @@
 координаты X/Y берет из SPS и пишет два файла: удаления слоев - для расчета
 статики по первым вступлениям - и скорости слоев.
 
+![Окно lmoToXY после счета на примерах](img/lmotoxy.png)
+
 ## Скачать
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/lmoToXY/lmoToXY.exe){ .md-button .md-button--primary }
@@ -14,7 +16,7 @@ Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.
 Fedora 39+ ([подробнее](index.md#run)).
 
 Версия 1.0.0. Пример для пробы - синтетическая пара: [synth_lmo.txt](examples/synth_lmo.txt)
-и [synth_sps.txt](examples/synth_sps.txt), 270 ПВ, трехслойная модель.
+и [synth.sps](examples/synth.sps), 270 ПВ, трехслойная модель.
 
 ## Входные данные
 

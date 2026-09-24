@@ -69,3 +69,7 @@
 Calc или текстовый файл.
 
 ![Экспорт](img/listqc_export.png)
+
+В Excel таблица уходит с той же шапкой, что в программе:
+
+![Результат экспорта в Excel](img/listqc_export_excel.png)

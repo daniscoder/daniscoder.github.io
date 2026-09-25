@@ -11,9 +11,12 @@
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/lmoToXY/lmoToXY.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/lmoToXY/lmoToXY){ .md-button }
+[:material-linux: Linux (CentOS 7)](https://github.com/daniscoder/daniscoder.github.io/releases/download/lmoToXY/lmoToXY-centos7){ .md-button }
 
 Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.04+, Debian 13,
-Fedora 39+ ([подробнее](index.md#run)).
+Fedora 39+. Для более старых - CentOS 7, RHEL, Rocky и Alma 8 и 9, Ubuntu 22.04,
+Debian 12, Astra Linux - сборка «Linux (CentOS 7)»: она на Qt5 и запускается на
+любой системе с glibc 2.17 и новее ([подробнее](index.md#run)).
 
 Версия 1.0.0. Пример для пробы - синтетическая пара: [synth_lmo.txt](examples/synth_lmo.txt)
 и [synth.sps](examples/synth.sps), 270 ПВ, трехслойная модель.
@@ -71,4 +74,4 @@ Fedora 39+ ([подробнее](index.md#run)).
 
 | Версия | Что нового |
 |---|---|
-| 1.0.0 | Первая версия отдельной программой: окна в Qt Designer, иконка, справка, сборка для Windows и Linux |
+| 1.0.0 | Первая версия отдельной программой: окна в Qt Designer, иконка, справка, сборка для Windows и Linux; позже - сборка на Qt5 для CentOS 7 и других старых Linux |

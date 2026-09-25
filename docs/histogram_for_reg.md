@@ -10,9 +10,12 @@
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/histogram_for_reg/histogram_for_reg.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/histogram_for_reg/histogram_for_reg){ .md-button }
+[:material-linux: Linux (CentOS 7)](https://github.com/daniscoder/daniscoder.github.io/releases/download/histogram_for_reg/histogram_for_reg-centos7){ .md-button }
 
 Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.04+, Debian 13,
-Fedora 39+ ([подробнее](index.md#run)).
+Fedora 39+. Для более старых - CentOS 7, RHEL, Rocky и Alma 8 и 9, Ubuntu 22.04,
+Debian 12, Astra Linux - сборка «Linux (CentOS 7)»: она на Qt5 и запускается на
+любой системе с glibc 2.17 и новее ([подробнее](index.md#run)).
 
 Версия 1.3.0. Примеры для пробы - синтетические распределения удалений:
 [synth_offsets_1.txt](examples/synth_offsets_1.txt) (на нем нарисованы картинки
@@ -81,7 +84,7 @@ Fedora 39+ ([подробнее](index.md#run)).
 
 | Версия | Что нового |
 |---|---|
-| 1.3.0 | Ступенчатый шаг дает ровно заданное число классов |
+| 1.3.0 | Ступенчатый шаг дает ровно заданное число классов; позже - сборка на Qt5 для CentOS 7 и других старых Linux |
 | 1.2.0 | «Макс. ширина класса удаления» - общая настройка диаграммы; переменный шаг заменен ступенчатым |
 | 1.1.0 | Ступенчатый шаг: зоны с постоянным шагом, таблица зон и ее подбор |
 | 1.0.0 | Первая версия: постоянный и переменный шаг |

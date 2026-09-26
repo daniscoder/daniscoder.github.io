@@ -69,3 +69,16 @@ gh release upload polygon polygon.exe polygon --clobber
 Что собрано и выложено, скрипт помнит по коммиту в `dist/` проекта, поэтому
 упавшая сборка или загрузка повторяется при следующем запуске. `--force` -
 пересобрать и выложить все, `--no-upload` - только собрать.
+
+### Сборки для новых Linux
+
+Обычный Linux-файл (без суффикса) собирается на Ubuntu в WSL так же одной
+командой:
+
+```bash
+~/daniscoder.github.io/tools/linux-release.sh
+```
+
+Окружение `~/qt6env` (Qt6, зависимости по `requirements.txt` проектов, nuitka)
+скрипт заводит сам. Оба скрипта - обертки над `tools/release-build.sh`, там же
+описаны режимы.

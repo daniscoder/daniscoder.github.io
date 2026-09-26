@@ -2,17 +2,17 @@
 # Сборки для CentOS 7 (Qt5) - одной командой на виртуальной CentOS 7.
 #
 # По каждому проекту: git pull; если текущий коммит еще не собран - пересобрать
-# через 2exe.py и выложить файл *-centos7 в релиз программы на сайте.
+# через 2exe.py и выложить файл *-legacy в релиз программы на сайте.
 # xvelutil_qt только собирается: на сайт он не идет.
 #
-# Что собрано и что выложено, скрипт помнит по коммиту - в dist/.centos7-built и
-# dist/.centos7-uploaded. Поэтому упавшая сборка или загрузка повторяется при
+# Что собрано и что выложено, скрипт помнит по коммиту - в dist/.legacy-built и
+# dist/.legacy-uploaded. Поэтому упавшая сборка или загрузка повторяется при
 # следующем запуске, даже если новых коммитов нет.
 #
 # Запуск:
-#   ~/daniscoder.github.io/tools/centos7-release.sh             как описано выше
-#   ~/daniscoder.github.io/tools/centos7-release.sh --force     пересобрать и выложить все
-#   ~/daniscoder.github.io/tools/centos7-release.sh --no-upload собрать, но не выкладывать
+#   ~/daniscoder.github.io/tools/legacy-release.sh             как описано выше
+#   ~/daniscoder.github.io/tools/legacy-release.sh --force     пересобрать и выложить все
+#   ~/daniscoder.github.io/tools/legacy-release.sh --no-upload собрать, но не выкладывать
 #
 # Что нужно на машине (как настроено 25.09.2026): проекты склонированы в домашний
 # каталог, gcc из devtoolset-11, окружение ~/qt5env по requirements-qt5.txt, gh с
@@ -63,12 +63,12 @@ for item in $PROJECTS; do
 
     # У xvelutil_qt файлов два (окно и пакетный режим) - сверяемся по окну
     if [ "$name" = xvelutil_qt ]; then
-        output=dist/xvelutil-centos7
+        output=dist/xvelutil-legacy
     else
-        output=dist/$name-centos7
+        output=dist/$name-legacy
     fi
-    built_stamp=dist/.centos7-built
-    uploaded_stamp=dist/.centos7-uploaded
+    built_stamp=dist/.legacy-built
+    uploaded_stamp=dist/.legacy-uploaded
 
     if [ "$FORCE" = 1 ] || [ ! -f "$output" ] || [ "$(cat "$built_stamp" 2>/dev/null)" != "$head" ]; then
         # Зависимости приходят вместе с кодом; если все уже стоит, это пара секунд

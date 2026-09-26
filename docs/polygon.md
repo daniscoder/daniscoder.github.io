@@ -11,11 +11,11 @@
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/polygon/polygon.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/polygon/polygon){ .md-button }
-[:material-linux: Linux (CentOS 7)](https://github.com/daniscoder/daniscoder.github.io/releases/download/polygon/polygon-centos7){ .md-button }
+[:material-linux: Linux (старые системы)](https://github.com/daniscoder/daniscoder.github.io/releases/download/polygon/polygon-legacy){ .md-button }
 
 Linux-версия - для систем с glibc 2.38 и новее: Ubuntu 24.04+, Debian 13,
 Fedora 39+. Для более старых - CentOS 7, RHEL, Rocky и Alma 8 и 9, Ubuntu 22.04,
-Debian 12, Astra Linux - сборка «Linux (CentOS 7)»: она на Qt5 и запускается на
+Debian 12, Astra Linux - сборка «Linux (старые системы)»: она на Qt5 и запускается на
 любой системе с glibc 2.17 и новее ([подробнее](index.md#run)).
 
 Версия 2.5.0. Примеры для пробы - синтетические выгрузки бинов, на них сняты

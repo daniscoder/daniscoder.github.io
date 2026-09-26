@@ -8,8 +8,10 @@
 #           CentOS 7 или Oracle Linux 7.9 (WSL): gcc из devtoolset-11, окружение
 #           ~/qt5env по requirements-qt5.txt.
 #   linux   Qt6, файлы без суффикса - для новых Linux. Собирается на Ubuntu
-#           (WSL): окружение ~/qt6env по requirements.txt проекта, скрипт заводит
-#           его сам.
+#           24.04 (WSL) или на Kubuntu: окружение ~/qt6env по requirements.txt
+#           проекта, скрипт заводит его сам. Требование к glibc у сборки - как у
+#           системы, где собрано; на сайте написано «2.38 и новее» - собранное на
+#           системе новее проверить (objdump -T), прежде чем выкладывать.
 # Обычно зовется через обертки legacy-release.sh и linux-release.sh.
 #
 # Что собрано и что выложено, скрипт помнит по коммиту - в dist/.<режим>-built и
@@ -21,7 +23,7 @@
 #   release-build.sh legacy|linux --force      пересобрать и выложить все
 #   release-build.sh legacy|linux --no-upload  собрать, но не выкладывать
 #
-# На машине: проекты склонированы в домашний каталог, gh с входом в GitHub.
+# На машине: проекты склонированы в ~ или в ~/PycharmProjects, gh с входом в GitHub.
 
 REPO=daniscoder/daniscoder.github.io
 # проект:тег релиза; без тега - только собрать
@@ -76,11 +78,13 @@ failed=()
 for item in $PROJECTS; do
     name=${item%%:*}
     tag=${item#*:}
+    # В WSL проекты лежат прямо в домашнем каталоге, на Kubuntu - в ~/PycharmProjects
     dir=~/$name
+    [ -d "$dir/.git" ] || dir=~/PycharmProjects/$name
     echo
     echo "=== $name"
     if ! cd "$dir" 2>/dev/null; then
-        echo "нет каталога $dir - склонируйте проект" >&2
+        echo "нет каталога ~/$name или $dir - склонируйте проект" >&2
         failed+=("$name: нет каталога")
         continue
     fi

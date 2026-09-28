@@ -27,7 +27,7 @@
 
 REPO=daniscoder/daniscoder.github.io
 # проект:тег релиза; без тега - только собрать
-PROJECTS="lmoToXY:lmoToXY polygon:polygon histogram_for_reg:histogram_for_reg xvelutil_qt:"
+PROJECTS="lmoToXY:lmoToXY polygon:polygon histogram_for_reg:histogram_for_reg autocrop:autocrop xvelutil_qt:"
 
 MODE=${1:-}
 shift

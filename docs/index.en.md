@@ -16,9 +16,9 @@ Linux, including old systems such as CentOS 7. Only ListQC, the oldest one, runs
 on Windows only. If something does not start, see [How to run](#run) below.
 
 !!! note "Interface language"
-    polygon and histogram_for_reg speak English: they follow the system
-    language, and the list next to the buttons switches it. The other programs
-    are in Russian so far - menus, buttons, the built-in help and their
+    polygon, histogram_for_reg and autocrop speak English: they follow the
+    system language, and the list next to the buttons switches it. The other
+    programs are in Russian so far - menus, buttons, the built-in help and their
     screenshots on this site. Where a page mentions a button or a field, its
     Russian caption is given in quotes next to the English name. If needed, a
     program can be localized into any language - [write to me](author.md#contacts).

@@ -20,7 +20,7 @@ Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux - use the "Linux (older
 systems)" build: it is built with Qt5 and runs on any system with glibc 2.17 or
 newer ([details](index.md#run)).
 
-Version 1.1. Sample data - synthetic window screenshots, the pictures below are
+Version 1.2. Sample data - synthetic window screenshots, the pictures below are
 made from them:
 
 - [synth_section.png](examples/autocrop/synth_section.png) - a section: two rows
@@ -35,13 +35,13 @@ made from them:
 On every screenshot the program finds three frames. In the window they are shown
 on the preview, the selected one is thicker.
 
-- **Image** («Картинку», green) - only the data area, exactly along its frame. For
+- **Image** (green) - only the data area, exactly along its frame. For
   a map without a frame - along the axes and the outermost data points; a scroll
   bar inside the plot area is cut off.
-- **With axes** («С осями», red) - also the tick labels above and below the image,
+- **With axes** (red) - also the tick labels above and below the image,
   all rows, and the values of the vertical axis. In width - up to the edge of
   these values: row names to the left of it are cut off.
-- **With annotations** («С оформлением», blue) - everything around the image:
+- **With annotations** (blue) - everything around the image:
   titles, axis names, color bars, tables, labels above a map.
 
 ![Section: synth_section.png](img/autocrop_section.png)
@@ -50,12 +50,12 @@ on the preview, the selected one is thicker.
 
 ![Spectrum: synth_spectrum.png](img/autocrop_spectrum.png)
 
-**Margin** («Отступ») - a few pixels around the axes and annotations; the image
+**Margin** - a few pixels around the axes and annotations; the image
 is cut without it.
 
 ## Manual mode
 
-If the screenshots are alike - one window, one scale - the Manual tab («Вручную»)
+If the screenshots are alike - one window, one scale - the Manual tab
 cuts the same rectangle from all of them: X, Y, width and height in screenshot
 pixels. It can be set with the mouse right in the preview: drag an edge or a
 corner to resize, drag from inside to move, drag outside the frame to draw a new
@@ -71,11 +71,11 @@ the result goes next to the screenshot with a `_cr` suffix in the name; the
 original screenshots are never overwritten.
 
 Format - as the screenshot or PNG, JPG, BMP. PNG is best for window screenshots:
-smaller and lossless; the "256-color palette" checkbox in the Settings window
-(«Настройка...») makes it another 2-4 times smaller. The JPG quality is set
+smaller and lossless; the "256-color palette" checkbox in the Settings... window
+makes it another 2-4 times smaller. The JPG quality is set
 there too: below 85 the labels get visibly blurred.
 
-Shrink to («Сжать до») - if the longer side of the result is larger than the
+Shrink to - if the longer side of the result is larger than the
 given size, the image is scaled down proportionally to it. The size under the
 preview already includes cropping and shrinking.
 
@@ -110,5 +110,6 @@ options - `autocrop -h`.
 
 | Version | What's new |
 |---|---|
+| 1.2 | English interface: the language follows the system and can be switched in the window |
 | 1.1 | Manual cropping: one rectangle for all screenshots, with the mouse in the preview or with arrow keys; shrinking by the longer side; format settings in their own window |
 | 1.0 | First version: three cropping levels, a window with a file browser and a frame preview, batch processing on all cores, console mode |

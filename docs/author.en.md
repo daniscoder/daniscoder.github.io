@@ -34,6 +34,8 @@ others too.
   screenshots, format converters, data checks and cross-checks.
 - **Extensions of the programs on this site** - a new input format, a new
   parameter, output for your system.
+- **Localization of the programs** - the interface and help in English or any
+  other language.
 
 ## Contacts { #contacts }
 

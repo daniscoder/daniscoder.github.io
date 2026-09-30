@@ -15,11 +15,12 @@ download and run it. Almost all of them are available for both Windows and
 Linux, including old systems such as CentOS 7. Only ListQC, the oldest one, runs
 on Windows only. If something does not start, see [How to run](#run) below.
 
-!!! note "The programs speak Russian"
-    Menus, buttons and the built-in help of the programs are in Russian, and the
-    screenshots on this site show that interface. Where a page mentions a button
-    or a field, its Russian caption is given in quotes next to the English name.
-    If needed, a program can be localized into any language -
+!!! note "Interface language"
+    polygon speaks English: it follows the system language, and the list next to
+    the buttons switches it. The other programs are in Russian so far - menus,
+    buttons, the built-in help and their screenshots on this site. Where a page
+    mentions a button or a field, its Russian caption is given in quotes next to
+    the English name. If needed, a program can be localized into any language -
     [write to me](author.md#contacts).
 
 <div class="grid cards" markdown>

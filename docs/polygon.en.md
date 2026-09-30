@@ -20,7 +20,7 @@ Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux - use the "Linux (older
 systems)" build: it is built with Qt5 and runs on any system with glibc 2.17 or
 newer ([details](index.md#run)).
 
-Version 2.5.0. Sample data - synthetic bin exports, the pictures below are made
+Version 2.6.0. Sample data - synthetic bin exports, the pictures below are made
 from them:
 
 - [synth_bins_regular.txt](examples/synth_bins_regular.txt) - an area with a
@@ -52,7 +52,7 @@ points are joined into triangles, and triangles with a side longer than the
 or set by hand: a smaller one keeps the outline closer to the points, a larger
 one cuts protruding corners and merges nearby areas. Concave corners that the
 triangulation cuts diagonally are squared - how boldly is set by the Squaring
-field («Спрямление»).
+field.
 
 ## Margin
 
@@ -81,5 +81,6 @@ their number is reported too.
 
 | Version | What's new |
 |---|---|
+| 2.6.0 | English interface: the language follows the system and can be switched in the window |
 | 2.5.0 | Outline from points not on a grid (SPS), a polygon per area, a picture of the result, squaring of concave corners; later - a Qt5 build for CentOS 7 and other old Linux systems |
 | 2.4.0 | Output for Surfer (.bln), help in the window |

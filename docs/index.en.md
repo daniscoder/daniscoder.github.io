@@ -19,6 +19,8 @@ on Windows only. If something does not start, see [How to run](#run) below.
     Menus, buttons and the built-in help of the programs are in Russian, and the
     screenshots on this site show that interface. Where a page mentions a button
     or a field, its Russian caption is given in quotes next to the English name.
+    If needed, a program can be localized into any language -
+    [write to me](author.md#contacts).
 
 <div class="grid cards" markdown>
 

@@ -10,6 +10,8 @@ copyright: '&copy; 2026 Danis Arslanov'
 theme:
   name: material
   language: ru
+  # Выбор языка по системе при первом заходе - overrides/main.html
+  custom_dir: overrides
   palette:
     - media: '(prefers-color-scheme: light)'
       scheme: default
@@ -28,6 +30,48 @@ theme:
     - navigation.expand
     - navigation.top
     - toc.follow
+
+plugins:
+  - search
+  # Английская версия: рядом со страницей <имя>.md лежит <имя>.en.md, сайт на
+  # английском собирается в /en/. Картинки и примеры общие. Переключатель языка
+  # в шапке ставит сам плагин.
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: ru
+          default: true
+          name: Русский
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_name: Seismic Processing Utilities
+          site_description: >-
+            Small helper programs for seismic data processing: offset classes
+            for 3D regularization, survey outline, near-surface model from first
+            breaks, screenshot cropping. Windows and Linux, no installation.
+          nav_translations:
+            Главная: Home
+            Программы: Programs
+            Об авторе: About the author
+          theme:
+            palette:
+              - toggle:
+                  name: Dark theme
+              - toggle:
+                  name: Light theme
+          extra:
+            social:
+              - icon: fontawesome/solid/envelope
+                link: mailto:arslanovdk@gmail.com
+                name: Email
+              - icon: fontawesome/brands/telegram
+                link: https://t.me/ar_dans
+                name: Telegram
+              - icon: fontawesome/brands/github
+                link: https://github.com/daniscoder
+                name: GitHub
 
 extra_css:
   - stylesheets/extra.css

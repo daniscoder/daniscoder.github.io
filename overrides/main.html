@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    /* Язык сайта по системе. Русская версия - в корне, английская - в /en/.
+       Если человек выбрал язык переключателем в шапке, берется его выбор (он
+       запоминается в браузере); если нет - первый язык браузера: русский,
+       белорусский, казахский - русская версия, остальные - английская. Переход
+       через location.replace: «Назад» не возвращает на страницу, с которой
+       перенаправили. */
+    (function () {
+      var KEY = 'site-language';
+      var path = location.pathname;
+      var current = /^\/en(\/|$)/.test(path) ? 'en' : 'ru';
+
+      // Ссылки переключателя языка у Material - с атрибутом hreflang.
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest ? event.target.closest('a[hreflang]') : null;
+        if (link) {
+          try { localStorage.setItem(KEY, link.getAttribute('hreflang')); } catch (e) {}
+        }
+      }, true);
+
+      var wanted = null;
+      try { wanted = localStorage.getItem(KEY); } catch (e) {}
+      if (wanted !== 'ru' && wanted !== 'en') {
+        var first = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+        wanted = /^(ru|be|kk)\b/i.test(first) ? 'ru' : 'en';
+      }
+      if (wanted === current) {
+        return;
+      }
+      var target = wanted === 'en' ? '/en' + path : path.replace(/^\/en(\/|$)/, '/');
+      location.replace(target + location.search + location.hash);
+    })();
+  </script>
+{% endblock %}

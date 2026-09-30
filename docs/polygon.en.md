@@ -6,7 +6,7 @@ meters. Without a margin it is an outline through the outermost points, with a
 margin - a buffer around the area. The polygon then goes to processing as the
 survey boundary.
 
-![polygon window](img/polygon.png)
+![polygon window](img/polygon_en.png)
 
 ## Download
 
@@ -44,7 +44,7 @@ themselves, so it needs neither line numbers nor the survey azimuth. The edge of
 the area is traced bin by bin, and the file gets the coordinates of the outermost
 bins themselves; a ragged edge is traced as it is.
 
-![Ragged edge: synth_bins_regular.txt, 30 m margin](img/polygon_regular.png)
+![Ragged edge: synth_bins_regular.txt, 30 m margin](img/polygon_regular_en.png)
 
 **Points not on a grid** - SPS, 2D lines, surveys with different spacing. The
 points are joined into triangles, and triangles with a side longer than the
@@ -69,13 +69,13 @@ coordinates a `<name>_polygon.txt` appears next to the input file, and with
 several areas - a file per polygon: `<name>_polygon_1.txt`, `_2.txt` and so on.
 For Surfer - a single `<name>_polygon.bln` with all polygons.
 
-![Two areas: synth_bins_two_areas.txt, two polygons](img/polygon_two_areas.png)
+![Two areas: synth_bins_two_areas.txt, two polygons](img/polygon_two_areas_en.png)
 
 When done, the program reports the area of every polygon and shows them in a
 picture together with the points. Holes inside areas do not go into the polygons -
 their number is reported too.
 
-![Holes inside an area: synth_bins_hole.txt, the polygon follows the outer edge](img/polygon_hole.png)
+![Holes inside an area: synth_bins_hole.txt, the polygon follows the outer edge](img/polygon_hole_en.png)
 
 ## Version history
 

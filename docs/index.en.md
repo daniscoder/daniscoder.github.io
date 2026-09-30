@@ -27,7 +27,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
     ---
 
     Offset distribution histogram and offset classes for 3D regularization:
-    a constant step or a step by zones - zones with a constant step fitted to the
+    a constant step or a step by panels - panels with a constant step fitted to the
     requested number of classes.
 
 -   :material-vector-polygon:{ .lg .middle } **[polygon](polygon.md)**

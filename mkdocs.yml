@@ -12,7 +12,15 @@ theme:
   language: ru
   # Выбор языка по системе при первом заходе - overrides/main.html
   custom_dir: overrides
+  # Три положения по кругу: как в системе -> светлая -> темная. Первая палитра
+  # подходит всегда, поэтому новый посетитель видит тему системы; ручной выбор
+  # Material запоминает в браузере. Подпись кнопки - что будет по нажатию.
   palette:
+    - media: '(prefers-color-scheme)'
+      primary: indigo
+      toggle:
+        icon: material/brightness-auto
+        name: Светлая тема
     - media: '(prefers-color-scheme: light)'
       scheme: default
       primary: indigo
@@ -24,7 +32,7 @@ theme:
       primary: indigo
       toggle:
         icon: material/weather-sunny
-        name: Светлая тема
+        name: Как в системе
   features:
     # Раздел «Программы» раскрыт сразу: свернутый прятал бы все программы
     - navigation.expand
@@ -58,9 +66,11 @@ plugins:
           theme:
             palette:
               - toggle:
+                  name: Light theme
+              - toggle:
                   name: Dark theme
               - toggle:
-                  name: Light theme
+                  name: System theme
           extra:
             social:
               - icon: fontawesome/solid/envelope

@@ -4,7 +4,7 @@ Offset distribution histogram for planning 3D regularization of seismic data. Th
 program splits offsets into classes, shows a histogram and writes a table of
 classes next to the input file, ready to be passed to 3D regularization.
 
-![histogram_for_reg window](img/histogram.png)
+![histogram_for_reg window](img/histogram_en.png)
 
 ## Download
 
@@ -43,7 +43,7 @@ offsets are taken as absolute values and equal ones are added up.
 Classes of equal width. Near offsets can be merged into a first class several
 steps wide, far offsets - into a last class starting from a given offset.
 
-![Constant step](img/histogram_const.png)
+![Constant step](img/histogram_const_en.png)
 
 ## Step by panels
 
@@ -53,7 +53,7 @@ towards far offsets. Classes hold about the target number of traces, as with
 equal-population classes, but within a panel the classes are regular - and there
 are fewer Kirchhoff migration artifacts than when every class has its own width.
 
-![Step by panels](img/histogram_step.png)
+![Step by panels](img/histogram_step_en.png)
 
 - **Number of offset classes** - how many classes
   the histogram will have. Exactly that many, if the other parameters allow it;

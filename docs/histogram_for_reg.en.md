@@ -18,7 +18,7 @@ Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux - use the "Linux (older
 systems)" build: it is built with Qt5 and runs on any system with glibc 2.17 or
 newer ([details](index.md#run)).
 
-Version 1.3.0. Sample data - synthetic offset distributions:
+Version 1.4.0. Sample data - synthetic offset distributions:
 [synth_offsets_1.txt](examples/synth_offsets_1.txt) (the pictures below are drawn
 from it) and [synth_offsets_2.txt](examples/synth_offsets_2.txt).
 
@@ -55,15 +55,14 @@ are fewer Kirchhoff migration artifacts than when every class has its own width.
 
 ![Step by panels](img/histogram_step.png)
 
-- **Number of offset classes** («Колич. классов удалений») - how many classes
+- **Number of offset classes** - how many classes
   the histogram will have. Exactly that many, if the other parameters allow it;
   otherwise the program warns you and takes the nearest possible number.
-- **Base step** («Базовый шаг») - panel steps are multiples of it. The smaller it
+- **Base step** - panel steps are multiples of it. The smaller it
   is, the closer the classes are to equal population, but the longer the fitting.
-- **Max panels** («Зон не больше») and **min classes per panel** («Классов в зоне не
-  меньше») - limits for the fitting.
+- **Max panels** and **Min classes per panel** - limits for the fitting.
 
-The Fit button («Подобрать») fills the panel table "from offset - step" from the
+The Fit button fills the panel table "from offset - step" from the
 data: panels are found by exhaustive search so that the number of traces in each
 class deviates from the target as little as possible. The table can be edited by
 hand and the histogram rebuilt.
@@ -87,6 +86,7 @@ The window size and all fields are remembered between runs.
 
 | Version | What's new |
 |---|---|
+| 1.4.0 | English interface: the language follows the system and can be switched in the window |
 | 1.3.0 | Step by panels gives exactly the requested number of classes; later - a Qt5 build for CentOS 7 and other old Linux systems |
 | 1.2.0 | "Max offset class width" is a common histogram setting; the variable step is replaced by step by panels |
 | 1.1.0 | Step by panels: panels with a constant step, a panel table and its fitting |

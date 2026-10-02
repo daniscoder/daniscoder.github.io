@@ -5,7 +5,7 @@ layer boundaries in offsets and layer velocities at every shot point, takes the
 X/Y coordinates from SPS and writes two files: layer offsets - for refraction
 statics from first breaks - and layer velocities.
 
-![lmoToXY window after a run on the samples](img/lmotoxy.png)
+![lmoToXY window after a run on the samples](img/lmotoxy_en.png)
 
 ## Download
 

@@ -16,7 +16,7 @@ Linux, including old systems such as CentOS 7. Only ListQC, the oldest one, runs
 on Windows only. If something does not start, see [How to run](#run) below.
 
 !!! note "Interface language"
-    histogram_for_reg, polygon, lmoToXY and autocrop speak English: they follow
+    autocrop, lmoToXY, polygon and histogram_for_reg speak English: they follow
     the system language, and the list next to the buttons switches it. gPad and
     ListQC are in Russian so far - menus, buttons, the built-in help and their
     screenshots on this site; where their pages mention a button or a field, its
@@ -93,8 +93,8 @@ version.
 
 For older systems some programs have a separate build - the "Linux (older
 systems)" button on the program's page. It is built with Qt5 on CentOS 7 (glibc
-2.17) and runs there and on any newer system. histogram_for_reg, polygon, lmoToXY
-and autocrop have such a build.
+2.17) and runs there and on any newer system. autocrop, lmoToXY, polygon
+and histogram_for_reg have such a build.
 
 On newer systems with Wayland (KDE, GNOME) the build for older systems may show a
 generic icon in the window title instead of the program's icon: that is how Qt5

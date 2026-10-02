@@ -14,8 +14,8 @@
 
 ## Как пишу программы
 
-- **Python и Qt** - на них сделаны histogram_for_reg, polygon, lmoToXY и
-  autocrop. Для больших настольных программ - Qt и C++.
+- **Python и Qt** - на них сделаны autocrop, lmoToXY, polygon и
+  histogram_for_reg. Для больших настольных программ - Qt и C++.
 - **Delphi и Free Pascal** - раньше: на Delphi написаны [ListQC](listqc.md) и
   первые версии [gPad](gpad.md), на Free Pascal (Lazarus) - gPad 2.0.
 - **Сборки одним файлом** для Windows и Linux, в том числе для старых систем

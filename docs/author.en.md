@@ -14,7 +14,7 @@ others too.
 
 ## How I write programs
 
-- **Python and Qt** - histogram_for_reg, polygon, lmoToXY and autocrop are made
+- **Python and Qt** - autocrop, lmoToXY, polygon and histogram_for_reg are made
   with them. For large desktop programs - Qt and C++.
 - **Delphi and Free Pascal** - earlier: [ListQC](listqc.md) and the first
   versions of [gPad](gpad.md) are written in Delphi, gPad 2.0 in Free Pascal

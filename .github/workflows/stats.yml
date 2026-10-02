@@ -1,0 +1,38 @@
+# Счетчики скачиваний релизов - в журнал stats/downloads.csv раз в 6 часов: при
+# перевыкладке файла GitHub обнуляет его счетчик, журнал хранит набранное
+# (tools/download_stats.py). Перед выпуском - запустить руками:
+#   gh workflow run stats.yml --repo daniscoder/daniscoder.github.io
+name: Статистика скачиваний
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 tools/download_stats.py snapshot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Коммит только если журнал изменился; сайт из-за него не пересобирается
+      # (paths-ignore в pages.yml)
+      - run: |
+          git add stats/downloads.csv
+          if git diff --cached --quiet; then
+            echo 'журнал не изменился'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Статистика скачиваний'
+          git push

@@ -4,6 +4,8 @@ name: Сайт
 on:
   push:
     branches: [main]
+    # Журнал скачиваний пишет Action раз в 6 часов - на сайт он не влияет
+    paths-ignore: ['stats/**']
   workflow_dispatch:
 
 permissions:

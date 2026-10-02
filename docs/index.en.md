@@ -25,21 +25,13 @@ on Windows only. If something does not start, see [How to run](#run) below.
 
 <div class="grid cards" markdown>
 
--   :material-chart-histogram:{ .lg .middle } **[histogram_for_reg](histogram_for_reg.md)**
+-   :material-crop:{ .lg .middle } **[autocrop](autocrop.md)**
 
     ---
 
-    Offset distribution histogram and offset classes for 3D regularization:
-    a constant step or a step by panels - panels with a constant step fitted to the
-    requested number of classes.
-
--   :material-vector-polygon:{ .lg .middle } **[polygon](polygon.md)**
-
-    ---
-
-    Survey boundary polygon from a bin export or SPS points: an outline through
-    the outermost points or a buffer with a margin, a polygon per area, a file
-    for processing or for Surfer.
+    Batch cropping of screenshots with seismic data, maps and spectra: keeps the
+    image, the image with axes or with all annotations - without the window
+    title, toolbars and scroll bars.
 
 -   :material-layers-triple:{ .lg .middle } **[lmoToXY](lmotoxy.md)**
 
@@ -49,13 +41,21 @@ on Windows only. If something does not start, see [How to run](#run) below.
     and layer velocities at every shot point, coordinates from SPS - for static
     corrections.
 
--   :material-crop:{ .lg .middle } **[autocrop](autocrop.md)**
+-   :material-vector-polygon:{ .lg .middle } **[polygon](polygon.md)**
 
     ---
 
-    Batch cropping of screenshots with seismic data, maps and spectra: keeps the
-    image, the image with axes or with all annotations - without the window
-    title, toolbars and scroll bars.
+    Survey boundary polygon from a bin export or SPS points: an outline through
+    the outermost points or a buffer with a margin, a polygon per area, a file
+    for processing or for Surfer.
+
+-   :material-chart-histogram:{ .lg .middle } **[histogram_for_reg](histogram_for_reg.md)**
+
+    ---
+
+    Offset distribution histogram and offset classes for 3D regularization:
+    a constant step or a step by panels - panels with a constant step fitted to the
+    requested number of classes.
 
 -   :material-file-document-edit:{ .lg .middle } **[gPad](gpad.md)**
 

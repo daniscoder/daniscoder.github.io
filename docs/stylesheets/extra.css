@@ -4,3 +4,14 @@
 .md-typeset img {
   border: 1px solid var(--md-default-fg-color--lighter);
 }
+
+/* Значки программ в карточках главной - настоящие, из самих программ (.ico,
+   у gPad и ListQC - из exe). Без рамки картинок выше и чуть крупнее значков
+   Material (.lg - 1.5em): у настоящих мелкие детали. */
+.md-typeset .grid.cards img.card-icon {
+  border: none;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+  margin-right: 0.15em;
+}

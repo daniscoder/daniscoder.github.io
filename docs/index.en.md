@@ -26,7 +26,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
 
 <div class="grid cards" markdown>
 
--   :material-crop:{ .lg .middle } **[autocrop](autocrop.md)**
+-   ![](img/icons/autocrop.png){ .card-icon } **[autocrop](autocrop.md)**
 
     ---
 
@@ -34,7 +34,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
     image, the image with axes or with all annotations - without the window
     title, toolbars and scroll bars.
 
--   :material-layers-triple:{ .lg .middle } **[lmoToXY](lmotoxy.md)**
+-   ![](img/icons/lmotoxy.png){ .card-icon } **[lmoToXY](lmotoxy.md)**
 
     ---
 
@@ -42,7 +42,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
     and layer velocities at every shot point, coordinates from SPS - for static
     corrections.
 
--   :material-vector-polygon:{ .lg .middle } **[polygon](polygon.md)**
+-   ![](img/icons/polygon.png){ .card-icon } **[polygon](polygon.md)**
 
     ---
 
@@ -50,7 +50,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
     the outermost points or a buffer with a margin, a polygon per area, a file
     for processing or for Surfer.
 
--   :material-chart-histogram:{ .lg .middle } **[histogram_for_reg](histogram_for_reg.md)**
+-   ![](img/icons/histogram_for_reg.png){ .card-icon } **[histogram_for_reg](histogram_for_reg.md)**
 
     ---
 
@@ -58,7 +58,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
     a constant step or a step by panels - panels with a constant step fitted to the
     requested number of classes.
 
--   :material-file-document-edit:{ .lg .middle } **[gPad](gpad.md)**
+-   ![](img/icons/gpad.png){ .card-icon } **[gPad](gpad.md)**
 
     ---
 
@@ -66,7 +66,7 @@ on Windows only. If something does not start, see [How to run](#run) below.
     checks, updates from a receiver and shot point database, a velocity format
     converter.
 
--   :material-check-decagram:{ .lg .middle } **[ListQC](listqc.md)**
+-   ![](img/icons/listqc.png){ .card-icon } **[ListQC](listqc.md)**
 
     ---
 

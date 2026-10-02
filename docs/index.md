@@ -18,7 +18,7 @@
 
 <div class="grid cards" markdown>
 
--   :material-crop:{ .lg .middle } **[autocrop](autocrop.md)**
+-   ![](img/icons/autocrop.png){ .card-icon } **[autocrop](autocrop.md)**
 
     ---
 
@@ -26,7 +26,7 @@
     остается картинка, картинка с осями или со всем оформлением - без
     заголовка окна, панелей и прокруток.
 
--   :material-layers-triple:{ .lg .middle } **[lmoToXY](lmotoxy.md)**
+-   ![](img/icons/lmotoxy.png){ .card-icon } **[lmoToXY](lmotoxy.md)**
 
     ---
 
@@ -34,7 +34,7 @@
     слоев в удалениях и скорости слоев на каждом ПВ, координаты из SPS -
     для расчета статических поправок.
 
--   :material-vector-polygon:{ .lg .middle } **[polygon](polygon.md)**
+-   ![](img/icons/polygon.png){ .card-icon } **[polygon](polygon.md)**
 
     ---
 
@@ -42,7 +42,7 @@
     крайним точкам или буфер с отступом, полигон на каждую площадь, файл для
     обработки или для Surfer.
 
--   :material-chart-histogram:{ .lg .middle } **[histogram_for_reg](histogram_for_reg.md)**
+-   ![](img/icons/histogram_for_reg.png){ .card-icon } **[histogram_for_reg](histogram_for_reg.md)**
 
     ---
 
@@ -50,7 +50,7 @@
     регуляризации 3D: постоянный шаг или ступенчатый - зоны с постоянным шагом,
     подобранные под заданное число классов.
 
--   :material-file-document-edit:{ .lg .middle } **[gPad](gpad.md)**
+-   ![](img/icons/gpad.png){ .card-icon } **[gPad](gpad.md)**
 
     ---
 
@@ -58,7 +58,7 @@
     шапки, проверка нумерации, обновление из базы ПП и ПВ, конвертор
     скоростных форматов.
 
--   :material-check-decagram:{ .lg .middle } **[ListQC](listqc.md)**
+-   ![](img/icons/listqc.png){ .card-icon } **[ListQC](listqc.md)**
 
     ---
 

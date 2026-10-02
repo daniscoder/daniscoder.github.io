@@ -3,12 +3,13 @@
 Small programs I wrote for my own work in 2D and 3D seismic data processing. They
 save time on routine tasks and help to:
 
-- **prepare processing parameters** - offset classes for 3D regularization, the
-  survey boundary polygon, a near-surface layer model for static corrections;
-- **check field data** - fix and cross-check SPS files, assess shooting quality
-  from recording listings;
 - **present the results** - crop screenshots of sections, maps and spectra for a
-  report or a presentation, a whole folder at once.
+  report or a presentation, a whole folder at once;
+- **prepare processing parameters** - a near-surface layer model for static
+  corrections, the survey boundary polygon, offset classes for 3D
+  regularization;
+- **check field data** - fix and cross-check SPS files, assess shooting quality
+  from recording listings.
 
 All programs are free and need no installation: a program is a single file, just
 download and run it. Almost all of them are available for both Windows and

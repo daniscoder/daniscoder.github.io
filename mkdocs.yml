@@ -3,8 +3,8 @@ site_url: https://daniscoder.github.io/
 site_author: Danis Arslanov
 site_description: >-
   Небольшие программы-помощники к обработке сейсморазведочных данных:
-  классы удалений для регуляризации 3D, контур съемки, модель ВЧР по первым
-  вступлениям, обрезка снимков экрана. Windows и Linux, без установки.
+  обрезка снимков экрана, модель ВЧР по первым вступлениям, контур съемки,
+  классы удалений для регуляризации 3D. Windows и Linux, без установки.
 copyright: '&copy; 2026 Danis Arslanov'
 
 theme:
@@ -56,9 +56,10 @@ plugins:
           build: true
           site_name: Seismic Processing Utilities
           site_description: >-
-            Small helper programs for seismic data processing: offset classes
-            for 3D regularization, survey outline, near-surface model from first
-            breaks, screenshot cropping. Windows and Linux, no installation.
+            Small helper programs for seismic data processing: screenshot
+            cropping, near-surface model from first breaks, survey outline,
+            offset classes for 3D regularization. Windows and Linux, no
+            installation.
           nav_translations:
             Главная: Home
             Программы: Programs

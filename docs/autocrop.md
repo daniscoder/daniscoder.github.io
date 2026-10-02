@@ -60,7 +60,7 @@ Debian 12, Astra Linux - сборка «Linux (старые системы)»: �
 рамки - нарисовать заново. Стрелки двигают рамку на 10 пикселов, с Shift - на
 один.
 
-![Вручную: synth_map.png](img/autocrop_manual.png)
+![Вручную: synth_section.png](img/autocrop_manual.png)
 
 ## Результат
 

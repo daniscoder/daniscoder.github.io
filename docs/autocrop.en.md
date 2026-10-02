@@ -6,7 +6,7 @@ bars, status bar and empty space are cut off; the frame is found automatically o
 every screenshot. What remains is the image, the image with axes or with all
 annotations - ready for a report or a presentation.
 
-![autocrop window](img/autocrop.png)
+![autocrop window](img/autocrop_en.png)
 
 ## Download
 
@@ -61,7 +61,7 @@ pixels. It can be set with the mouse right in the preview: drag an edge or a
 corner to resize, drag from inside to move, drag outside the frame to draw a new
 one. Arrow keys move the frame by 10 pixels, with Shift - by one.
 
-![Manual: synth_map.png](img/autocrop_manual.png)
+![Manual: synth_section.png](img/autocrop_manual_en.png)
 
 ## Result
 

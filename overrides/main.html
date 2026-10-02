@@ -36,3 +36,23 @@
     })();
   </script>
 {% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <!-- Посещения - GoatCounter (arslanovdk.goatcounter.com): без cookie, поэтому
+       без баннера согласия; с localhost не считает. Нажатия на кнопки скачивания
+       - событиями download/<тег>/<файл>: счетчик релиза GitHub обнуляется при
+       каждой перевыкладке файла, а эти события копятся. -->
+  <script data-goatcounter="https://arslanovdk.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script>
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest ? event.target.closest('a[href*="/releases/download/"]') : null;
+      if (!link || !window.goatcounter || !window.goatcounter.count) {
+        return;
+      }
+      var file = link.getAttribute('href').split('/releases/download/')[1];
+      window.goatcounter.count({path: 'download/' + file, title: file, event: true});
+    });
+  </script>
+{% endblock %}

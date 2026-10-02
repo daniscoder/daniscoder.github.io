@@ -5,13 +5,59 @@
   border: 1px solid var(--md-default-fg-color--lighter);
 }
 
-/* Значки программ в карточках главной - настоящие, из самих программ (.ico,
-   у gPad и ListQC - из exe). Без рамки картинок выше и чуть крупнее значков
-   Material (.lg - 1.5em): у настоящих мелкие детали. */
-.md-typeset .grid.cards img.card-icon {
+/* Программы на главной - крупными блоками, как на главной Material: текст и
+   снимок окна рядом, через один зеркально; на узком экране - столбиком, текст
+   над снимком. */
+.md-typeset .feature {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 2.5rem 0 3.5rem;
+}
+.md-typeset .feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.md-typeset .feature-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.md-typeset .feature-image {
+  flex: 1.2 1 0;
+  min-width: 0;
+}
+.md-typeset .feature h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+/* Снимок - без рамки картинок выше, с тенью и скругленными углами. Окна разной
+   формы: высокие (lmoToXY, gPad) ограничены по высоте и становятся уже, а не
+   длиннее соседнего текста. */
+.md-typeset .feature-image img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 20rem;
+  margin: 0 auto;
   border: none;
-  width: 2em;
-  height: 2em;
-  vertical-align: middle;
-  margin-right: 0.15em;
+  border-radius: 0.4rem;
+  box-shadow: var(--md-shadow-z2);
+}
+/* Значок программы - настоящий, из самой программы (.ico, у gPad и ListQC - из exe) */
+.md-typeset .feature-icon {
+  border: none;
+  width: 1.6em;
+  height: 1.6em;
+}
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .feature,
+  .md-typeset .feature:nth-child(even) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
 }

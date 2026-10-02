@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Утилиты обработчика сейсмических данных
 
 Небольшие программы, которые я написал для своей работы в обработке
@@ -16,54 +21,127 @@
 вроде CentOS 7. Только ListQC, самая давняя из них, работает лишь на Windows.
 Если что-то не запускается - смотрите [«Как запустить»](#run) ниже.
 
-<div class="grid cards" markdown>
+## Программы { #programs }
 
--   ![](img/icons/autocrop.png){ .card-icon } **[autocrop](autocrop.md)**
+<div class="features" markdown>
 
-    ---
+<div class="feature" markdown>
+<div class="feature-text" markdown>
 
-    Обрезка снимков экрана с сейсмикой, картами и спектрами пакетом:
-    остается картинка, картинка с осями или со всем оформлением - без
-    заголовка окна, панелей и прокруток.
+### ![](img/icons/autocrop.png){ .feature-icon } autocrop { #autocrop }
 
--   ![](img/icons/lmotoxy.png){ .card-icon } **[lmoToXY](lmotoxy.md)**
+Обрезает снимки экрана с разрезами, сейсмограммами, картами и спектрами **пакетом,
+сразу всю папку**. Заголовок окна, панели, прокрутки и пустое поле уходят, **рамка
+находится сама** на каждом снимке. Остается **картинка, картинка с осями или со всем
+оформлением** - готово для отчета или презентации.
 
-    ---
+[:octicons-arrow-right-24: Подробнее](autocrop.md)
 
-    Слоистая модель верхней части разреза по первым вступлениям: границы
-    слоев в удалениях и скорости слоев на каждом ПВ, координаты из SPS -
-    для расчета статических поправок.
+</div>
+<div class="feature-image" markdown>
 
--   ![](img/icons/polygon.png){ .card-icon } **[polygon](polygon.md)**
+[![Окно autocrop](img/autocrop.png)](autocrop.md)
 
-    ---
+</div>
+</div>
 
-    Полигон границы съемки по выгрузке бинов или по точкам SPS: контур по
-    крайним точкам или буфер с отступом, полигон на каждую площадь, файл для
-    обработки или для Surfer.
+<div class="feature" markdown>
+<div class="feature-text" markdown>
 
--   ![](img/icons/histogram_for_reg.png){ .card-icon } **[histogram_for_reg](histogram_for_reg.md)**
+### ![](img/icons/lmotoxy.png){ .feature-icon } lmoToXY { #lmotoxy }
 
-    ---
+**Слоистая модель верхней части разреза** по первым вступлениям. По файлу LMO
+программа на каждом ПВ строит **границы слоев в удалениях и скорости слоев**,
+координаты берет из SPS - получаются файлы для **расчета статических поправок**.
 
-    Диаграмма распределения удалений и разбиение удалений на классы для
-    регуляризации 3D: постоянный шаг или ступенчатый - зоны с постоянным шагом,
-    подобранные под заданное число классов.
+[:octicons-arrow-right-24: Подробнее](lmotoxy.md)
 
--   ![](img/icons/gpad.png){ .card-icon } **[gPad](gpad.md)**
+</div>
+<div class="feature-image" markdown>
 
-    ---
+[![Окно lmoToXY](img/lmotoxy.png)](lmotoxy.md)
 
-    Текстовый редактор с режимом колонок и инструментами для SPS: сортировка,
-    шапки, проверка нумерации, обновление из базы ПП и ПВ, конвертор
-    скоростных форматов.
+</div>
+</div>
 
--   ![](img/icons/listqc.png){ .card-icon } **[ListQC](listqc.md)**
+<div class="feature" markdown>
+<div class="feature-text" markdown>
 
-    ---
+### ![](img/icons/polygon.png){ .feature-icon } polygon { #polygon }
 
-    Контроль качества полевого отстрела: атрибуты из листинга Geovation или
-    Geocluster, оценка каждого наблюдения по критериям, коэффициент качества.
+**Полигон границы съемки** по выгрузке бинов или по точкам SPS. Без отступа -
+**контур по крайним точкам**, с отступом - **буфер** вокруг площади, на каждую
+площадь свой полигон. Результат - файл для обработки или **BLN для Surfer**.
+
+[:octicons-arrow-right-24: Подробнее](polygon.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![Окно polygon](img/polygon.png)](polygon.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/histogram_for_reg.png){ .feature-icon } histogram_for_reg { #histogram_for_reg }
+
+**Диаграмма распределения удалений** и разбиение их на классы для **регуляризации
+3D**: постоянный шаг или **ступенчатый** - зоны со своим шагом, подобранные под
+заданное число классов. Рядом со входным файлом ложится **таблица классов**, готовая
+для регуляризации.
+
+[:octicons-arrow-right-24: Подробнее](histogram_for_reg.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![Окно histogram_for_reg](img/histogram.png)](histogram_for_reg.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
+
+**Текстовый редактор** для сейсморазведчика с **режимом колонок**: SPS, скорости,
+статики и координаты правятся колонкой целиком, а не строка за строкой. Плюс
+**инструменты для SPS** - сортировка, шапки, проверка нумерации, обновление из базы
+ПП и ПВ - и **конвертор скоростных форматов**.
+
+[:octicons-arrow-right-24: Подробнее](gpad.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![Окно gPad](img/gpad.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/listqc.png){ .feature-icon } ListQC { #listqc }
+
+**Контроль качества полевого отстрела** по атрибутам из листинга Geovation или
+Geocluster. Программа оценивает **каждое наблюдение по критериям** и показывает
+таблицу с **коэффициентом качества** - сразу видно, какие ПВ не проходят и по какому
+атрибуту.
+
+[:octicons-arrow-right-24: Подробнее](listqc.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![Окно ListQC](img/listqc.png)](listqc.md)
+
+</div>
+</div>
 
 </div>
 

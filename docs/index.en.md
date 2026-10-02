@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Utilities for Seismic Data Processors
 
 Small programs I wrote for my own work in 2D and 3D seismic data processing. They
@@ -24,54 +29,130 @@ on Windows only. If something does not start, see [How to run](#run) below.
     Russian caption is given in quotes next to the English name. If needed, a
     program can be localized into any language - [write to me](author.md#contacts).
 
-<div class="grid cards" markdown>
+## Programs { #programs }
 
--   ![](img/icons/autocrop.png){ .card-icon } **[autocrop](autocrop.md)**
+<div class="features" markdown>
 
-    ---
+<div class="feature" markdown>
+<div class="feature-text" markdown>
 
-    Batch cropping of screenshots with seismic data, maps and spectra: keeps the
-    image, the image with axes or with all annotations - without the window
-    title, toolbars and scroll bars.
+### ![](img/icons/autocrop.png){ .feature-icon } autocrop { #autocrop }
 
--   ![](img/icons/lmotoxy.png){ .card-icon } **[lmoToXY](lmotoxy.md)**
+Crops screenshots of sections, gathers, maps and spectra **in batch, a whole folder
+at once**. The window title, toolbars, scroll bars and empty space go away, and
+**the frame is found automatically** on every screenshot. What remains is **the
+image, the image with axes or with all annotations** - ready for a report or a
+presentation.
 
-    ---
+[:octicons-arrow-right-24: Learn more](autocrop.md)
 
-    Layered near-surface model from first breaks: layer boundaries in offsets
-    and layer velocities at every shot point, coordinates from SPS - for static
-    corrections.
+</div>
+<div class="feature-image" markdown>
 
--   ![](img/icons/polygon.png){ .card-icon } **[polygon](polygon.md)**
+[![autocrop window](img/autocrop_en.png)](autocrop.md)
 
-    ---
+</div>
+</div>
 
-    Survey boundary polygon from a bin export or SPS points: an outline through
-    the outermost points or a buffer with a margin, a polygon per area, a file
-    for processing or for Surfer.
+<div class="feature" markdown>
+<div class="feature-text" markdown>
 
--   ![](img/icons/histogram_for_reg.png){ .card-icon } **[histogram_for_reg](histogram_for_reg.md)**
+### ![](img/icons/lmotoxy.png){ .feature-icon } lmoToXY { #lmotoxy }
 
-    ---
+**Layered near-surface model** from first breaks. From an LMO file the program
+builds **layer boundaries in offsets and layer velocities** at every shot point and
+takes the coordinates from SPS - the output files are ready for **static
+corrections**.
 
-    Offset distribution histogram and offset classes for 3D regularization:
-    a constant step or a step by panels - panels with a constant step fitted to the
-    requested number of classes.
+[:octicons-arrow-right-24: Learn more](lmotoxy.md)
 
--   ![](img/icons/gpad.png){ .card-icon } **[gPad](gpad.md)**
+</div>
+<div class="feature-image" markdown>
 
-    ---
+[![lmoToXY window](img/lmotoxy_en.png)](lmotoxy.md)
 
-    A text editor with a column mode and SPS tools: sorting, headers, numbering
-    checks, updates from a receiver and shot point database, a velocity format
-    converter.
+</div>
+</div>
 
--   ![](img/icons/listqc.png){ .card-icon } **[ListQC](listqc.md)**
+<div class="feature" markdown>
+<div class="feature-text" markdown>
 
-    ---
+### ![](img/icons/polygon.png){ .feature-icon } polygon { #polygon }
 
-    Quality control of field shooting: attributes from a Geovation or Geocluster
-    listing, every record rated against criteria, a quality factor.
+**Survey boundary polygon** from a bin export or SPS points. Without a margin it is
+**an outline through the outermost points**, with a margin - **a buffer** around the
+area, a polygon per area. The result is a file for processing or **a BLN for
+Surfer**.
+
+[:octicons-arrow-right-24: Learn more](polygon.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![polygon window](img/polygon_en.png)](polygon.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/histogram_for_reg.png){ .feature-icon } histogram_for_reg { #histogram_for_reg }
+
+**Offset distribution histogram** and offset classes for **3D regularization**: a
+constant step or **a step by panels** - panels with their own step fitted to the
+requested number of classes. **A table of classes** ready for regularization is
+written next to the input file.
+
+[:octicons-arrow-right-24: Learn more](histogram_for_reg.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![histogram_for_reg window](img/histogram_en.png)](histogram_for_reg.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
+
+**A text editor** for seismic people with **a column mode**: SPS, velocities,
+statics and coordinates are edited a whole column at a time rather than line by
+line. Plus **SPS tools** - sorting, headers, numbering checks, updates from a
+receiver and shot point database - and **a velocity format converter**.
+
+[:octicons-arrow-right-24: Learn more](gpad.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![gPad window](img/gpad.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/listqc.png){ .feature-icon } ListQC { #listqc }
+
+**Quality control of field shooting** from the attributes in a Geovation or
+Geocluster listing. The program rates **every record against criteria** and shows a
+table with **a quality factor** - you see at once which shot points fail and on
+which attribute.
+
+[:octicons-arrow-right-24: Learn more](listqc.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![ListQC window](img/listqc.png)](listqc.md)
+
+</div>
+</div>
 
 </div>
 

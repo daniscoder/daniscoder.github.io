@@ -19,7 +19,7 @@ Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux - use the "Linux (older
 systems)" build: it is built with Qt5 and runs on any system with glibc 2.17 or
 newer ([details](index.md#run)).
 
-Version 1.0.0. Sample data - a synthetic pair: [synth_lmo.txt](examples/synth_lmo.txt)
+Version 1.1.0. Sample data - a synthetic pair: [synth_lmo.txt](examples/synth_lmo.txt)
 and [synth.sps](examples/synth.sps), 270 shot points, a three-layer model.
 
 ## Input data
@@ -43,8 +43,7 @@ the time at the end of a piece equals the time at the start of the next one.
 **SPS file** - shot point records with fixed character positions: 2-17 shot
 line, 18-25 shot point, 47-55 X, 56-65 Y. Line and point are joined into the shot
 point number, which must match the number in the LMO file. If your crew uses other
-columns or positions, change them in the Columns and positions window («Колонки и
-позиции»).
+columns or positions, change them in the Columns and positions window.
 
 ## Computation
 
@@ -72,11 +71,11 @@ Two files in the output folder or next to the LMO file, in blocks by layer:
 ```
 
 Files of several projects in one folder are merged into one `_offset` and one
-`_velocity` with the Merge button («Объединить»); duplicates by coordinates are
-skipped.
+`_velocity` with the Merge button; duplicates by coordinates are skipped.
 
 ## Version history
 
 | Version | What's new |
 |---|---|
+| 1.1.0 | English interface: the language follows the system and can be switched in the window |
 | 1.0.0 | First version as a separate program: windows in Qt Designer, an icon, help, builds for Windows and Linux; later - a Qt5 build for CentOS 7 and other old Linux systems |

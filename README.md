@@ -1,6 +1,6 @@
 # daniscoder.github.io
 
-Сайт «Утилиты сейсмообработчика»: https://daniscoder.github.io.
+Сайт «Утилиты обработчика сейсмических данных»: https://daniscoder.github.io.
 Собирается MkDocs с темой Material из Markdown в `docs/`, выкладывается на
 GitHub Pages при каждом push в `main` (`.github/workflows/pages.yml`).
 

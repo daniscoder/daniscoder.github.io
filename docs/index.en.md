@@ -1,4 +1,4 @@
-# Seismic Processing Utilities
+# Utilities for Seismic Data Processors
 
 Small programs I wrote for my own work in 2D and 3D seismic data processing. They
 save time on routine tasks and help to:

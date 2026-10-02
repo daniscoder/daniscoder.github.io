@@ -1,4 +1,4 @@
-site_name: Утилиты сейсмообработчика
+site_name: Утилиты обработчика сейсмических данных
 site_url: https://daniscoder.github.io/
 site_author: Danis Arslanov
 site_description: >-
@@ -60,7 +60,7 @@ plugins:
         - locale: en
           name: English
           build: true
-          site_name: Seismic Processing Utilities
+          site_name: Utilities for Seismic Data Processors
           site_description: >-
             Small helper programs for seismic data processing: screenshot
             cropping, near-surface model from first breaks, survey outline,

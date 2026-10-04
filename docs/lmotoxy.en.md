@@ -45,7 +45,8 @@ starts with a tab:
 	1305.6	1.0E7	575.67	3341.0
 ```
 
-The program cannot read a file with space-separated columns.
+This data is copied from PickWorks after LMO picking and saved to a text file as
+is: the columns must stay separated by tabs.
 
 The lines of one block are pieces of one continuous first-break traveltime curve:
 the time at the end of a piece equals the time at the start of the next one.

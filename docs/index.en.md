@@ -214,8 +214,8 @@ all parameters, and an About button («О программе») with the version
 
 ## Author
 
-My name is Danis Arslanov, and I am a seismic data processor. I can write a
-utility for your task or extend the programs on this site - see
+My name is Danis Arslanov, and I am a seismic data processing specialist. I can
+write a utility for your task or extend the programs on this site - see
 [About the author](author.md).
 
 Email [arslanovdk@gmail.com](mailto:arslanovdk@gmail.com), Telegram

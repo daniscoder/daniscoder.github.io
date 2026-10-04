@@ -6,7 +6,7 @@ hide:
 # Utilities for Seismic Data Processors
 
 Small programs I wrote for my own work with 2D and 3D seismic data. The utilities
-automate routine operations and help with three typical tasks:
+automate routine operations and help with three main tasks:
 
 - **present the results** - crop screenshots of sections, maps and spectra for a
   report or a presentation, and a whole folder at once;

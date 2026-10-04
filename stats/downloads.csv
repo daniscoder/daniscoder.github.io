@@ -16,3 +16,15 @@ date,tag,asset,asset_id,count
 2026-10-02 14:07,gPad,Setup_gPad_v1.5.61.exe,585988083,1
 2026-10-02 14:07,ListQC,ListQC.exe,586128126,3
 2026-10-02 22:19,autocrop,autocrop.exe,605624431,1
+2026-10-04 21:36,autocrop,autocrop,610014295,0
+2026-10-04 21:36,autocrop,autocrop-legacy,610034325,0
+2026-10-04 21:36,autocrop,autocrop.exe,609992662,0
+2026-10-04 21:36,polygon,polygon,610004009,0
+2026-10-04 21:36,polygon,polygon-legacy,610024633,0
+2026-10-04 21:36,polygon,polygon.exe,609992013,0
+2026-10-04 21:36,lmoToXY,lmoToXY,609995259,0
+2026-10-04 21:36,lmoToXY,lmoToXY-legacy,610016577,0
+2026-10-04 21:36,lmoToXY,lmoToXY.exe,609992542,0
+2026-10-04 21:36,histogram_for_reg,histogram_for_reg,610008652,0
+2026-10-04 21:36,histogram_for_reg,histogram_for_reg-legacy,610028671,0
+2026-10-04 21:36,histogram_for_reg,histogram_for_reg.exe,609992362,0

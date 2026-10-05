@@ -22,7 +22,8 @@ earliest of the utilities presented here: it runs on Windows only. If something
 does not start, see [How to run](#run) below.
 
 !!! note "Interface language"
-    autocrop, lmoToXY, polygon and histogram_for_reg speak English: they follow
+    autocrop, lmoToXY, polygon and histogram_for_reg speak English and Chinese
+    (Simplified): they follow
     the system language, and the list next to the buttons switches it. gPad and
     ListQC are in Russian so far - menus, buttons, the built-in help and their
     screenshots on this site; where their pages mention a button or a field, its
@@ -208,6 +209,11 @@ is done like this:
 ```bash
 sudo apt install libgl1 libxkbcommon-x11-0 libxcb-cursor0
 ```
+
+**Chinese on Linux.** If you see squares instead of Chinese characters, the
+system has no Chinese font. Install one and restart the program: `sudo apt install
+fonts-wqy-microhei` on Ubuntu and Debian, `sudo yum install wqy-microhei-fonts` on
+CentOS 7.
 
 Every program has a Help button («Справка») with the workflow and a description of
 all parameters, and an About button («О программе») with the version number.

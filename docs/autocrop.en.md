@@ -38,7 +38,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 1.2. To try the program, you can download synthetic
+The current version is 1.3. To try the program, you can download synthetic
 window screenshots; the illustrations below are made from them:
 
 - [synth_section.png](examples/autocrop/synth_section.png) - a section with two
@@ -146,6 +146,7 @@ Main options:
 
 | Version | What's new |
 |---|---|
+| 1.3 | Chinese interface (Simplified): the language follows the system and can be switched in the window |
 | 1.2 | English interface: the language follows the system and can be switched in the window |
 | 1.1 | Manual cropping: one rectangle for all screenshots, with the mouse in the preview or with arrow keys; shrinking by the longer side; format settings in their own window |
 | 1.0 | First version: three cropping levels, a window with a file browser and a frame preview, batch processing on all cores, console mode |

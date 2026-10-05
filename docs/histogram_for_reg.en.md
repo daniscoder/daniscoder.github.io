@@ -31,7 +31,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 1.4.0. To try the program, you can download synthetic
+The current version is 1.5.0. To try the program, you can download synthetic
 offset distributions: [synth_offsets_1.txt](examples/synth_offsets_1.txt) (the
 illustrations below are made from it) and
 [synth_offsets_2.txt](examples/synth_offsets_2.txt).
@@ -107,6 +107,7 @@ The window size and the values of all fields are remembered between runs.
 
 | Version | What's new |
 |---|---|
+| 1.5.0 | Chinese interface (Simplified): the language follows the system and can be switched in the window, in Chinese the histogram labels too |
 | 1.4.0 | English interface: the language follows the system and can be switched in the window |
 | 1.3.0 | Step by panels gives exactly the requested number of classes; later - a Qt5 build for CentOS 7 and other old Linux systems |
 | 1.2.0 | "Max offset class width" is a common histogram setting; the variable step is replaced by step by panels |

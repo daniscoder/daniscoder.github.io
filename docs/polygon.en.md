@@ -33,7 +33,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 2.6.0. To try the program, you can download synthetic bin
+The current version is 2.7.0. To try the program, you can download synthetic bin
 exports; the illustrations below are made from them:
 
 - [synth_bins_regular.txt](examples/synth_bins_regular.txt) - an area with a
@@ -97,6 +97,7 @@ polygons; their number is also given in the summary.
 
 | Version | What's new |
 |---|---|
+| 2.7.0 | Chinese interface (Simplified): the language follows the system and can be switched in the window |
 | 2.6.0 | English interface: the language follows the system and can be switched in the window |
 | 2.5.0 | Outline from points not on a grid (SPS), a polygon per area, a picture of the result, squaring of concave corners; later - a Qt5 build for CentOS 7 and other old Linux systems |
 | 2.4.0 | Output for Surfer (.bln), help in the window |

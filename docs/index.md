@@ -202,6 +202,11 @@ Debian и Ubuntu это делается так:
 sudo apt install libgl1 libxkbcommon-x11-0 libxcb-cursor0
 ```
 
+**Китайский язык на Linux.** Если вместо иероглифов квадратики, в системе нет
+китайского шрифта. Поставьте его и перезапустите программу: `sudo apt install
+fonts-wqy-microhei` в Ubuntu и Debian, `sudo yum install wqy-microhei-fonts` в
+CentOS 7.
+
 В каждой программе есть кнопка «Справка» с порядком работы и описанием всех
 параметров и кнопка «О программе» с номером версии.
 

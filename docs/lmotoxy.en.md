@@ -27,7 +27,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 1.1.0. To try the program, you can download a synthetic
+The current version is 1.2.0. To try the program, you can download a synthetic
 pair of files: [synth_lmo.txt](examples/synth_lmo.txt) and
 [synth.sps](examples/synth.sps) - 270 shot points and a three-layer model.
 
@@ -94,5 +94,6 @@ by coordinates are skipped.
 
 | Version | What's new |
 |---|---|
+| 1.2.0 | Chinese interface (Simplified): the language follows the system and can be switched in the window |
 | 1.1.0 | English interface: the language follows the system and can be switched in the window |
 | 1.0.0 | First version as a separate program: windows in Qt Designer, an icon, help, builds for Windows and Linux; later - a Qt5 build for CentOS 7 and other old Linux systems |

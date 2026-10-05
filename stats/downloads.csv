@@ -28,3 +28,15 @@ date,tag,asset,asset_id,count
 2026-10-04 21:36,histogram_for_reg,histogram_for_reg,610008652,0
 2026-10-04 21:36,histogram_for_reg,histogram_for_reg-legacy,610028671,0
 2026-10-04 21:36,histogram_for_reg,histogram_for_reg.exe,609992362,0
+2026-10-05 14:53,autocrop,autocrop,612481155,0
+2026-10-05 14:53,autocrop,autocrop-legacy,612482142,0
+2026-10-05 14:53,autocrop,autocrop.exe,612480194,0
+2026-10-05 14:53,polygon,polygon,612479810,0
+2026-10-05 14:53,polygon,polygon-legacy,612480785,0
+2026-10-05 14:53,polygon,polygon.exe,612479235,0
+2026-10-05 14:53,lmoToXY,lmoToXY,612479373,0
+2026-10-05 14:53,lmoToXY,lmoToXY-legacy,612479493,0
+2026-10-05 14:53,lmoToXY,lmoToXY.exe,612479979,0
+2026-10-05 14:53,histogram_for_reg,histogram_for_reg,612480543,0
+2026-10-05 14:53,histogram_for_reg,histogram_for_reg-legacy,612481416,0
+2026-10-05 14:53,histogram_for_reg,histogram_for_reg.exe,612479639,0

@@ -7,7 +7,7 @@ published here are those that may be useful to others too.
 
 ## What I work with
 
-- **seismic data processing:** Omega, Vista, Geovation;
+- **seismic data processing:** Omega, GeoEast, Vista, Geovation;
 - **viewing volumes and sections:** OpendTect, Petrel;
 - **survey design:** Mesa, Pikeza;
 - **maps and surfaces:** Surfer.

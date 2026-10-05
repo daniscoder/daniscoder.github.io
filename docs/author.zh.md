@@ -5,7 +5,7 @@
 
 ## 我使用的软件
 
-- **地震数据处理：**Omega、Vista、Geovation；
+- **地震数据处理：**Omega、GeoEast、Vista、Geovation；
 - **数据体和剖面浏览：**OpendTect、Petrel；
 - **观测系统设计：**Mesa、Пикеза（Pikeza）；
 - **平面图和曲面：**Surfer。

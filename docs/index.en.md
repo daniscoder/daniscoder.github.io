@@ -23,12 +23,12 @@ does not start, see [How to run](#run) below.
 
 !!! note "Interface language"
     autocrop, lmoToXY, polygon and histogram_for_reg speak English and Chinese
-    (Simplified): they follow
-    the system language, and the list next to the buttons switches it. gPad and
-    ListQC are in Russian so far - menus, buttons, the built-in help and their
-    screenshots on this site; where their pages mention a button or a field, its
-    Russian caption is given in quotes next to the English name. If needed, a
-    program can be localized into any language - [write to me](author.md#contacts).
+    (Simplified): they follow the system language, and the list next to the
+    buttons switches it. gPad and ListQC are in Russian so far - menus, buttons,
+    the built-in help and their screenshots on this site; where their pages
+    mention a button or a field, its Russian caption is given in quotes next to the
+    English name. If needed, a program can be localized into any language - [write
+    to me](author.md#contacts).
 
 ## Programs { #programs }
 

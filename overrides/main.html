@@ -3,16 +3,18 @@
 {% block extrahead %}
   {{ super() }}
   <script>
-    /* Язык сайта по системе. Русская версия - в корне, английская - в /en/.
-       Если человек выбрал язык переключателем в шапке, берется его выбор (он
-       запоминается в браузере); если нет - первый язык браузера: русский,
-       белорусский, казахский - русская версия, остальные - английская. Переход
-       через location.replace: «Назад» не возвращает на страницу, с которой
-       перенаправили. */
+    /* Язык сайта по системе. Русская версия - в корне, английская - в /en/,
+       китайская - в /zh/. Если человек выбрал язык переключателем в шапке,
+       берется его выбор (он запоминается в браузере); если нет - первый язык
+       браузера: русский, белорусский, казахский - русская версия, китайский -
+       китайская, остальные - английская. Переход через location.replace:
+       «Назад» не возвращает на страницу, с которой перенаправили. */
     (function () {
       var KEY = 'site-language';
+      var PREFIX = /^\/(en|zh)(\/|$)/;
       var path = location.pathname;
-      var current = /^\/en(\/|$)/.test(path) ? 'en' : 'ru';
+      var match = PREFIX.exec(path);
+      var current = match ? match[1] : 'ru';
 
       // Ссылки переключателя языка у Material - с атрибутом hreflang.
       document.addEventListener('click', function (event) {
@@ -24,14 +26,15 @@
 
       var wanted = null;
       try { wanted = localStorage.getItem(KEY); } catch (e) {}
-      if (wanted !== 'ru' && wanted !== 'en') {
+      if (wanted !== 'ru' && wanted !== 'en' && wanted !== 'zh') {
         var first = (navigator.languages && navigator.languages[0]) || navigator.language || '';
-        wanted = /^(ru|be|kk)\b/i.test(first) ? 'ru' : 'en';
+        wanted = /^(ru|be|kk)\b/i.test(first) ? 'ru' : /^zh\b/i.test(first) ? 'zh' : 'en';
       }
       if (wanted === current) {
         return;
       }
-      var target = wanted === 'en' ? '/en' + path : path.replace(/^\/en(\/|$)/, '/');
+      var base = path.replace(PREFIX, '/');
+      var target = wanted === 'ru' ? base : '/' + wanted + base;
       location.replace(target + location.search + location.hash);
     })();
   </script>

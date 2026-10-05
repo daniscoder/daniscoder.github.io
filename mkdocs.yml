@@ -46,10 +46,15 @@ theme:
     - toc.follow
 
 plugins:
-  - search
-  # Английская версия: рядом со страницей <имя>.md лежит <имя>.en.md, сайт на
-  # английском собирается в /en/. Картинки и примеры общие. Переключатель языка
-  # в шапке ставит сам плагин.
+  # Китайский текст без пробелов: Material делит его на слова пакетом jieba и
+  # ставит между словами пробел нулевой ширины - его разделитель и учитывает.
+  # Без этого китайское предложение было бы в поиске одним «словом».
+  - search:
+      separator: '[\s​\-]+'
+  # Английская и китайская версии: рядом со страницей <имя>.md лежат <имя>.en.md и
+  # <имя>.zh.md, сайт на английском собирается в /en/, на китайском - в /zh/.
+  # Картинки и примеры общие, снимки окон - свои на язык (*_en.png, *_zh.png).
+  # Переключатель языка в шапке ставит сам плагин.
   - i18n:
       docs_structure: suffix
       languages:
@@ -83,6 +88,36 @@ plugins:
               - icon: fontawesome/solid/envelope
                 link: mailto:arslanovdk@gmail.com
                 name: Email
+              - icon: fontawesome/brands/telegram
+                link: https://t.me/ar_dans
+                name: Telegram
+              - icon: fontawesome/brands/github
+                link: https://github.com/daniscoder
+                name: GitHub
+        - locale: zh
+          name: 中文
+          build: true
+          site_name: 地震数据处理实用工具
+          site_description: >-
+            地震数据处理的小型辅助程序：截图裁剪、根据初至建立近地表模型、工区轮廓、
+            三维规则化的偏移距分组。支持 Windows 和 Linux，无需安装。
+          nav_translations:
+            Главная: 首页
+            Программы: 程序
+            Об авторе: 关于作者
+          theme:
+            palette:
+              - toggle:
+                  name: 浅色主题
+              - toggle:
+                  name: 深色主题
+              - toggle:
+                  name: 跟随系统
+          extra:
+            social:
+              - icon: fontawesome/solid/envelope
+                link: mailto:arslanovdk@gmail.com
+                name: 邮箱
               - icon: fontawesome/brands/telegram
                 link: https://t.me/ar_dans
                 name: Telegram

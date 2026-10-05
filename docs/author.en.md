@@ -36,8 +36,8 @@ published here are those that may be useful to others too.
   and screenshots, format converters, data checks and cross-checks.
 - **Extensions of the programs on this site** - adding a new input format, a new
   parameter, output for your system.
-- **Localization of the programs** - the interface and help in English or any
-  other language.
+- **Localization of the programs** - the interface and help in English, Chinese
+  or any other language.
 
 ## Contacts { #contacts }
 

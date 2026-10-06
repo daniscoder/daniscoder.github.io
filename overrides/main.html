@@ -2,6 +2,11 @@
 
 {% block extrahead %}
   {{ super() }}
+  <!-- Фавиконка не только в SVG (ее задает theme.favicon): робот Яндекса SVG не
+       нашел - ICO в корне сайта и PNG 120x120, размер для выдачи Яндекса. -->
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="120x120" href="/img/favicon-120.png">
+  <link rel="apple-touch-icon" href="/img/favicon-120.png">
   <script>
     /* Язык сайта по системе. Русская версия - в корне, английская - в /en/,
        китайская - в /zh/. Если человек выбрал язык переключателем в шапке,

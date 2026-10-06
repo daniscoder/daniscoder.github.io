@@ -41,3 +41,12 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+
+  # Яндекс и Bing узнают об изменениях сразу, а не при очередном обходе. Отказ
+  # IndexNow выкладку не отменяет - сайт уже выложен, задание просто красное.
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 tools/indexnow.py

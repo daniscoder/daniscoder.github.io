@@ -31,7 +31,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 1.5.0. To try the program, you can download synthetic
+The current version is 1.6.0. To try the program, you can download synthetic
 offset distributions: [synth_offsets_1.txt](examples/synth_offsets_1.txt) (the
 illustrations below are made from it) and
 [synth_offsets_2.txt](examples/synth_offsets_2.txt).
@@ -81,6 +81,11 @@ Fitting parameters:
   the closer the classes are to equal population, but the longer the fitting
   takes.
 - **Max panels** and **Min classes per panel** - limits for the fitting.
+- **Step only decreases, then increases** - when checked, the step changes in one
+  direction from panel to panel: large at near offsets, small in the dense middle
+  and large again towards far offsets. When unchecked, the fitting also allows the
+  step to swing: at a dip in the distribution it puts a narrow panel with a large
+  step among the small ones.
 
 The "Fit" button fills the panel table "from offset - step" from the data: panels
 are found by exhaustive search so that the number of traces in each class deviates
@@ -107,6 +112,7 @@ The window size and the values of all fields are remembered between runs.
 
 | Version | What's new |
 |---|---|
+| 1.6.0 | Step by panels without swinging: the panel step only decreases and then only increases (a checkbox in the window, on by default) |
 | 1.5.0 | Chinese interface (Simplified): the language follows the system and can be switched in the window, in Chinese the histogram labels too |
 | 1.4.0 | English interface: the language follows the system and can be switched in the window |
 | 1.3.0 | Step by panels gives exactly the requested number of classes; later - a Qt5 build for CentOS 7 and other old Linux systems |

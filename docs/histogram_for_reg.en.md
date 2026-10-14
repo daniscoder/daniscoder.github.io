@@ -31,7 +31,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 1.6.0. To try the program, you can download synthetic
+The current version is 1.7.0. To try the program, you can download synthetic
 offset distributions: [synth_offsets_1.txt](examples/synth_offsets_1.txt) (the
 illustrations below are made from it) and
 [synth_offsets_2.txt](examples/synth_offsets_2.txt).
@@ -94,8 +94,8 @@ histogram built again.
 
 ## Output
 
-The program opens a window with the histogram - it can be zoomed and saved as an
-image - and writes a text file next to the input one: `<name>_<step>.txt` for a
+The program opens a window with the histogram - it can be zoomed with the mouse
+wheel and saved as a PNG, JPG, PDF or SVG image with the right button - and writes a text file next to the input one: `<name>_<step>.txt` for a
 constant step and `<name>_step<classes>.txt` for a step by panels. The file has
 four columns: the first offset of the class, the last offset, the class center and
 the number of traces.
@@ -112,6 +112,7 @@ The window size and the values of all fields are remembered between runs.
 
 | Version | What's new |
 |---|---|
+| 1.7.0 | The histogram is drawn without matplotlib: the program file is almost half the size and the histogram is faster; the class under the cursor is highlighted, the image is saved to PNG, JPG, PDF and SVG, the color is picked with the ">>" button |
 | 1.6.0 | Step by panels without swinging: the panel step only decreases and then only increases (a checkbox in the window, on by default) |
 | 1.5.0 | Chinese interface (Simplified): the language follows the system and can be switched in the window, in Chinese the histogram labels too |
 | 1.4.0 | English interface: the language follows the system and can be switched in the window |

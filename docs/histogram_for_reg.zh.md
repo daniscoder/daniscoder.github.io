@@ -25,7 +25,7 @@ RHEL、Rocky 和 Alma 10。对于更旧的系统 - CentOS 7、RHEL、Rocky 和 A
 Astra Linux - 有“Linux（旧系统）”版本：它用 Qt5 构建，可以在任何 glibc 2.17 或更新版本的系统上运行
 （[详情](index.md#run)）。
 
-当前版本为 1.6.0。要试用程序，可以下载合成的偏移距分布：[synth_offsets_1.txt](examples/synth_offsets_1.txt)
+当前版本为 1.7.0。要试用程序，可以下载合成的偏移距分布：[synth_offsets_1.txt](examples/synth_offsets_1.txt)
 （下面的插图就是用它制作的）和 [synth_offsets_2.txt](examples/synth_offsets_2.txt)。
 
 ## 输入数据
@@ -68,7 +68,7 @@ Astra Linux - 有“Linux（旧系统）”版本：它用 Qt5 构建，可以�
 
 ## 结果
 
-程序打开直方图窗口（可以放大并保存为图片），并在输入文件旁写出文本文件：等步长时为 `<name>_<step>.txt`，
+程序打开直方图窗口（可用鼠标滚轮放大，右键保存为 PNG、JPG、PDF 或 SVG 图片），并在输入文件旁写出文本文件：等步长时为 `<name>_<step>.txt`，
 分段步长时为 `<name>_step<classes>.txt`。文件有四列：组的第一个偏移距、最后一个偏移距、组中心和道数。
 
 ```
@@ -83,6 +83,7 @@ Astra Linux - 有“Linux（旧系统）”版本：它用 Qt5 构建，可以�
 
 | 版本 | 新内容 |
 |---|---|
+| 1.7.0 | 直方图不再使用 matplotlib 绘制：程序文件几乎缩小一半，绘图更快；光标处的偏移距组高亮显示，图片可保存为 PNG、JPG、PDF 和 SVG，颜色用“>>”按钮选择 |
 | 1.6.0 | 分段步长不再摆动：区段步长先只减小，后只增大（窗口中的复选框，默认勾选） |
 | 1.5.0 | 中文界面（简体）：语言跟随系统，也可以在窗口中切换，直方图标注也为中文 |
 | 1.4.0 | 英文界面：语言跟随系统，也可以在窗口中切换 |

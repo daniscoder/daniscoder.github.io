@@ -27,7 +27,7 @@ RHEL、Rocky 和 Alma 10。对于更旧的系统 - CentOS 7、RHEL、Rocky 和 A
 Astra Linux - 有“Linux（旧系统）”版本：它用 Qt5 构建，可以在任何 glibc 2.17 或更新版本的系统上运行
 （[详情](index.md#run)）。
 
-当前版本为 2.7.0。要试用程序，可以下载合成的面元导出文件；下面的插图就是用它们制作的：
+当前版本为 2.8.0。要试用程序，可以下载合成的面元导出文件；下面的插图就是用它们制作的：
 
 - [synth_bins_regular.txt](examples/synth_bins_regular.txt) - 边缘参差不齐、缺一行面元的区域；
 - [synth_bins_hole.txt](examples/synth_bins_hole.txt) - 中间有一个大空洞和两个小空洞的区域；
@@ -72,6 +72,7 @@ Astra Linux - 有“Linux（旧系统）”版本：它用 Qt5 构建，可以�
 
 | 版本 | 新内容 |
 |---|---|
+| 2.8.0 | 结果图不再使用 matplotlib 绘制：程序文件几乎缩小一半，绘图更快；滚轮缩放、鼠标平移，可保存为 PNG、JPG、PDF 和 SVG |
 | 2.7.0 | 中文界面（简体）：语言跟随系统，也可以在窗口中切换 |
 | 2.6.0 | 英文界面：语言跟随系统，也可以在窗口中切换 |
 | 2.5.0 | 根据不在网格上的点（SPS）构建轮廓，每个区域一个多边形，结果图，凹角直角化；后来增加了用于 CentOS 7 及其他旧 Linux 的 Qt5 版本 |

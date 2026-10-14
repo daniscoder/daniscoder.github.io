@@ -43,3 +43,6 @@ date,tag,asset,asset_id,count
 2026-10-10 12:41,histogram_for_reg,histogram_for_reg,627615124,0
 2026-10-10 12:41,histogram_for_reg,histogram_for_reg-legacy,627615859,0
 2026-10-10 12:41,histogram_for_reg,histogram_for_reg.exe,627614397,0
+2026-10-14 12:03,autocrop,autocrop-legacy.tar.xz,640196008,1
+2026-10-14 12:03,autocrop,autocrop-setup.exe,640196012,1
+2026-10-14 12:03,autocrop,autocrop.tar.xz,640196026,1

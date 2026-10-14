@@ -49,3 +49,15 @@ date,tag,asset,asset_id,count
 2026-10-14 14:00,autocrop,autocrop-legacy.tar.xz,640196008,2
 2026-10-14 14:00,autocrop,autocrop-setup.exe,640196012,2
 2026-10-14 14:00,autocrop,autocrop.tar.xz,640196026,2
+2026-10-14 17:19,autocrop,autocrop-legacy.tar.xz,640564632,1
+2026-10-14 17:19,autocrop,autocrop-setup.exe,640196012,4
+2026-10-14 17:19,autocrop,autocrop.tar.xz,640562090,1
+2026-10-14 17:19,polygon,polygon,640561077,1
+2026-10-14 17:19,polygon,polygon-legacy,640563483,1
+2026-10-14 17:19,polygon,polygon.exe,640558936,1
+2026-10-14 17:19,lmoToXY,lmoToXY,640560459,1
+2026-10-14 17:19,lmoToXY,lmoToXY-legacy,640562713,1
+2026-10-14 17:19,lmoToXY,lmoToXY.exe,640559817,1
+2026-10-14 17:19,histogram_for_reg,histogram_for_reg,640561576,1
+2026-10-14 17:19,histogram_for_reg,histogram_for_reg-legacy,640564143,1
+2026-10-14 17:19,histogram_for_reg,histogram_for_reg.exe,640559422,1

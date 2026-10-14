@@ -28,9 +28,18 @@ The resulting files are ready to be pasted into reports and presentations.
 
 ## Download
 
-[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop.exe){ .md-button .md-button--primary }
-[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop){ .md-button }
-[:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-legacy){ .md-button }
+[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-setup.exe){ .md-button .md-button--primary }
+[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop.tar.xz){ .md-button }
+[:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-legacy.tar.xz){ .md-button }
+
+For Windows it is an installer: by default it installs the program for you only,
+without administrator rights, into `%LOCALAPPDATA%\Programs\autocrop`, with a
+Start menu shortcut (a desktop shortcut is optional). A new version installs over
+the old one.
+
+For Linux it is an archive: unpack it and run `install.sh`, and the program
+appears in the applications menu and as the `autocrop` command
+([details](index.md#run)).
 
 The Linux version is for systems with glibc 2.38 or newer: Ubuntu 24.04 and
 newer, Debian 13, Fedora 39 and newer, RHEL, Rocky and Alma 10. For older systems -

@@ -4,7 +4,7 @@ site_author: Danis Arslanov
 site_description: >-
   Небольшие программы-помощники к обработке сейсморазведочных данных:
   обрезка снимков экрана, модель ВЧР по первым вступлениям, контур съемки,
-  классы удалений для регуляризации 3D. Windows и Linux, без установки.
+  классы удалений для регуляризации 3D. Windows и Linux, бесплатно.
 copyright: '&copy; 2026 Danis Arslanov'
 
 theme:
@@ -69,8 +69,7 @@ plugins:
           site_description: >-
             Small helper programs for seismic data processing: screenshot
             cropping, near-surface model from first breaks, survey outline,
-            offset classes for 3D regularization. Windows and Linux, no
-            installation.
+            offset classes for 3D regularization. Windows and Linux, free.
           nav_translations:
             Главная: Home
             Программы: Programs
@@ -100,7 +99,7 @@ plugins:
           site_name: 地震数据处理实用工具
           site_description: >-
             地震数据处理的小型辅助程序：截图裁剪、根据初至建立近地表模型、工区轮廓、
-            三维规则化的偏移距分组。支持 Windows 和 Linux，无需安装。
+            三维规则化的偏移距分组。支持 Windows 和 Linux，免费使用。
           nav_translations:
             Главная: 首页
             Программы: 程序

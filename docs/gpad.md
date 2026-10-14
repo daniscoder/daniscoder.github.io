@@ -17,8 +17,8 @@
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
 
-Текущая версия - 2.0. Установка не нужна: программа - один файл, как и остальные
-программы на сайте. Чтобы попробовать редактор, можно скачать пример
+Текущая версия - 2.0. Установка не нужна: программа - один файл, как и большинство
+программ на сайте. Чтобы попробовать редактор, можно скачать пример
 [synth.sps](examples/synth.sps), на нем сделан снимок экрана выше.
 
 Linux-версия запускается также на старых системах вроде CentOS 7, но ей нужна

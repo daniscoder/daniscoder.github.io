@@ -15,14 +15,14 @@
 - **Python 和 Qt** - autocrop、lmoToXY、polygon 和 histogram_for_reg 都是用它们编写的；较大的桌面应用程序我用 Qt 和 C++。
 - **Delphi 和 Free Pascal** - 早些时候：[ListQC](listqc.md) 和 [gPad](gpad.md) 的早期版本用 Delphi 编写，
   gPad 2.0 用 Free Pascal（Lazarus）编写。
-- **打包成单个文件**，适用于 Windows 和 Linux，包括 CentOS 7 这样的旧系统。
+- **打包为单个文件或安装程序**，适用于 Windows 和 Linux，包括 CentOS 7 这样的旧系统。
 - **移植旧程序：**我把 Omega 软件包的速度格式转换工具从 Python 2 和 Tkinter 移植到了 Python 3 和 Qt - 约 200 项操作，
   有 Windows 和 Linux 版本。该工具已投入实际使用，但不公开提供。
 
 ## 可以定制的服务
 
 - **为您的任务编写工具** - 与本站程序类似的小程序：支持您所用处理系统的导出格式，适应野外队或处理中心的工作流程。
-  适用于 Windows 和 Linux，单个文件，无需安装。
+  适用于 Windows 和 Linux，可以是无需安装的单个文件，也可以带安装程序。
 - **日常操作自动化** - 批量处理文件和截图的脚本、格式转换器、数据检查和核对。
 - **改进本站的程序** - 增加新的输入数据格式、新的参数、适合您系统的输出。
 - **程序本地化** - 把界面和帮助翻译成英文、中文或任何其他语言。

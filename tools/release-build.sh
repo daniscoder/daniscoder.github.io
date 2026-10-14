@@ -28,6 +28,9 @@
 REPO=daniscoder/daniscoder.github.io
 # проект:тег релиза; без тега - только собрать
 PROJECTS="lmoToXY:lmoToXY polygon:polygon histogram_for_reg:histogram_for_reg autocrop:autocrop xvelutil_qt:"
+# Собираются папкой, выкладывается архив dist/<проект>[-legacy].tar.xz с install.sh
+# (его делает 2exe.py проекта); остальные - одним файлом
+ARCHIVED="autocrop"
 
 MODE=${1:-}
 shift
@@ -97,6 +100,8 @@ for item in $PROJECTS; do
     # У xvelutil_qt файлов два (окно и пакетный режим) - сверяемся по окну
     if [ "$name" = xvelutil_qt ]; then
         output=dist/xvelutil$SUFFIX
+    elif [[ " $ARCHIVED " == *" $name "* ]]; then
+        output=dist/$name$SUFFIX.tar.xz
     else
         output=dist/$name$SUFFIX
     fi

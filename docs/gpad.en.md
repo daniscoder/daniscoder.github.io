@@ -18,7 +18,7 @@ applied to a whole column rather than to each line separately.
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
 
 The current version is 2.0. No installation is needed: the program is a single
-file, like the other programs on this site. To try the editor, you can download
+file, like most programs on this site. To try the editor, you can download
 the sample [synth.sps](examples/synth.sps); the screenshot above is made from it.
 
 The Linux version also runs on old systems such as CentOS 7, but it needs the GTK2

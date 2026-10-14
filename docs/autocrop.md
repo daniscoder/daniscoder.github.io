@@ -30,9 +30,16 @@
 
 ## Скачать
 
-[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop.exe){ .md-button .md-button--primary }
-[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop){ .md-button }
-[:material-linux: Linux (старые системы)](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-legacy){ .md-button }
+[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-setup.exe){ .md-button .md-button--primary }
+[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop.tar.xz){ .md-button }
+[:material-linux: Linux (старые системы)](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-legacy.tar.xz){ .md-button }
+
+Для Windows - установщик: по умолчанию он ставит программу только для вас, без
+прав администратора, в `%LOCALAPPDATA%\Programs\autocrop`, с ярлыком в меню
+«Пуск» (на рабочем столе - по желанию). Новая версия ставится поверх прежней.
+
+Для Linux - архив: распакуйте его и запустите `install.sh`, программа появится в
+меню приложений и как команда `autocrop` ([подробнее](index.md#run)).
 
 Linux-версия рассчитана на системы с glibc 2.38 и новее: Ubuntu 24.04 и новее,
 Debian 13, Fedora 39 и новее, RHEL, Rocky и Alma 10. Для более старых систем -
@@ -140,7 +147,9 @@ autocrop снимок.png папка_со_снимками -k axes -f png -o cro
 - `--box X Y W H` - ручной режим: вырезать этот прямоугольник из всех снимков;
 - `--max-side` - сжать до заданной длинной стороны.
 
-Полный список ключей выводит `autocrop -h`.
+Полный список ключей выводит `autocrop -h`. На Windows программа установлена в
+`%LOCALAPPDATA%\Programs\autocrop`, в командной строке ее можно вызвать по полному
+пути; на Linux после `install.sh` - командой `autocrop`.
 
 ## История версий
 

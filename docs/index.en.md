@@ -15,11 +15,13 @@ automate routine operations and help with three main tasks:
 - **check field data** - fix and cross-check SPS files, assess shooting quality
   from recording listings.
 
-All programs are free and need no installation: each utility is a single file
-that you just download and run. Almost all of them are built for Windows and
-Linux, including old systems such as CentOS 7. The exception is ListQC, the
-earliest of the utilities presented here: it runs on Windows only. If something
-does not start, see [How to run](#run) below.
+All programs are free. Almost all of them are built for Windows and Linux,
+including old systems such as CentOS 7. The exception is ListQC, the earliest of
+the utilities presented here: it runs on Windows only. Most utilities are a single
+file that you just download and run, with no installation; autocrop comes with an
+installer on Windows and as an archive with an install script on Linux, neither
+needs administrator rights. If something does not start, see [How to run](#run)
+below.
 
 !!! note "Interface language"
     autocrop, lmoToXY, polygon and histogram_for_reg speak English and Chinese
@@ -163,10 +165,28 @@ fail the check and on which attribute exactly.
 
 ## How to run { #run }
 
-Download the file for your system from the program's page. Nothing needs to be
-installed: you can put the file in any folder and run it from there. On the first
-start the program unpacks itself into a temporary folder, so the first start
-takes a couple of seconds longer.
+Most programs are a single file: download the file for your system from the
+program's page, put it in any folder and run it from there, nothing needs to be
+installed. On the first start such a program unpacks itself into a temporary
+folder, so the first start takes a couple of seconds longer.
+
+**autocrop** is distributed differently - this way it starts faster:
+
+- **Windows** - the installer `autocrop-setup.exe`. By default it installs the
+  program for you only, without administrator rights, and adds it to the Start
+  menu. A new version installs over the old one; you can remove the program in
+  Windows "Installed apps".
+- **Linux** - the archive `autocrop.tar.xz` (for older systems
+  `autocrop-legacy.tar.xz` with the `autocrop-legacy` folder). Unpack it and run
+  `install.sh`: the program appears in the applications menu and as the
+  `autocrop` command, no administrator rights needed. To remove it, run
+  `~/.local/share/autocrop/uninstall.sh`. You can also skip the installation: the
+  program runs right from the unpacked folder.
+
+```bash
+tar -xJf autocrop.tar.xz
+./autocrop/install.sh
+```
 
 **Windows.** Run the `.exe` with a double click. The programs are not signed with
 a certificate, so on the first start Windows may show a SmartScreen window

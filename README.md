@@ -62,6 +62,13 @@ gh release upload polygon polygon.exe polygon --clobber
 После этого поменять номер версии и строку в «Истории версий» на странице
 программы.
 
+autocrop (с 14.10.2026) собирается папкой, а не одним файлом, - так он
+запускается в разы быстрее. В релизе у него `autocrop-setup.exe` (установщик Inno
+Setup, его собирает `2exe.py` на Windows), `autocrop.tar.xz` и
+`autocrop-legacy.tar.xz` (папка программы с `install.sh`, их собирает `2exe.py` на
+Linux). Скрипты Linux-сборок выкладывают у него архивы (`ARCHIVED` в
+`tools/release-build.sh`).
+
 ### Сборки для старых Linux
 
 У histogram_for_reg, polygon и lmoToXY в релизе есть третий файл,

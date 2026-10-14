@@ -22,9 +22,15 @@
 
 ## 下载
 
-[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop.exe){ .md-button .md-button--primary }
-[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop){ .md-button }
-[:material-linux: Linux（旧系统）](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-legacy){ .md-button }
+[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-setup.exe){ .md-button .md-button--primary }
+[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop.tar.xz){ .md-button }
+[:material-linux: Linux（旧系统）](https://github.com/daniscoder/daniscoder.github.io/releases/download/autocrop/autocrop-legacy.tar.xz){ .md-button }
+
+Windows 版是安装程序：默认只为当前用户安装，不需要管理员权限，安装到 `%LOCALAPPDATA%\Programs\autocrop`，
+并在“开始”菜单中添加快捷方式（桌面快捷方式可选）。新版本可直接覆盖旧版本安装。
+
+Linux 版是压缩包：解压后运行 `install.sh`，程序会出现在应用程序菜单中，也可以用 `autocrop` 命令启动
+（[详情](index.md#run)）。
 
 Linux 版适用于 glibc 2.38 或更新版本的系统：Ubuntu 24.04 及更新版本、Debian 13、Fedora 39 及更新版本、
 RHEL、Rocky 和 Alma 10。对于更旧的系统 - CentOS 7、RHEL、Rocky 和 Alma 8 与 9、Ubuntu 22.04、Debian 12、

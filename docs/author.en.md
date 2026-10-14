@@ -19,8 +19,8 @@ published here are those that may be useful to others too.
 - **Delphi and Free Pascal** - earlier: [ListQC](listqc.md) and the first
   versions of [gPad](gpad.md) are written in Delphi, gPad 2.0 in Free Pascal
   (Lazarus).
-- **Single-file builds** for Windows and Linux, including old systems such as
-  CentOS 7.
+- **Builds for Windows and Linux** - as a single file or with an installer,
+  including old systems such as CentOS 7.
 - **Porting legacy programs:** I moved the velocity format conversion utility of
   the Omega package from Python 2 and Tkinter to Python 3 and Qt - about 200
   operations, builds for Windows and Linux. The utility is in working use but is
@@ -30,8 +30,8 @@ published here are those that may be useful to others too.
 
 - **A utility for your task** - a small program in the spirit of the ones on this
   site: supporting the export format of your processing system, fitting the
-  workflow of a field crew or a processing center. For Windows and Linux, a single
-  file, no installation.
+  workflow of a field crew or a processing center. For Windows and Linux - a single
+  file with no installation, or with an installer.
 - **Automation of routine operations** - scripts for batch processing of files
   and screenshots, format converters, data checks and cross-checks.
 - **Extensions of the programs on this site** - adding a new input format, a new

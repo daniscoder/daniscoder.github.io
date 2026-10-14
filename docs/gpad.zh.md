@@ -14,7 +14,7 @@
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
 
-当前版本为 2.0。无需安装：与本站其他程序一样，程序就是一个文件。程序界面目前只有俄文。要试用编辑器，
+当前版本为 2.0。无需安装：与本站大多数程序一样，程序就是一个文件。程序界面目前只有俄文。要试用编辑器，
 可以下载示例 [synth.sps](examples/synth.sps)；上面的截图就是用它制作的。
 
 Linux 版也能在 CentOS 7 这样的旧系统上运行，但需要 GTK2 库。有桌面环境的计算机通常已经有了；如果没有，可以这样安装：

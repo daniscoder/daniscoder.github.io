@@ -80,3 +80,10 @@ date,tag,asset,asset_id,count
 2026-10-22 12:02,seisboard,seisboard-setup.exe,665733051,0
 2026-10-22 12:02,seisboard,seisboard-version.json,665733655,0
 2026-10-22 12:02,seisboard,seisboard.tar.xz,665733044,0
+2026-10-22 17:17,seisboard,seisboard-demo-legacy.tar.xz,666449688,0
+2026-10-22 17:17,seisboard,seisboard-demo-setup.exe,666447148,0
+2026-10-22 17:17,seisboard,seisboard-demo.tar.xz,666447129,0
+2026-10-22 17:17,seisboard,seisboard-legacy.tar.xz,666447151,1
+2026-10-22 17:17,seisboard,seisboard-setup.exe,666447142,1
+2026-10-22 17:17,seisboard,seisboard-version.json,666449680,3
+2026-10-22 17:17,seisboard,seisboard.tar.xz,666447128,0

@@ -122,3 +122,5 @@ date,tag,asset,asset_id,count
 2026-10-27 12:23,seisboard,seisboard-setup.exe,681263140,0
 2026-10-27 12:23,seisboard,seisboard-version.json,681263935,2
 2026-10-27 12:23,seisboard,seisboard.tar.xz,681263138,0
+2026-10-27 14:30,seisboard,seisboard-setup.exe,681263140,1
+2026-10-27 14:30,seisboard,seisboard-version.json,681263935,5

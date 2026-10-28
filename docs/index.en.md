@@ -42,7 +42,7 @@ below.
 
 ### ![](img/icons/seisboard.png){ .feature-icon } seisboard { #seisboard }
 
-**Seismic field data on a single board**: source and receiver statics, SPS geometry,
+**Seismic data on a single board**: source and receiver statics, SPS geometry,
 the survey grid and fold, quality attributes - on one map, in tables and profiles.
 Smoothing and splitting statics into periods, gridding, outliers, elevation statics and
 the floating datum, **comparing and assembling solutions**, fold plots, the CMP cloud

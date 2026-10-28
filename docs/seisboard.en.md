@@ -1,6 +1,6 @@
 # seisboard
 
-**Seismic field data on a single board**
+**Seismic data on a single board**
 
 seisboard brings together source and receiver static corrections, SPS acquisition
 geometry, the survey grid and fold, and quality attributes: one map, tables, operations,

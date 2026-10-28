@@ -11,9 +11,9 @@ hide:
 - **准备处理参数** - 为静校正建立近地表模型，构建工区边界多边形，为三维规则化划分偏移距组；
 - **检查野外数据** - 修改和核对 SPS 文件，根据记录班报评价放炮质量。
 
-所有程序均免费。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统。唯一的例外是
+除 seisboard 外，所有程序均免费：seisboard 提供免费试用版，完整版需要作者提供的许可密钥。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统。唯一的例外是
 ListQC，它是这里最早的一个工具，只能在 Windows 下运行。大多数工具就是一个文件，下载后即可运行，无需安装；
-autocrop 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的压缩包，两者都不需要管理员权限。如果有程序
+autocrop 和 seisboard 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的压缩包，两者都不需要管理员权限。如果有程序
 无法启动，请参阅下面的[“如何运行”](#run)一节。
 
 !!! note "界面语言"
@@ -24,6 +24,26 @@ autocrop 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的�
 ## 程序 { #programs }
 
 <div class="features" markdown>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/seisboard.png){ .feature-icon } seisboard { #seisboard }
+
+**地震勘探野外数据一览板**：炮点和检波点静校正、SPS 观测系统、测网与覆盖次数、质量属性，
+集中在一张地图、表格和剖面上。静校正平滑与分频、网格化、异常值、高程静校正和浮动基准面，
+**解的比较与组合**、覆盖次数图表、CMP 云图和偏移距分组。输出为 **Omega、SPS、Excel 和
+Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥。界面目前为俄文。
+
+[:octicons-arrow-right-24: 详细信息](seisboard.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![seisboard 窗口](img/seisboard.png)](seisboard.md)
+
+</div>
+</div>
 
 <div class="feature" markdown>
 <div class="feature-text" markdown>

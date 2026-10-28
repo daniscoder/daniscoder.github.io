@@ -130,6 +130,7 @@ extra_css:
 nav:
   - Главная: index.md
   - Программы:
+      - seisboard: seisboard.md
       - autocrop: autocrop.md
       - lmoToXY: lmotoxy.md
       - polygon: polygon.md

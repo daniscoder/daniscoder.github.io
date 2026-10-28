@@ -15,10 +15,11 @@ automate routine operations and help with three main tasks:
 - **check field data** - fix and cross-check SPS files, assess shooting quality
   from recording listings.
 
-All programs are free. Almost all of them are built for Windows and Linux,
+All programs are free except seisboard: it has a free demo, and the full version
+works with a key from the author. Almost all of them are built for Windows and Linux,
 including old systems such as CentOS 7. The exception is ListQC, the earliest of
 the utilities presented here: it runs on Windows only. Most utilities are a single
-file that you just download and run, with no installation; autocrop comes with an
+file that you just download and run, with no installation; autocrop and seisboard come with an
 installer on Windows and as an archive with an install script on Linux, neither
 needs administrator rights. If something does not start, see [How to run](#run)
 below.
@@ -35,6 +36,28 @@ below.
 ## Programs { #programs }
 
 <div class="features" markdown>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/seisboard.png){ .feature-icon } seisboard { #seisboard }
+
+**Seismic field data on a single board**: source and receiver statics, SPS geometry,
+the survey grid and fold, quality attributes - on one map, in tables and profiles.
+Smoothing and splitting statics into periods, gridding, outliers, elevation statics and
+the floating datum, **comparing and assembling solutions**, fold plots, the CMP cloud
+and offset classes. Output to **Omega, SPS, Excel and Surfer**. A free 30-day **demo**;
+the full version works with a key. The interface is in Russian for now.
+
+[:octicons-arrow-right-24: More](seisboard.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![seisboard window](img/seisboard.png)](seisboard.md)
+
+</div>
+</div>
 
 <div class="feature" markdown>
 <div class="feature-text" markdown>

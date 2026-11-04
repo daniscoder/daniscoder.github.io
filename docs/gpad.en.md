@@ -2,101 +2,144 @@
 
 **A text editor for geophysicists**
 
-The editor combines the standard features for plain text with specialized tools
-for the text formats used in seismic exploration: SPS acquisition geometry,
-velocity tables, static corrections and coordinates. It has a column mode and a
-set of functions for SPS files.
+gPad opens any text file, but knows seismic files best: SPS acquisition geometry (R, S
+and X), velocity functions (VELF, LVI, Handvel, V5 and others), static corrections and
+coordinates. Columns in such files are at fixed positions, so the editor has block
+selection, column mode and operations on whole columns: a change is applied to the whole
+column rather than to each line separately.
 
-Such files are organized in columns, and they are edited by columns: changes are
-applied to a whole column rather than to each line separately.
+The program recognizes the SPS record kind and revision by itself, highlights the fields
+and offers only the operations that fit. Points of all open files are shown on a map with
+shots and the active spread, and the coordinates, elevations and statics of points can be
+collected in an SP and RP database and used to fill SPS files.
 
 ![gPad: an SPS file with the X column selected](img/gpad.png)
 
 ## Download
 
-[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button .md-button--primary }
-[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
+[:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 
-The current version is 2.0. No installation is needed: the program is a single
-file, like most programs on this site. To try the editor, you can download
-the sample [synth.sps](examples/synth.sps); the screenshot above is made from it.
+The current version is 3.0.0. For Windows there is an installer: by default it installs
+the program for you only, without administrator rights, with a shortcut in the Start menu
+(on the desktop - optionally); for all users - by a choice in the first window. The
+program checks for updates itself and installs a new version with one button. A Linux
+version will come later.
 
-The Linux version also runs on old systems such as CentOS 7, but it needs the GTK2
-library. A desktop computer usually has it already; if not, it can be installed
-like this:
-
-```bash
-sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
-sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
-sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
-```
+To try the editor, you can download the sample [synth.sps](examples/synth.sps); the
+screenshot above is made from it.
 
 ## Plain text
 
 For plain text the editor offers the standard set of features:
 
-- several files open at once in tabs, a list of recent files, opening several
-  files on one page;
-- support for encodings and Windows, Unix and Mac line endings;
+- several files in tabs, recent files, appending another file to the end of a page,
+  splitting a large file into parts;
+- files of millions of lines open in the background in seconds and edit without delays;
+- the UTF-8, UTF-16, Windows-1251, DOS-866, KOI8-R and Windows-1252 encodings and
+  Windows, Unix and Mac line endings are detected on opening, and the file is saved in
+  them;
 - find and replace, including regular expressions and within a selection;
-- bookmarks: ten numbered ones and free ones; all lines with a bookmark or,
-  the other way round, without one can be deleted;
-- sorting lines, including multi-level sorting by columns;
-- removing empty lines, duplicates and lines by a mask; changing case; splitting
-  a large file into parts.
+- bookmarks: ten numbered ones and free ones; all lines with a bookmark or, the other way
+  round, without one can be deleted;
+- a changed-lines bar next to the line numbers: yellow - changed and not saved, green -
+  saved;
+- sorting lines, including sorting by columns with any number of levels;
+- removing empty lines, duplicates and lines by a mask, keeping every N-th line,
+  changing case;
+- text cleanup: replacing characters (for example, a decimal comma with a dot), Cyrillic
+  look-alike letters to Latin in point codes, invisible characters, trailing spaces,
+  tabs.
 
 ## Columns
 
-Column mode and block selection extend the standard features of the editor when
-working with column formats. The following operations are available for a column:
+Block selection and column mode extend the standard features of the editor when working
+with column formats. A block is selected with the mouse with Alt or with Alt and the
+arrow keys. The following operations are available for a column:
 
-- typing text from the keyboard right into a column: what you type goes into all
-  lines of the column below the cursor at once, at the same position;
-- inserting, deleting, cutting and shifting a column; aligning it left, right or
-  center;
+- typing text from the keyboard right into a column: what you type, Backspace and Delete
+  act on all lines of the column below the cursor at once, at the same position;
+- inserting, deleting, cutting and shifting a column; aligning it left, right or center;
 - inserting numbering with a given first number, step and leading zeros;
-- arithmetic on a column and a summary of it: number of values, minimum, maximum,
-  mean and sum;
-- inserting a column from the clipboard or splitting delimited text into
-  fixed-width columns;
-- selecting lines by the values in a column.
+- column arithmetic (add, subtract, multiply, divide, set a value) and a summary: number
+  of values, minimum, maximum, sum and mean;
+- inserting a column from the clipboard, including repeating it to the end of the text,
+  and laying out delimited text in even columns.
 
 ## SPS
 
-SPS files have their own set of tools:
+The program understands SPS R, S and X of the Rev 0 and Rev 2.1 revisions. It detects
+the record kind and revision from the beginning of the file, and the "SPS file" menu
+offers only the items that fit the page. For SPS files there are:
 
-- the SPS format is configurable: revision, field positions, comment character.
-  The standard Rev 0 and Rev 2.1 formats are included, with conversion between
-  them;
-- sorting, finding the current shot point in S and X files, selecting and
-  clearing columns of SPS R, S and X;
-- working with headers: remove comments, bring them to the standard, insert extra
-  information - Julian day, time, indices, codes;
-- numbering checks: unify record numbers, show missing ones;
-- removing reshoots of shot points;
-- building SPS S and R from SPS X, and for 2D - SPS R and S from the coordinates of
-  line bend points;
-- a receiver and shot point database with import and export via text, Excel or
-  the clipboard. SPS files are updated from it: coordinates from survey data,
-  static corrections, hole depths and uphole times, 2D spreads;
-- export to a Geocluster library.
+- field highlighting by meaning: key, index and code, coordinates and elevation, date and
+  time; asterisks and non-numbers in numeric fields are marked as errors. The field under
+  the cursor is highlighted in all records, and its name and positions are shown in the
+  status bar;
+- conversion between Rev 0 and Rev 2.1 and bringing records to the standard. A value that
+  does not fit into a field is written as asterisks, and the program reports it: nothing
+  is cut off silently;
+- selecting, clearing and arithmetic on SPS columns by field names, selecting records by
+  the values of a field;
+- sorting, including by SPS fields with any number of levels, finding the current shot
+  point in S and X files, removing duplicate points;
+- working with the header and records: remove comments, insert extra information -
+  index, code, Julian day, time;
+- checking X: unify record numbers, show missing ones, remove reshoots of shot points;
+- building SPS R and S from SPS X, and for 2D - from the coordinates of line bend points.
+  "Tie to SPS X" arranges R or S in the order of the X points and marks the missing ones;
+- table import from text, the clipboard and Excel (.xlsx and .xls) with columns detected
+  by headers and data; export to text, the clipboard and Excel;
+- export to a Geocluster library: Libri ST and Libri XY.
+
+## SP and RP map
+
+The map shows the points of all open R and S pages, hundreds of thousands at once and
+without delays. Shots are taken from the open X pages: shot points without a shot, shot
+and reshot ones are shown in different colors.
+
+Shift + click on a point shows its active spread: for a shot point - its receiver points
+over all X records, for a receiver point - the shot points that record into it. The
+point's record is selected in the text, and the "Point" window shows its fields, record
+numbers (FFID) and the spread summary with offsets. If several areas with the same point
+numbers are open, the spread is taken from the point's own area only. The map can be
+saved as a picture.
+
+## SP and RP database
+
+The database is a separate file with two tables, receiver points and shot points. It is
+handy for collecting coordinates, elevations, static corrections, hole depths and uphole
+times from different sources: SPS files, text, the clipboard and Excel. The tables are
+edited right in the cells, with undo. If a record is already in the database, you can
+keep the old one, replace it with the new one or fill in only the empty fields.
+
+SPS pages are updated from the database: the checked fields are taken by the point key,
+and empty values in the database overwrite nothing. The database can be exported to SPS,
+text, the clipboard and Excel.
 
 ## Velocities
 
-The built-in converter translates the LVI, Handvel and V5 velocity formats into
-one another in any direction.
+The built-in converter translates velocity functions between 11 formats: Omega VELF,
+Geocluster LVI and V5, Handvel, Landmark, ProMAX, Hampson-Russell, Shell V5 / Charisma
+and Charisma VL_B are read and written, SeisBase III and Charisma VL_A are written only.
+The page format is detected from its contents. V5 can be built from two pages - Handvel
+and Geoq.
+
+## Help and updates
+
+Detailed help with contents, search and pictures opens with F1; in any window - right at
+the topic about it. The interface and help are in English and Russian, the language is
+chosen in "View" - "Language". The screenshot on this page is still Russian.
+
+On startup, no more than once a day, the program checks for a new version and shows
+what is new in all the skipped versions. A new version installs over the old one with one
+button, settings and files are left untouched.
 
 ## Version history
 
 | Version | What's new |
 |---|---|
+| 3.0.0 | The program was rewritten in C++ and Qt 6, on Windows it comes with an installer and checks for updates itself; its own editor: files of millions of lines open in the background, block selection, column mode, changed-lines bar; SPS field highlighting; SP and RP map with shots and the active spread; SP and RP database with undo, import from text, the clipboard and Excel; velocity conversion between 11 formats; help on F1 and English interface language |
 | 2.0 | Rewritten in Free Pascal with Lazarus: Windows and Linux, 64-bit |
 | 1.5 | The Delphi version, Windows only, 32-bit |
 
-The old version 1.5.61 with an installer for 32-bit Windows:
-[Setup_gPad_v1.5.61.exe](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/Setup_gPad_v1.5.61.exe).
-It is no longer supported or updated - take it only if something is missing in
-2.0.
-
-What is missing in 2.0 can be added if needed - write what you lack
-([contacts](author.md#contacts)).
+If something is missing in the program, write to me ([contacts](author.md#contacts)).

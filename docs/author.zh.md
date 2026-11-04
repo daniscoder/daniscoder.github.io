@@ -12,7 +12,7 @@
 
 ## 我如何编写程序
 
-- **Python 和 Qt** - autocrop、lmoToXY、polygon 和 histogram_for_reg 都是用它们编写的；较大的桌面应用程序我用 Qt 和 C++。
+- **Python 和 Qt** - autocrop、lmoToXY、polygon 和 histogram_for_reg 都是用它们编写的；较大的桌面应用程序我用 Qt 和 C++，gPad 3.0 就是用它们编写的。
 - **Delphi 和 Free Pascal** - 早些时候：[ListQC](listqc.md) 和 [gPad](gpad.md) 的早期版本用 Delphi 编写，
   gPad 2.0 用 Free Pascal（Lazarus）编写。
 - **打包为单个文件或安装程序**，适用于 Windows 和 Linux，包括 CentOS 7 这样的旧系统。

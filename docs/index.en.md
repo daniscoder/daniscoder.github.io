@@ -17,20 +17,22 @@ automate routine operations and help with three main tasks:
 
 All programs are free except seisboard: it has a free demo, and the full version
 works with a key from the author. Almost all of them are built for Windows and Linux,
-including old systems such as CentOS 7. The exception is ListQC, the earliest of
-the utilities presented here: it runs on Windows only. Most utilities are a single
-file that you just download and run, with no installation; autocrop and seisboard come with an
-installer on Windows and as an archive with an install script on Linux, neither
-needs administrator rights. If something does not start, see [How to run](#run)
+including old systems such as CentOS 7. Only ListQC, the earliest of the utilities
+presented here, and, for now, gPad 3.0 run on Windows only: the Linux version of gPad
+will come later. Most utilities are a single file that you just download and run, with
+no installation; autocrop and seisboard come with an installer on Windows and as an
+archive with an install script on Linux, gPad - with an installer on Windows, and none
+of them needs administrator rights. If something does not start, see [How to run](#run)
 below.
 
 !!! note "Interface language"
     autocrop, lmoToXY, polygon and histogram_for_reg speak English and Chinese
     (Simplified): they follow the system language, and the list next to the
-    buttons switches it. gPad and ListQC are in Russian so far - menus, buttons,
-    the built-in help and their screenshots on this site; where their pages
-    mention a button or a field, its Russian caption is given in quotes next to the
-    English name. If needed, a program can be localized into any language - [write
+    buttons switches it. gPad speaks English and Russian, the language is chosen in
+    "View" - "Language"; its screenshot on this site is still Russian. ListQC is in
+    Russian so far - menus, buttons, the built-in help and its screenshots on this
+    site; where its page mentions a button or a field, the Russian caption is given in
+    quotes next to the English name. If needed, a program can be localized into any language - [write
     to me](author.md#contacts).
 
 ## Programs { #programs }
@@ -148,11 +150,12 @@ classes.
 
 ### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
 
-**A text editor for geophysicists**: the standard features for plain text and
-tools for seismic exploration formats - SPS acquisition geometry, velocity tables,
-static corrections and coordinates. Such files are edited **by columns** rather
-than line by line; there is **a separate set of functions** for SPS and **a format
-converter** for velocities.
+**A text editor for geophysicists**: any text files and above all seismic files -
+SPS acquisition geometry, velocity functions, static corrections and coordinates. Such
+files are edited **by columns** rather than line by line. The program recognizes SPS by
+itself and **highlights the fields**, shows the points on an **SP and RP map** with shots
+and the active spread and collects them in an **SP and RP database**; for velocities
+there is **a converter of 11 formats**.
 
 [:octicons-arrow-right-24: Learn more](gpad.md)
 

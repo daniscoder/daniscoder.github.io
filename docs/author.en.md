@@ -15,7 +15,8 @@ published here are those that may be useful to others too.
 ## How I write programs
 
 - **Python and Qt** - autocrop, lmoToXY, polygon and histogram_for_reg are built
-  with them; for larger desktop applications I use Qt and C++.
+  with them; for larger desktop applications I use Qt and C++ - gPad 3.0 is written
+  with them.
 - **Delphi and Free Pascal** - earlier: [ListQC](listqc.md) and the first
   versions of [gPad](gpad.md) are written in Delphi, gPad 2.0 in Free Pascal
   (Lazarus).

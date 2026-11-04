@@ -86,6 +86,28 @@ screenshots and **shrinking** for large ones.
 <div class="feature" markdown>
 <div class="feature-text" markdown>
 
+### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
+
+**A text editor for geophysicists**: any text files and above all seismic files -
+SPS acquisition geometry, velocity functions, static corrections and coordinates. Such
+files are edited **by columns** rather than line by line. The program recognizes SPS by
+itself and **highlights the fields**, shows the points on an **SP and RP map** with shots
+and the active spread and collects them in an **SP and RP database**; for velocities
+there is **a converter of 11 formats**.
+
+[:octicons-arrow-right-24: Learn more](gpad.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![gPad window](img/gpad.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
 ### ![](img/icons/lmotoxy.png){ .feature-icon } lmoToXY { #lmotoxy }
 
 **A layered near-surface model from first breaks** to parameterize the static
@@ -141,28 +163,6 @@ classes.
 <div class="feature-image" markdown>
 
 [![histogram_for_reg window](img/histogram_en.png)](histogram_for_reg.md)
-
-</div>
-</div>
-
-<div class="feature" markdown>
-<div class="feature-text" markdown>
-
-### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
-
-**A text editor for geophysicists**: any text files and above all seismic files -
-SPS acquisition geometry, velocity functions, static corrections and coordinates. Such
-files are edited **by columns** rather than line by line. The program recognizes SPS by
-itself and **highlights the fields**, shows the points on an **SP and RP map** with shots
-and the active spread and collects them in an **SP and RP database**; for velocities
-there is **a converter of 11 formats**.
-
-[:octicons-arrow-right-24: Learn more](gpad.md)
-
-</div>
-<div class="feature-image" markdown>
-
-[![gPad window](img/gpad.png)](gpad.md)
 
 </div>
 </div>

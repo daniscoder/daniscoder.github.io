@@ -77,6 +77,28 @@ Surfer**. Бесплатная **демо-версия** на 30 дней, по�
 <div class="feature" markdown>
 <div class="feature-text" markdown>
 
+### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
+
+**Текстовый редактор для геофизика**: любые текстовые файлы и прежде всего файлы
+сейсморазведки - геометрия наблюдений SPS, законы скоростей, статические поправки и
+координаты. Такие файлы редактируются **по колонкам**, а не строка за строкой. SPS
+программа узнает сама и **подсвечивает поля**, пункты показывает на **схеме ПВ и ПП**
+с отстрелами и активной расстановкой, копит их в **базе ПВ и ПП**; для скоростей есть
+**конвертор 11 форматов**.
+
+[:octicons-arrow-right-24: Подробнее](gpad.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![Окно gPad](img/gpad.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
 ### ![](img/icons/lmotoxy.png){ .feature-icon } lmoToXY { #lmotoxy }
 
 **Слоистая модель верхней части разреза по первым вступлениям** для
@@ -130,28 +152,6 @@ Refraction Tomo. По данным LMO из PickWorks программа на к
 <div class="feature-image" markdown>
 
 [![Окно histogram_for_reg](img/histogram.png)](histogram_for_reg.md)
-
-</div>
-</div>
-
-<div class="feature" markdown>
-<div class="feature-text" markdown>
-
-### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
-
-**Текстовый редактор для геофизика**: любые текстовые файлы и прежде всего файлы
-сейсморазведки - геометрия наблюдений SPS, законы скоростей, статические поправки и
-координаты. Такие файлы редактируются **по колонкам**, а не строка за строкой. SPS
-программа узнает сама и **подсвечивает поля**, пункты показывает на **схеме ПВ и ПП**
-с отстрелами и активной расстановкой, копит их в **базе ПВ и ПП**; для скоростей есть
-**конвертор 11 форматов**.
-
-[:octicons-arrow-right-24: Подробнее](gpad.md)
-
-</div>
-<div class="feature-image" markdown>
-
-[![Окно gPad](img/gpad.png)](gpad.md)
 
 </div>
 </div>

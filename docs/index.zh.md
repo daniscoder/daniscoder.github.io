@@ -68,6 +68,25 @@ Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥
 <div class="feature" markdown>
 <div class="feature-text" markdown>
 
+### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
+
+**面向地球物理人员的文本编辑器**：可以处理任何文本文件，首先是地震勘探文件 - SPS 观测系统、速度函数、
+静校正量和坐标。这类文件**按列**编辑，而不是逐行编辑。程序自动识别 SPS 并**高亮显示字段**，在**炮点和检波点平面图**上
+显示点及其放炮情况和活动排列，并把点积累在**炮点和检波点数据库**中；速度有 **11 种格式的转换器**。
+
+[:octicons-arrow-right-24: 详细了解](gpad.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![gPad 窗口](img/gpad.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
 ### ![](img/icons/lmotoxy.png){ .feature-icon } lmoToXY { #lmotoxy }
 
 **根据初至建立层状近地表模型**，用于为静校正计算模块 Refraction Miser 或 Refraction Tomo 设置参数。
@@ -115,25 +134,6 @@ Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥
 <div class="feature-image" markdown>
 
 [![histogram_for_reg 窗口](img/histogram_zh.png)](histogram_for_reg.md)
-
-</div>
-</div>
-
-<div class="feature" markdown>
-<div class="feature-text" markdown>
-
-### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
-
-**面向地球物理人员的文本编辑器**：可以处理任何文本文件，首先是地震勘探文件 - SPS 观测系统、速度函数、
-静校正量和坐标。这类文件**按列**编辑，而不是逐行编辑。程序自动识别 SPS 并**高亮显示字段**，在**炮点和检波点平面图**上
-显示点及其放炮情况和活动排列，并把点积累在**炮点和检波点数据库**中；速度有 **11 种格式的转换器**。
-
-[:octicons-arrow-right-24: 详细了解](gpad.md)
-
-</div>
-<div class="feature-image" markdown>
-
-[![gPad 窗口](img/gpad.png)](gpad.md)
 
 </div>
 </div>

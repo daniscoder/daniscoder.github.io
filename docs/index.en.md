@@ -18,8 +18,8 @@ automate routine operations and help with three main tasks:
 All programs are free except seisboard: it has a free demo, and the full version
 works with a key from the author. Almost all of them are built for Windows and Linux,
 including old systems such as CentOS 7. Only ListQC, the earliest of the utilities
-presented here, and, for now, gPad 3.0 run on Windows only: the Linux version of gPad
-will come later. Most utilities are a single file that you just download and run, with
+presented here, and, for now, gPad 3.0 run on Windows only: for Linux gPad has the
+previous version 2.0. Most utilities are a single file that you just download and run, with
 no installation; autocrop and seisboard come with an installer on Windows and as an
 archive with an install script on Linux, gPad - with an installer on Windows, and none
 of them needs administrator rights. If something does not start, see [How to run](#run)

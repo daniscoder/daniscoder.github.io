@@ -28,6 +28,25 @@ gPad открывает любые текстовые файлы, но лучш�
 Чтобы попробовать редактор, можно скачать пример [synth.sps](examples/synth.sps), на нем
 сделан снимок экрана выше.
 
+### Версия 2.0 для старых систем
+
+Пока у 3.0 нет версии для Linux, на сайте остается прежняя версия 2.0 - для Linux,
+включая старые системы вроде CentOS 7, и для Windows, на которой 3.0 не запускается (ей
+нужна Windows 10 или новее). Установка не нужна: программа - один файл. Версия 2.0 больше
+не развивается, и в ней нет того, что появилось в 3.0.
+
+[:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
+[:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
+
+Linux-версии 2.0 нужна библиотека GTK2. На компьютере с рабочим столом она обычно уже
+установлена, а если нет, ее можно поставить так:
+
+```bash
+sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
+sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
+sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
+```
+
 ## Обычный текст
 
 Для работы с обычным текстом редактор предоставляет стандартный набор возможностей:

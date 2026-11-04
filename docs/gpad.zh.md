@@ -21,6 +21,23 @@ Linux 版将在以后推出。
 
 要试用编辑器，可以下载示例 [synth.sps](examples/synth.sps)；上面的截图就是用它制作的。
 
+### 用于旧系统的 2.0 版
+
+在 3.0 还没有 Linux 版之前，本站保留以前的 2.0 版 - 用于 Linux（包括 CentOS 7 这样的旧系统），以及无法运行 3.0 的
+Windows（3.0 需要 Windows 10 或更新版本）。无需安装：程序就是一个文件。2.0 版已不再开发，没有 3.0 中新增的功能，
+界面只有俄文。
+
+[:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
+[:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
+
+2.0 的 Linux 版需要 GTK2 库。有桌面环境的计算机通常已经有了；如果没有，可以这样安装：
+
+```bash
+sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
+sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
+sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
+```
+
 ## 普通文本
 
 对于普通文本，编辑器提供标准的功能：

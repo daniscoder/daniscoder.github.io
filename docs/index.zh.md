@@ -12,7 +12,7 @@ hide:
 - **检查野外数据** - 修改和核对 SPS 文件，根据记录班报评价放炮质量。
 
 除 seisboard 外，所有程序均免费：seisboard 提供免费试用版，完整版需要作者提供的许可密钥。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统。只能在 Windows 下运行的有
-ListQC（这里最早的一个工具）以及目前的 gPad 3.0：gPad 的 Linux 版将在以后推出。大多数工具就是一个文件，下载后即可运行，无需安装；
+ListQC（这里最早的一个工具）以及目前的 gPad 3.0：在 Linux 上可以使用 gPad 以前的 2.0 版。大多数工具就是一个文件，下载后即可运行，无需安装；
 autocrop 和 seisboard 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的压缩包，gPad 在 Windows 上使用安装程序，都不需要管理员权限。如果有程序
 无法启动，请参阅下面的[“如何运行”](#run)一节。
 

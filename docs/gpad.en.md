@@ -28,6 +28,26 @@ version will come later.
 To try the editor, you can download the sample [synth.sps](examples/synth.sps); the
 screenshot above is made from it.
 
+### Version 2.0 for old systems
+
+While 3.0 has no Linux version, the previous version 2.0 stays on the site - for Linux,
+including old systems such as CentOS 7, and for Windows on which 3.0 does not run (it
+needs Windows 10 or newer). No installation is needed: the program is a single file.
+Version 2.0 is no longer developed, and it lacks what appeared in 3.0. Its interface is
+in Russian only.
+
+[:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
+[:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
+
+The Linux version 2.0 needs the GTK2 library. A desktop computer usually has it already;
+if not, it can be installed like this:
+
+```bash
+sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
+sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
+sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
+```
+
 ## Plain text
 
 For plain text the editor offers the standard set of features:

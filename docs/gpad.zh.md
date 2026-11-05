@@ -2,30 +2,41 @@
 
 **面向地球物理人员的文本编辑器**
 
-gPad 可以打开任何文本文件，但最熟悉的是地震勘探文件：SPS 观测系统（R、S 和 X）、速度函数（VELF、LVI、
+gPad 可以打开任何文本文件，首先是地震勘探文件：SPS 观测系统（R、S 和 X）、速度函数（VELF、LVI、
 Handvel、V5 等）、静校正量和坐标。这类文件中的列位于固定位置，因此编辑器提供块选择、列模式和整列操作：
 修改作用于整列，而不是逐行分别进行。
 
 程序会自动识别 SPS 的记录类型和版本，高亮显示字段，并且只提供适用的操作。所有打开文件中的点显示在平面图上，
 附带放炮情况和活动排列；点的坐标、高程和静校正量可以积累在炮点和检波点数据库中，再用来填写 SPS 文件。
 
-![gPad：选中 X 列的 SPS 文件](img/gpad.png)
+![gPad：带字段高亮的 SPS S 页面](img/gpad_zh.png)
 
 ## 下载
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
+[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
 当前版本为 3.0.0。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
-Linux 版将在以后推出。
 
-要试用编辑器，可以下载示例 [synth.sps](examples/synth.sps)；上面的截图就是用它制作的。
+Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
+卸载 - 运行程序文件夹 `~/.local/share/gpad` 中的 `uninstall.sh`。Linux 版适用于 glibc 2.38 及更新版本的系统：
+Ubuntu 24.04 及更新版本、Debian 13、Fedora 39 及更新版本、RHEL、Rocky 和 Alma 10（[详细说明](index.md#run)）。
+它会自动提示新版本，但新版本需要手动安装：用同样的压缩包覆盖安装在旧版本之上。
+
+```bash
+tar -xJf gpad.tar.xz
+./gpad/install.sh
+```
+
+要试用编辑器，可以下载 SPS Rev 2.1 格式的三维工区示例 - [Demo3D.rps](examples/gpad/Demo3D.rps)、
+[Demo3D.sps](examples/gpad/Demo3D.sps) 和 [Demo3D.xps](examples/gpad/Demo3D.xps)；上面的截图就是用它制作的。
 
 ### 用于旧系统的 2.0 版
 
-在 3.0 还没有 Linux 版之前，本站保留以前的 2.0 版 - 用于 Linux（包括 CentOS 7 这样的旧系统），以及无法运行 3.0 的
-Windows（3.0 需要 Windows 10 或更新版本）。无需安装：程序就是一个文件。2.0 版已不再开发，没有 3.0 中新增的功能，
-界面只有俄文。
+本站为旧系统保留以前的 2.0 版：用于无法运行 3.0 的 Linux，例如 CentOS 7、RHEL、Rocky 和 Alma 8 和 9、Ubuntu 22.04、
+Debian 12、Astra Linux，以及 Windows 10 以前的 Windows。无需安装：程序就是一个文件。2.0 版已不再开发，
+没有 3.0 中新增的功能，界面只有俄文。
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
 [:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
@@ -109,16 +120,16 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 ## 帮助和更新
 
 带目录、搜索和图片的详细帮助按 F1 打开；在任何窗口中都会直接打开关于该窗口的章节。界面和帮助有英文和俄文，
-语言在“View” - “Language”（视图 - 语言）中选择，暂时没有中文。本页截图目前是俄文的。
+语言在“View” - “Language”（视图 - 语言）中选择，暂时没有中文。本页截图是英文界面。
 
-程序在启动时检查是否有新版本（每天最多一次），并显示所有跳过的版本中的新内容。新版本只需一个按钮即可覆盖安装在旧版本之上，
-设置和文件保持不变。
+程序在启动时检查是否有新版本（每天最多一次），并显示所有跳过的版本中的新内容。在 Windows 上新版本只需一个按钮即可覆盖安装在旧版本之上，
+在 Linux 上用发布页面的压缩包安装；设置和文件保持不变。
 
 ## 版本历史
 
 | 版本 | 新内容 |
 |---|---|
-| 3.0.0 | 用 C++ 和 Qt 6 重写，Windows 版使用安装程序并自动检查更新；自己的编辑器：数百万行的文件在后台打开，块选择、列模式、修改标记条；SPS 字段高亮；带放炮情况和活动排列的炮点和检波点平面图；可撤销编辑的炮点和检波点数据库，从文本、剪贴板和 Excel 导入；11 种速度格式之间的转换；F1 帮助和英文界面 |
+| 3.0.0 | 用 C++ 和 Qt 6 重写，可在 Windows 和 Linux 上运行，Windows 版使用安装程序并自动检查更新；自己的编辑器：数百万行的文件在后台打开，块选择、列模式、修改标记条；SPS 字段高亮；带放炮情况和活动排列的炮点和检波点平面图；可撤销编辑的炮点和检波点数据库，从文本、剪贴板和 Excel 导入；11 种速度格式之间的转换；F1 帮助和英文界面 |
 | 2.0 | 用 Free Pascal 和 Lazarus 重写：Windows 和 Linux，64 位 |
 | 1.5 | Delphi 版本，仅限 Windows，32 位 |
 

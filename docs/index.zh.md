@@ -11,14 +11,14 @@ hide:
 - **准备处理参数** - 为静校正建立近地表模型，构建工区边界多边形，为三维规则化划分偏移距组；
 - **检查野外数据** - 修改和核对 SPS 文件，根据记录班报评价放炮质量。
 
-除 seisboard 外，所有程序均免费：seisboard 提供免费试用版，完整版需要作者提供的许可密钥。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统。只能在 Windows 下运行的有
-ListQC（这里最早的一个工具）以及目前的 gPad 3.0：在 Linux 上可以使用 gPad 以前的 2.0 版。大多数工具就是一个文件，下载后即可运行，无需安装；
-autocrop 和 seisboard 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的压缩包，gPad 在 Windows 上使用安装程序，都不需要管理员权限。如果有程序
+除 seisboard 外，所有程序均免费：seisboard 提供免费试用版，完整版需要作者提供的许可密钥。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统（gPad 为旧系统保留以前的 2.0 版）。唯一的例外是
+ListQC，它是这里最早的一个工具，只能在 Windows 下运行。大多数工具就是一个文件，下载后即可运行，无需安装；
+autocrop、seisboard 和 gPad 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的压缩包，都不需要管理员权限。如果有程序
 无法启动，请参阅下面的[“如何运行”](#run)一节。
 
 !!! note "界面语言"
     autocrop、lmoToXY、polygon 和 histogram_for_reg 支持中文（简体）：语言跟随系统，也可以用按钮旁的列表切换。
-    gPad 有英文和俄文界面，语言在“View” - “Language”中选择，本站上它的截图目前是俄文的；在它的页面中提到按钮或字段时，
+    gPad 有英文和俄文界面，语言在“View” - “Language”中选择，本站上它的截图是英文界面；在它的页面中提到按钮或字段时，
     给出的是英文名称。ListQC 目前只有俄文 - 菜单、按钮、内置帮助以及本站上的截图都是俄文；在它的页面中提到按钮或字段时，
     会在中文名称旁的引号中给出俄文名称。如有需要，程序可以翻译成任何语言 - [请联系我](author.md#contacts)。
 
@@ -79,7 +79,7 @@ Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥
 </div>
 <div class="feature-image" markdown>
 
-[![gPad 窗口](img/gpad.png)](gpad.md)
+[![gPad 窗口](img/gpad_zh.png)](gpad.md)
 
 </div>
 </div>

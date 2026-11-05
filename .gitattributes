@@ -3,3 +3,5 @@
 * text=auto eol=lf
 # ...кроме .bat: cmd с одними LF путается в метках и длинных строках
 *.bat text eol=crlf
+# Пример SPS для gPad - как есть, с CRLF, как файлы с полевых станций (и как в репозитории gPad)
+docs/examples/gpad/Demo3D.* -text

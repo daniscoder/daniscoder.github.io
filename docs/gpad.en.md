@@ -2,7 +2,7 @@
 
 **A text editor for geophysicists**
 
-gPad opens any text file, but knows seismic files best: SPS acquisition geometry (R, S
+gPad opens any text files and above all seismic files: SPS acquisition geometry (R, S
 and X), velocity functions (VELF, LVI, Handvel, V5 and others), static corrections and
 coordinates. Columns in such files are at fixed positions, so the editor has block
 selection, column mode and operations on whole columns: a change is applied to the whole
@@ -13,28 +13,42 @@ and offers only the operations that fit. Points of all open files are shown on a
 shots and the active spread, and the coordinates, elevations and statics of points can be
 collected in an SP and RP database and used to fill SPS files.
 
-![gPad: an SPS file with the X column selected](img/gpad.png)
+![gPad: an SPS S page with field highlighting](img/gpad_en.png)
 
 ## Download
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
+[:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
 The current version is 3.0.0. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
-program checks for updates itself and installs a new version with one button. A Linux
-version will come later.
+program checks for updates itself and installs a new version with one button.
 
-To try the editor, you can download the sample [synth.sps](examples/synth.sps); the
-screenshot above is made from it.
+For Linux there is an archive: unpack it and run `install.sh`, and the program appears in
+the applications menu and as the `gpad` command; no administrator rights are needed. To
+remove it, run `uninstall.sh` in the program folder `~/.local/share/gpad`. The Linux
+version is meant for systems with glibc 2.38 or newer: Ubuntu 24.04 and newer, Debian 13,
+Fedora 39 and newer, RHEL, Rocky and Alma 10 ([more](index.md#run)). It tells you about
+a new version itself, but the new version is installed by hand, with the same archive over
+the old one.
+
+```bash
+tar -xJf gpad.tar.xz
+./gpad/install.sh
+```
+
+To try the editor, you can download a sample 3D survey in SPS Rev 2.1 -
+[Demo3D.rps](examples/gpad/Demo3D.rps), [Demo3D.sps](examples/gpad/Demo3D.sps) and
+[Demo3D.xps](examples/gpad/Demo3D.xps); the screenshot above is made from it.
 
 ### Version 2.0 for old systems
 
-While 3.0 has no Linux version, the previous version 2.0 stays on the site - for Linux,
-including old systems such as CentOS 7, and for Windows on which 3.0 does not run (it
-needs Windows 10 or newer). No installation is needed: the program is a single file.
-Version 2.0 is no longer developed, and it lacks what appeared in 3.0. Its interface is
-in Russian only.
+For old systems the previous version 2.0 stays on the site: for Linux such as CentOS 7,
+RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux, where 3.0 does not
+run, and for Windows older than 10. No installation is needed: the program is a single
+file. Version 2.0 is no longer developed, and it lacks what appeared in 3.0. Its
+interface is in Russian only.
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
 [:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
@@ -148,17 +162,18 @@ and Geoq.
 
 Detailed help with contents, search and pictures opens with F1; in any window - right at
 the topic about it. The interface and help are in English and Russian, the language is
-chosen in "View" - "Language". The screenshot on this page is still Russian.
+chosen in "View" - "Language".
 
 On startup, no more than once a day, the program checks for a new version and shows
-what is new in all the skipped versions. A new version installs over the old one with one
-button, settings and files are left untouched.
+what is new in all the skipped versions. On Windows a new version installs over the old
+one with one button, on Linux - with the archive from the release page; settings and
+files are left untouched.
 
 ## Version history
 
 | Version | What's new |
 |---|---|
-| 3.0.0 | The program was rewritten in C++ and Qt 6, on Windows it comes with an installer and checks for updates itself; its own editor: files of millions of lines open in the background, block selection, column mode, changed-lines bar; SPS field highlighting; SP and RP map with shots and the active spread; SP and RP database with undo, import from text, the clipboard and Excel; velocity conversion between 11 formats; help on F1 and English interface language |
+| 3.0.0 | The program was rewritten in C++ and Qt 6 and runs on Windows and Linux, on Windows it comes with an installer and checks for updates itself; its own editor: files of millions of lines open in the background, block selection, column mode, changed-lines bar; SPS field highlighting; SP and RP map with shots and the active spread; SP and RP database with undo, import from text, the clipboard and Excel; velocity conversion between 11 formats; help on F1 and English interface language |
 | 2.0 | Rewritten in Free Pascal with Lazarus: Windows and Linux, 64-bit |
 | 1.5 | The Delphi version, Windows only, 32-bit |
 

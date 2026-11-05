@@ -17,19 +17,18 @@ automate routine operations and help with three main tasks:
 
 All programs are free except seisboard: it has a free demo, and the full version
 works with a key from the author. Almost all of them are built for Windows and Linux,
-including old systems such as CentOS 7. Only ListQC, the earliest of the utilities
-presented here, and, for now, gPad 3.0 run on Windows only: for Linux gPad has the
-previous version 2.0. Most utilities are a single file that you just download and run, with
-no installation; autocrop and seisboard come with an installer on Windows and as an
-archive with an install script on Linux, gPad - with an installer on Windows, and none
-of them needs administrator rights. If something does not start, see [How to run](#run)
+including old systems such as CentOS 7 (for them gPad has the previous version 2.0).
+The exception is ListQC, the earliest of the utilities presented here: it runs on
+Windows only. Most utilities are a single file that you just download and run, with no
+installation; autocrop, seisboard and gPad come with an installer on Windows and as an
+archive with an install script on Linux, and none of them needs administrator rights. If something does not start, see [How to run](#run)
 below.
 
 !!! note "Interface language"
     autocrop, lmoToXY, polygon and histogram_for_reg speak English and Chinese
     (Simplified): they follow the system language, and the list next to the
     buttons switches it. gPad speaks English and Russian, the language is chosen in
-    "View" - "Language"; its screenshot on this site is still Russian. ListQC is in
+    "View" - "Language". ListQC is in
     Russian so far - menus, buttons, the built-in help and its screenshots on this
     site; where its page mentions a button or a field, the Russian caption is given in
     quotes next to the English name. If needed, a program can be localized into any language - [write
@@ -100,7 +99,7 @@ there is **a converter of 11 formats**.
 </div>
 <div class="feature-image" markdown>
 
-[![gPad window](img/gpad.png)](gpad.md)
+[![gPad window](img/gpad_en.png)](gpad.md)
 
 </div>
 </div>

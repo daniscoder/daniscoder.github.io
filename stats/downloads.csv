@@ -180,3 +180,7 @@ date,tag,asset,asset_id,count
 2026-10-31 12:44,seisboard,seisboard-version.json,694613729,2
 2026-10-31 12:44,seisboard,seisboard.tar.xz,694613288,0
 2026-11-02 21:46,seisboard,seisboard-version.json,694613729,3
+2026-11-05 12:36,gPad,gpad-setup.exe,713147864,2
+2026-11-05 12:36,gPad,gpad-version.json,713147865,3
+2026-11-05 12:36,gPad,gPad.exe,585988082,2
+2026-11-05 12:36,gPad,gpad.tar.xz,713147867,1

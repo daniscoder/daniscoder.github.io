@@ -87,12 +87,12 @@ screenshots and **shrinking** for large ones.
 
 ### ![](img/icons/gpad.png){ .feature-icon } gPad { #gpad }
 
-**A text editor for geophysicists**: any text files and above all seismic files -
-SPS acquisition geometry, velocity functions, static corrections and coordinates. Such
-files are edited **by columns** rather than line by line. The program recognizes SPS by
-itself and **highlights the fields**, shows the points on an **SP and RP map** with shots
-and the active spread and collects them in an **SP and RP database**; for velocities
-there is **a converter of 11 formats**.
+**A text editor for geophysicists**: opens any text files, but is made first of all for
+seismic data (SPS acquisition geometry, velocity functions, static corrections and
+coordinates). Edits are made to whole **columns**, not line by line. The program detects the
+SPS revision by itself and **highlights the fields**, shows the points on an **SP and RP map**
+with shots and the active spread, collects them in an **SP and RP database**, and for
+velocity functions includes **a converter of 11 formats**.
 
 [:octicons-arrow-right-24: Learn more](gpad.md)
 

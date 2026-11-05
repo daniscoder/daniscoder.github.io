@@ -2,16 +2,16 @@
 
 **A text editor for geophysicists**
 
-gPad opens any text files and above all seismic files: SPS acquisition geometry (R, S
-and X), velocity functions (VELF, LVI, Handvel, V5 and others), static corrections and
-coordinates. Columns in such files are at fixed positions, so the editor has block
-selection, column mode and operations on whole columns: a change is applied to the whole
-column rather than to each line separately.
+gPad works with any text files, but is built first of all for seismic data: SPS
+acquisition geometry (R, S and X), velocity functions (VELF, LVI, Handvel, V5, etc.), static
+corrections and coordinates. Fields in such files are tied to fixed positions, so the editor
+has block selection and column mode: any operation or edit applies to the whole column at
+once, not line by line.
 
-The program recognizes the SPS record kind and revision by itself, highlights the fields
-and offers only the operations that fit. Points of all open files are shown on a map with
-shots and the active spread, and the coordinates, elevations and statics of points can be
-collected in an SP and RP database and used to fill SPS files.
+The program detects the SPS revision and record kind by itself, highlights the fields and
+offers only the operations that fit. Points from all open files are shown on a map with shots
+and the active spread, and coordinates, elevations and statics can be collected in the SP and
+RP database to fill SPS files with them later.
 
 ![gPad: an SPS S page with field highlighting](img/gpad_en.png)
 

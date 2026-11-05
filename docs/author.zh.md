@@ -1,7 +1,9 @@
 # 关于作者
 
 我叫 Danis Arslanov，是地震勘探数据处理专家。本站的程序源于我的日常工作：每当某个处理环节耗时太多或容易出错时，
-我就为它编写一个工具。这里发布的是其中可能对他人也有用的那些。
+我就为它编写一个工具。这里发布的是其中可能对他人也有用的那些。其中最大的 [seisboard](seisboard.md)
+把 2D/3D 观测系统、静校正、平面图和质量属性的工作集中在一个一览板上：从观测系统设计和覆盖次数计算，
+到静校正解的分解和拼接。我在自己的工作中使用它，包括数千万道规模的观测系统。
 
 ## 我使用的软件
 
@@ -12,9 +14,10 @@
 
 ## 我如何编写程序
 
-- **C++、Python 和 Qt** - 我的主要技术栈：用 C++ 和 Qt 开发大型桌面应用程序（[gPad 3.0](gpad.md) 就是用它们编写的），
-  用 Python 和 Qt 编写了可以替代 Mesa、Surfer 和 MAD（Omega）的 [seisboard](seisboard.md)，以及 autocrop、lmoToXY、
-  polygon 和 histogram_for_reg 等工具。
+- **C++、Python 和 Qt** - 我的主要技术栈。用 C++ 和 Qt 开发大型桌面应用程序，例如 [gPad 3.0](gpad.md)。
+  [seisboard](seisboard.md) 以及 autocrop、lmoToXY、polygon 和 histogram_for_reg 等工具是用 Python 和 Qt 编写的。
+- **完整的程序，而不是脚本** - seisboard 作为完整的产品发布：安装程序、自动更新、带搜索和打印功能的帮助、会话、
+  凭许可密钥使用的完整版和免费试用版。
 - **Windows 和 Linux 版本** - 把程序打包为单个可执行文件或安装程序，包括对 CentOS 7 这样的旧系统的支持。
 - **移植旧程序** - 我把 Omega 软件包的速度格式转换工具从 Python 2 和 Tkinter 移植到了 Python 3 和 Qt（约 200 项操作，
   有 Windows 和 Linux 版本）。该工具完全可用，但不公开提供。

@@ -3,7 +3,11 @@
 My name is Danis Arslanov, and I am a seismic data processing specialist. The
 programs on this site grew out of my everyday work: whenever a processing step
 took too much time or was easy to get wrong, I wrote a utility for it. The ones
-published here are those that may be useful to others too.
+published here are those that may be useful to others too. The largest of them,
+[seisboard](seisboard.md), brings work with 2D/3D geometry, static corrections, maps and
+quality attributes together on a single board - from survey design and fold computation
+to decomposing and stitching static solutions. I use it in my own work, including on
+surveys of tens of millions of traces.
 
 ## What I work with
 
@@ -14,10 +18,12 @@ published here are those that may be useful to others too.
 
 ## How I write programs
 
-- **C++, Python and Qt** - my main stack: with C++ and Qt I build large desktop
-  applications ([gPad 3.0](gpad.md) is written with them), and with Python and Qt -
-  [seisboard](seisboard.md), which can replace Mesa, Surfer and MAD (Omega), and the
-  utilities autocrop, lmoToXY, polygon and histogram_for_reg.
+- **C++, Python and Qt** - my main stack. With C++ and Qt I write large desktop
+  applications such as [gPad 3.0](gpad.md). [seisboard](seisboard.md) and the utilities
+  autocrop, lmoToXY, polygon and histogram_for_reg are written in Python and Qt.
+- **Finished programs, not scripts** - seisboard is released as a full product: an
+  installer, automatic updates, help with search and printing, sessions, a full version
+  with a key and a free demo.
 - **Builds for Windows and Linux** - I build programs as a single executable or with an
   installer, including support for old systems such as CentOS 7.
 - **Porting legacy programs** - I moved the velocity format conversion utility of the

@@ -31,10 +31,11 @@ autocrop、seisboard 和 gPad 在 Windows 上使用安装程序，在 Linux 上�
 
 ### ![](img/icons/seisboard.png){ .feature-icon } seisboard { #seisboard }
 
-**地震勘探数据一览板**：炮点和检波点静校正、SPS 观测系统、测网与覆盖次数、质量属性，
-集中在一张地图、表格和剖面上。静校正平滑与分频、网格化、异常值、高程静校正和浮动基准面，
-**解的比较与组合**、覆盖次数图表、CMP 云图和偏移距分组。输出为 **Omega、SPS、Excel 和
-Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥。界面目前为俄文。
+**地震勘探数据一览板**：2D/3D 观测系统、静校正、平面图和质量属性，**取代 Mesa、Surfer 和
+MAD（Omega）的组合**。在程序中可以**设计观测系统**或为 5D 规则化布置炮点和检波点，加载 SPS
+观测系统，计算测网、覆盖次数和偏移距分组，绘制并平滑平面图，**分解和拼接静校正解**，直接在
+地图上用画笔修正异常值并比较不同方案。提供 30 天免费**试用版**，完整版需要许可密钥。界面目前
+为俄文。
 
 [:octicons-arrow-right-24: 详细信息](seisboard.md)
 
@@ -42,25 +43,6 @@ Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥
 <div class="feature-image" markdown>
 
 [![seisboard 窗口](img/seisboard.png)](seisboard.md)
-
-</div>
-</div>
-
-<div class="feature" markdown>
-<div class="feature-text" markdown>
-
-### ![](img/icons/autocrop.png){ .feature-icon } autocrop { #autocrop }
-
-**批量自动裁剪截图**，适用于道集、剖面、切片、平面图和频谱的截图。程序为每张截图自动找出有用图像的区域，
-去掉窗口标题、工具栏、滚动条和空白边。输出为**仅图像、含坐标轴的图像或含全部注释的图像**，可直接用于报告或演示。
-对于相同的截图有**手动模式**，对于过大的图片可以**缩小**。
-
-[:octicons-arrow-right-24: 详细了解](autocrop.md)
-
-</div>
-<div class="feature-image" markdown>
-
-[![autocrop 窗口](img/autocrop_zh.png)](autocrop.md)
 
 </div>
 </div>
@@ -80,6 +62,25 @@ Surfer** 格式。提供 30 天免费**试用版**，完整版需要许可密钥
 <div class="feature-image" markdown>
 
 [![gPad 窗口](img/gpad_zh.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/autocrop.png){ .feature-icon } autocrop { #autocrop }
+
+**批量自动裁剪截图**，适用于道集、剖面、切片、平面图和频谱的截图。程序为每张截图自动找出有用图像的区域，
+去掉窗口标题、工具栏、滚动条和空白边。输出为**仅图像、含坐标轴的图像或含全部注释的图像**，可直接用于报告或演示。
+对于相同的截图有**手动模式**，对于过大的图片可以**缩小**。
+
+[:octicons-arrow-right-24: 详细了解](autocrop.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![autocrop 窗口](img/autocrop_zh.png)](autocrop.md)
 
 </div>
 </div>

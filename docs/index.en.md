@@ -43,12 +43,13 @@ below.
 
 ### ![](img/icons/seisboard.png){ .feature-icon } seisboard { #seisboard }
 
-**Seismic data on a single board**: source and receiver statics, SPS geometry,
-the survey grid and fold, quality attributes - on one map, in tables and profiles.
-Smoothing and splitting statics into periods, gridding, outliers, elevation statics and
-the floating datum, **comparing and assembling solutions**, fold plots, the CMP cloud
-and offset classes. Output to **Omega, SPS, Excel and Surfer**. A free 30-day **demo**;
-the full version works with a key. The interface is in Russian for now.
+**Seismic data on a single board**: 2D/3D geometry, static corrections, maps and
+quality attributes, **instead of the combination of Mesa, Surfer and MAD (Omega)**. In
+the program you can **design a survey** or lay out sources and receivers for 5D
+regularization, load geometry from SPS, compute the grid, fold and offset classes, build
+and smooth maps, **decompose and stitch static solutions**, fix outliers with a brush
+right on the map and compare variants. A free 30-day **demo**; the full version works
+with a key. The interface is in Russian for now.
 
 [:octicons-arrow-right-24: More](seisboard.md)
 
@@ -56,28 +57,6 @@ the full version works with a key. The interface is in Russian for now.
 <div class="feature-image" markdown>
 
 [![seisboard window](img/seisboard.png)](seisboard.md)
-
-</div>
-</div>
-
-<div class="feature" markdown>
-<div class="feature-text" markdown>
-
-### ![](img/icons/autocrop.png){ .feature-icon } autocrop { #autocrop }
-
-**Automatic batch cropping of screenshots** with gathers, sections, slices, maps
-and spectra. For every screenshot the program finds the useful part of the image
-by itself and drops the window title, toolbars, scroll bars and empty margins.
-The output is **the image only, the image with axes or with all annotations**,
-ready for a report or a presentation. There is **a manual mode** for identical
-screenshots and **shrinking** for large ones.
-
-[:octicons-arrow-right-24: Learn more](autocrop.md)
-
-</div>
-<div class="feature-image" markdown>
-
-[![autocrop window](img/autocrop_en.png)](autocrop.md)
 
 </div>
 </div>
@@ -100,6 +79,28 @@ velocity functions includes **a converter of 11 formats**.
 <div class="feature-image" markdown>
 
 [![gPad window](img/gpad_en.png)](gpad.md)
+
+</div>
+</div>
+
+<div class="feature" markdown>
+<div class="feature-text" markdown>
+
+### ![](img/icons/autocrop.png){ .feature-icon } autocrop { #autocrop }
+
+**Automatic batch cropping of screenshots** with gathers, sections, slices, maps
+and spectra. For every screenshot the program finds the useful part of the image
+by itself and drops the window title, toolbars, scroll bars and empty margins.
+The output is **the image only, the image with axes or with all annotations**,
+ready for a report or a presentation. There is **a manual mode** for identical
+screenshots and **shrinking** for large ones.
+
+[:octicons-arrow-right-24: Learn more](autocrop.md)
+
+</div>
+<div class="feature-image" markdown>
+
+[![autocrop window](img/autocrop_en.png)](autocrop.md)
 
 </div>
 </div>

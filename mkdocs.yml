@@ -131,8 +131,8 @@ nav:
   - Главная: index.md
   - Программы:
       - seisboard: seisboard.md
-      - autocrop: autocrop.md
       - gPad: gpad.md
+      - autocrop: autocrop.md
       - lmoToXY: lmotoxy.md
       - polygon: polygon.md
       - histogram_for_reg: histogram_for_reg.md

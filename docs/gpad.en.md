@@ -20,7 +20,7 @@ RP database to fill SPS files with them later.
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-The current version is 3.0.0. For Windows there is an installer: by default it installs
+The current version is 3.0.1. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -82,7 +82,12 @@ For plain text the editor offers the standard set of features:
   changing case;
 - text cleanup: replacing characters (for example, a decimal comma with a dot), Cyrillic
   look-alike letters to Latin in point codes, invisible characters, trailing spaces,
-  tabs.
+  tabs;
+- table highlighting: in text in columns (exports of coordinates, statics, elevations) the
+  header, integers, decimals and text get different colors, a non-number in a numeric column
+  and a line with a different number of columns are underlined, and the column under the
+  cursor is highlighted in all lines, with its name in the status bar. Table, SPS and velocity
+  highlighting can be turned off in "View" - "Highlighting".
 
 ## Columns
 
@@ -158,6 +163,12 @@ and Charisma VL_B are read and written, SeisBase III and Charisma VL_A are writt
 The page format is detected from its contents. V5 can be built from two pages - Handvel
 and Geoq.
 
+Velocity highlighting colors card labels, the function key (inline, crossline, CMP),
+coordinates, time and velocity, and underlines what is worth checking: a time that does not
+increase within a function, a time without a velocity, a velocity outside 300-10000 m/s and
+a function that already appeared above. The status bar shows the function key and the time -
+velocity pair under the cursor.
+
 ## Help and updates
 
 Detailed help with contents, search and pictures opens with F1; in any window - right at
@@ -173,6 +184,7 @@ files are left untouched.
 
 | Version | What's new |
 |---|---|
+| 3.0.1 | Table and velocity highlighting with error checks; highlighting can be turned off in "View" - "Highlighting"; window fields no longer stretch |
 | 3.0.0 | The program was rewritten in C++ and Qt 6 and runs on Windows and Linux, on Windows it comes with an installer and checks for updates itself; its own editor: files of millions of lines open in the background, block selection, column mode, changed-lines bar; SPS field highlighting; SP and RP map with shots and the active spread; SP and RP database with undo, import from text, the clipboard and Excel; velocity conversion between 11 formats; help on F1 and English interface language |
 | 2.0 | Rewritten in Free Pascal with Lazarus: Windows and Linux, 64-bit |
 | 1.5 | The Delphi version, Windows only, 32-bit |

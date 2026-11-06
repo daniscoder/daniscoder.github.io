@@ -16,7 +16,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-当前版本为 3.0.0。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
+当前版本为 3.0.1。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
 
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
@@ -63,7 +63,10 @@ sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
 - 行排序，包括按列的任意多级排序；
 - 删除空行、重复行和按掩码删除行，保留每第 N 行，转换大小写；
 - 文本清理：替换字符（例如把小数逗号换成点），把点代码中形似拉丁字母的西里尔字母换成拉丁字母，
-  去除不可见字符、行尾空格和制表符。
+  去除不可见字符、行尾空格和制表符；
+- 表格高亮：在按列排列的文本（坐标、静校正量、高程的导出文件）中，表头、整数、小数和文本以不同颜色显示，
+  数值列中的非数字和列数不同的行带下划线，光标所在的列在所有行中高亮，列名显示在状态栏中。表格、SPS 和速度的高亮
+  可以在“View” - “Highlighting”（视图 - 高亮）中关闭。
 
 ## 列
 
@@ -117,6 +120,10 @@ SPS 文件、文本、剪贴板和 Excel。表格直接在单元格中编辑，�
 Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase III 和 Charisma VL_A 只能写入。
 页面格式根据内容自动识别。V5 可以由两个页面 - Handvel 和 Geoq 合成。
 
+速度高亮为卡片标记、函数键（Inline、Crossline、CMP）、坐标、时间和速度着色，并为值得检查的地方加下划线：
+函数内不递增的时间、没有速度的时间、超出 300-10000 米/秒的速度，以及前面已经出现过的函数。
+状态栏显示光标处的函数键和时间 - 速度对。
+
 ## 帮助和更新
 
 带目录、搜索和图片的详细帮助按 F1 打开；在任何窗口中都会直接打开关于该窗口的章节。界面和帮助有英文和俄文，
@@ -129,6 +136,7 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 
 | 版本 | 新内容 |
 |---|---|
+| 3.0.1 | 带错误检查的表格高亮和速度高亮；高亮可以在“View” - “Highlighting”（视图 - 高亮）中关闭；窗口中的字段不再拉伸 |
 | 3.0.0 | 用 C++ 和 Qt 6 重写，可在 Windows 和 Linux 上运行，Windows 版使用安装程序并自动检查更新；自己的编辑器：数百万行的文件在后台打开，块选择、列模式、修改标记条；SPS 字段高亮；带放炮情况和活动排列的炮点和检波点平面图；可撤销编辑的炮点和检波点数据库，从文本、剪贴板和 Excel 导入；11 种速度格式之间的转换；F1 帮助和英文界面 |
 | 2.0 | 用 Free Pascal 和 Lazarus 重写：Windows 和 Linux，64 位 |
 | 1.5 | Delphi 版本，仅限 Windows，32 位 |

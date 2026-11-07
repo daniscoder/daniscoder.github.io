@@ -20,7 +20,7 @@ RP database to fill SPS files with them later.
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-The current version is 3.0.1. For Windows there is an installer: by default it installs
+The current version is 3.0.2. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -184,6 +184,7 @@ files are left untouched.
 
 | Version | What's new |
 |---|---|
+| 3.0.2 | Update check fixed: 3.0.1 offered an update to itself |
 | 3.0.1 | Table and velocity highlighting with error checks; highlighting can be turned off in "View" - "Highlighting"; window fields no longer stretch |
 | 3.0.0 | The program was rewritten in C++ and Qt 6 and runs on Windows and Linux, on Windows it comes with an installer and checks for updates itself; its own editor: files of millions of lines open in the background, block selection, column mode, changed-lines bar; SPS field highlighting; SP and RP map with shots and the active spread; SP and RP database with undo, import from text, the clipboard and Excel; velocity conversion between 11 formats; help on F1 and English interface language |
 | 2.0 | Rewritten in Free Pascal with Lazarus: Windows and Linux, 64-bit |

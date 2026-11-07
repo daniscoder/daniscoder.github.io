@@ -16,7 +16,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-当前版本为 3.0.1。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
+当前版本为 3.0.2。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
 
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
@@ -136,6 +136,7 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 
 | 版本 | 新内容 |
 |---|---|
+| 3.0.2 | 修正了更新检查：3.0.1 会提示更新到它自己 |
 | 3.0.1 | 带错误检查的表格高亮和速度高亮；高亮可以在“View” - “Highlighting”（视图 - 高亮）中关闭；窗口中的字段不再拉伸 |
 | 3.0.0 | 用 C++ 和 Qt 6 重写，可在 Windows 和 Linux 上运行，Windows 版使用安装程序并自动检查更新；自己的编辑器：数百万行的文件在后台打开，块选择、列模式、修改标记条；SPS 字段高亮；带放炮情况和活动排列的炮点和检波点平面图；可撤销编辑的炮点和检波点数据库，从文本、剪贴板和 Excel 导入；11 种速度格式之间的转换；F1 帮助和英文界面 |
 | 2.0 | 用 Free Pascal 和 Lazarus 重写：Windows 和 Linux，64 位 |

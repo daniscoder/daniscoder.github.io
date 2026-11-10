@@ -6,7 +6,7 @@ The utility builds an offset distribution histogram and is meant for planning 3D
 regularization of seismic data.
 
 The program splits offsets into classes, shows them as a histogram and saves a
-table of classes next to the input file. The table can be used as input for 3D
+table of classes. The table can be used as input for 3D
 regularization.
 
 Offset classes are built in one of two ways:
@@ -31,7 +31,7 @@ CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux -
 there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
 system with glibc 2.17 or newer ([details](index.md#run)).
 
-The current version is 1.7.0. To try the program, you can download synthetic
+The current version is 1.8.0. To try the program, you can download synthetic
 offset distributions: [synth_offsets_1.txt](examples/synth_offsets_1.txt) (the
 illustrations below are made from it) and
 [synth_offsets_2.txt](examples/synth_offsets_2.txt).
@@ -59,8 +59,6 @@ All classes have the same width. Near offsets can be merged into a first class
 several steps wide, and far offsets - into a last class starting from a given
 offset.
 
-![Constant step](img/histogram_const_en.png)
-
 ## Step by panels
 
 Offsets are split into panels: the step is constant within a panel and changes
@@ -75,8 +73,8 @@ every class has its own width.
 Fitting parameters:
 
 - **Number of offset classes** - how many classes the histogram will have. If the
-  other parameters allow it, you get exactly that many; otherwise the program
-  warns you and takes the nearest possible number.
+  other parameters allow it, you get exactly that many; otherwise the nearest
+  possible number is taken, and a line on the histogram says so.
 - **Base step** - panel steps are fitted as multiples of it. The smaller it is,
   the closer the classes are to equal population, but the longer the fitting
   takes.
@@ -87,16 +85,22 @@ Fitting parameters:
   step to swing: at a dip in the distribution it puts a narrow panel with a large
   step among the small ones.
 
-The "Fit" button fills the panel table "from offset - step" from the data: panels
-are found by exhaustive search so that the number of traces in each class deviates
-from the target as little as possible. The table can be edited by hand and the
-histogram built again.
+The "Fit" button fills the panel table "from offset - step" from the data and
+builds the histogram by it at once: panels are found by exhaustive search so that
+the number of traces in each class deviates from the target as little as
+possible. Fitting runs in the background, the window stays free. The table can be
+edited by hand and the histogram built again.
 
 ## Output
 
-The program opens a window with the histogram - it can be zoomed with the mouse
-wheel and saved as a PNG, JPG, PDF or SVG image with the right button - and writes a text file next to the input one: `<name>_<step>.txt` for a
-constant step and `<name>_step<classes>.txt` for a step by panels. The file has
+The histogram appears on the right, in the same window: it can be zoomed with the
+mouse wheel and saved as a PNG, JPG, PDF or SVG image with the "Save image..."
+button or the right button. The "Separate window" button opens a copy of the
+histogram to compare splits with different parameters.
+
+The "Save classes..." button writes a text file, by default next to the input one:
+`<name>_<step>.txt` for a constant step and `<name>_step<classes>.txt` for a step
+by panels. The file has
 four columns: the first offset of the class, the last offset, the class center and
 the number of traces.
 
@@ -112,6 +116,7 @@ The window size and the values of all fields are remembered between runs.
 
 | Version | What's new |
 |---|---|
+| 1.8.0 | The histogram is in the main window, the modes are tabs; the table of classes and the image are saved with buttons, the histogram can be opened in a separate window for comparison; panel fitting runs in the background, the histogram labels follow the window language |
 | 1.7.0 | The histogram is drawn without matplotlib: the program file is almost half the size and the histogram is faster; the class under the cursor is highlighted, the image is saved to PNG, JPG, PDF and SVG, the color is picked with the ">>" button |
 | 1.6.0 | Step by panels without swinging: the panel step only decreases and then only increases (a checkbox in the window, on by default) |
 | 1.5.0 | Chinese interface (Simplified): the language follows the system and can be switched in the window, in Chinese the histogram labels too |

@@ -16,7 +16,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-当前版本为 3.0.2。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
+当前版本为 3.0.3。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
 
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
@@ -65,8 +65,11 @@ sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
 - 文本清理：替换字符（例如把小数逗号换成点），把点代码中形似拉丁字母的西里尔字母换成拉丁字母，
   去除不可见字符、行尾空格和制表符；
 - 表格高亮：在按列排列的文本（坐标、静校正量、高程的导出文件）中，表头、整数、小数和文本以不同颜色显示，
-  数值列中的非数字和列数不同的行带下划线，光标所在的列在所有行中高亮，列名显示在状态栏中。表格、SPS 和速度的高亮
-  可以在“View” - “Highlighting”（视图 - 高亮）中关闭。
+  数值列中的非数字和列数不同的行带下划线，光标所在的列在所有行中高亮，列名显示在状态栏中；
+- 按扩展名高亮代码和配置文件：处理脚本（Python、shell、PowerShell、bat、awk、Perl、MATLAB、Fortran 等）、
+  JSON、YAML、TOML、INI、XML、Markdown、Makefile、.gitignore、diff 比较文件，共近四十种语言和格式。
+
+每种高亮（表格、代码、SPS 和速度）都可以在“View” - “Highlighting”（视图 - 高亮）中关闭。
 
 ## 列
 
@@ -86,6 +89,7 @@ SPS 文件有以下功能：
 
 - 按含义高亮显示字段：键、索引和代码、坐标和高程、日期和时间；数值字段中的星号和非数字标记为错误。
   光标所在字段在所有记录中高亮显示，其名称和位置显示在状态栏中；
+- “SPS formats”（SPS 格式）窗口列出 Rev 0 和 Rev 2.1 中 R、S、X 的字段位置。它不妨碍编辑，并自动选中光标所在字段的那一行；
 - Rev 0 和 Rev 2.1 之间的转换以及按标准整理记录。放不进字段的值写成星号，程序会给出提示：不会悄悄截断任何内容；
 - 按字段名称选择、清除 SPS 列并进行算术运算，按字段值筛选记录；
 - 排序，包括按 SPS 字段的任意多级排序，在 S 和 X 文件中查找当前炮点，删除重复的点；
@@ -136,6 +140,7 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 
 | 版本 | 新内容 |
 |---|---|
+| 3.0.3 | 代码和配置文件高亮；列出字段位置的“SPS formats”（SPS 格式）窗口；导入和导出使用不同的图标；在 Linux 上窗口在关闭时的位置打开 |
 | 3.0.2 | 修正了更新检查：3.0.1 会提示更新到它自己 |
 | 3.0.1 | 带错误检查的表格高亮和速度高亮；高亮可以在“View” - “Highlighting”（视图 - 高亮）中关闭；窗口中的字段不再拉伸 |
 | 3.0.0 | 用 C++ 和 Qt 6 重写，可在 Windows 和 Linux 上运行，Windows 版使用安装程序并自动检查更新；自己的编辑器：数百万行的文件在后台打开，块选择、列模式、修改标记条；SPS 字段高亮；带放炮情况和活动排列的炮点和检波点平面图；可撤销编辑的炮点和检波点数据库，从文本、剪贴板和 Excel 导入；11 种速度格式之间的转换；F1 帮助和英文界面 |

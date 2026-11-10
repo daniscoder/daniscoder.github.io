@@ -20,7 +20,7 @@ RP database to fill SPS files with them later.
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-The current version is 3.0.2. For Windows there is an installer: by default it installs
+The current version is 3.0.3. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -86,8 +86,13 @@ For plain text the editor offers the standard set of features:
 - table highlighting: in text in columns (exports of coordinates, statics, elevations) the
   header, integers, decimals and text get different colors, a non-number in a numeric column
   and a line with a different number of columns are underlined, and the column under the
-  cursor is highlighted in all lines, with its name in the status bar. Table, SPS and velocity
-  highlighting can be turned off in "View" - "Highlighting".
+  cursor is highlighted in all lines, with its name in the status bar;
+- code and settings file highlighting by extension: processing scripts (Python, shell,
+  PowerShell, bat, awk, Perl, MATLAB, Fortran and others), JSON, YAML, TOML, INI, XML, Markdown,
+  Makefile, .gitignore, diffs - almost forty languages and formats.
+
+Each kind of highlighting - tables, code, SPS and velocities - can be turned off in "View" -
+"Highlighting".
 
 ## Columns
 
@@ -114,6 +119,9 @@ offers only the items that fit the page. For SPS files there are:
   time; asterisks and non-numbers in numeric fields are marked as errors. The field under
   the cursor is highlighted in all records, and its name and positions are shown in the
   status bar;
+- the "SPS formats" window with the field positions of R, S and X in Rev 0 and Rev 2.1. It does
+  not get in the way of editing, and the row of the field under the cursor is selected in it by
+  itself;
 - conversion between Rev 0 and Rev 2.1 and bringing records to the standard. A value that
   does not fit into a field is written as asterisks, and the program reports it: nothing
   is cut off silently;
@@ -184,6 +192,7 @@ files are left untouched.
 
 | Version | What's new |
 |---|---|
+| 3.0.3 | Code and settings file highlighting; the "SPS formats" window with field positions; different icons for import and export; on Linux windows open where they were closed |
 | 3.0.2 | Update check fixed: 3.0.1 offered an update to itself |
 | 3.0.1 | Table and velocity highlighting with error checks; highlighting can be turned off in "View" - "Highlighting"; window fields no longer stretch |
 | 3.0.0 | The program was rewritten in C++ and Qt 6 and runs on Windows and Linux, on Windows it comes with an installer and checks for updates itself; its own editor: files of millions of lines open in the background, block selection, column mode, changed-lines bar; SPS field highlighting; SP and RP map with shots and the active spread; SP and RP database with undo, import from text, the clipboard and Excel; velocity conversion between 11 formats; help on F1 and English interface language |

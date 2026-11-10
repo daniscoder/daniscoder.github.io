@@ -220,3 +220,6 @@ date,tag,asset,asset_id,count
 2026-11-10 18:21,histogram_for_reg,histogram_for_reg,732381243,0
 2026-11-10 18:21,histogram_for_reg,histogram_for_reg-legacy,732381245,0
 2026-11-10 18:21,histogram_for_reg,histogram_for_reg.exe,732381244,0
+2026-11-10 19:50,gPad,gpad-setup.exe,732474904,0
+2026-11-10 19:50,gPad,gpad-version.json,732474900,2
+2026-11-10 19:50,gPad,gpad.tar.xz,732474901,0

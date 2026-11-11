@@ -232,3 +232,8 @@ date,tag,asset,asset_id,count
 2026-11-11 10:25,gPad,gpad-setup.exe,735082586,0
 2026-11-11 10:25,gPad,gpad-version.json,735082596,0
 2026-11-11 10:25,gPad,gpad.tar.xz,735082585,0
+2026-11-11 11:04,polygon,polygon,735086715,0
+2026-11-11 11:04,polygon,polygon-legacy,735086710,0
+2026-11-11 11:04,polygon,polygon.exe,735086712,0
+2026-11-11 11:04,gPad,gpad-setup.exe,735082586,1
+2026-11-11 11:04,gPad,gpad-version.json,735082596,5

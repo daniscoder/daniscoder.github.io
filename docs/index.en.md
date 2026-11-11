@@ -17,7 +17,7 @@ automate routine operations and help with three main tasks:
 
 All programs are free except seisboard: it has a free demo, and the full version
 works with a key from the author. Almost all of them are built for Windows and Linux,
-including old systems such as CentOS 7 (for them gPad has the previous version 2.0).
+including old systems such as CentOS 7.
 The exception is ListQC, the earliest of the utilities presented here: it runs on
 Windows only. Most utilities are a single file that you just download and run, with no
 installation; autocrop, seisboard and gPad come with an installer on Windows and as an
@@ -226,7 +226,7 @@ out your glibc version with the `ldd --version` command.
 
 For older systems some programs have a separate build - the "Linux (older
 systems)" button on the program's page. It is built with Qt5 on CentOS 7 (glibc
-2.17) and runs there and on all newer systems. autocrop, lmoToXY, polygon and
+2.17) and runs there and on all newer systems. gPad, autocrop, lmoToXY, polygon and
 histogram_for_reg have such a build.
 
 On newer systems with Wayland (KDE, GNOME) the build for older systems may show a

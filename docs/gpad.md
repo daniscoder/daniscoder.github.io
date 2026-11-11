@@ -19,6 +19,7 @@ gPad работает с любыми текстовыми файлами, но 
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
+[:material-linux: Linux (старые системы)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
 Текущая версия - 3.0.4. Для Windows - установщик: по умолчанию он ставит программу
 только для вас, без прав администратора, с ярлыком в меню «Пуск» (на рабочем столе - по
@@ -29,8 +30,13 @@ gPad работает с любыми текстовыми файлами, но 
 приложений и как команда `gpad`, права администратора не нужны. Удаление -
 `uninstall.sh` в папке программы `~/.local/share/gpad`. Linux-версия рассчитана на
 системы с glibc 2.38 и новее: Ubuntu 24.04 и новее, Debian 13, Fedora 39 и новее, RHEL,
-Rocky и Alma 10 ([подробнее](index.md#run)). О новой версии она сообщает сама, но
-ставится новая версия вручную, тем же архивом поверх прежней.
+Rocky и Alma 10 ([подробнее](index.md#run)). Новую версию она, как и в Windows, ставит
+сама по одной кнопке.
+
+Для более старых систем - CentOS 7, RHEL, Rocky и Alma 8 и 9, Ubuntu 22.04, Debian 12,
+Astra Linux - есть сборка «Linux (старые системы)»: она собрана на Qt5 и запускается на
+любой системе с glibc 2.17 и новее. Ставится она так же, из архива `gpad-legacy.tar.xz`, и
+тоже обновляется сама. Выбора темы оформления в ней нет: окна всегда в теме системы.
 
 ```bash
 tar -xJf gpad.tar.xz
@@ -43,9 +49,8 @@ tar -xJf gpad.tar.xz
 
 ### Версия 2.0 для старых систем
 
-Для старых систем на сайте остается прежняя версия 2.0: для Linux вроде CentOS 7, RHEL,
-Rocky и Alma 8 и 9, Ubuntu 22.04, Debian 12, Astra Linux, где 3.0 не запускается, и для
-Windows ниже 10. Установка не нужна: программа - один файл. Версия 2.0 больше не
+Для Windows ниже 10, где 3.0 не запускается, на сайте остается прежняя версия 2.0, есть
+и ее Linux-версия. Установка не нужна: программа - один файл. Версия 2.0 больше не
 развивается, и в ней нет того, что появилось в 3.0.
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }

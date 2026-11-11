@@ -11,7 +11,7 @@ hide:
 - **准备处理参数** - 为静校正建立近地表模型，构建工区边界多边形，为三维规则化划分偏移距组；
 - **检查野外数据** - 修改和核对 SPS 文件，根据记录班报评价放炮质量。
 
-除 seisboard 外，所有程序均免费：seisboard 提供免费试用版，完整版需要作者提供的许可密钥。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统（gPad 为旧系统保留以前的 2.0 版）。唯一的例外是
+除 seisboard 外，所有程序均免费：seisboard 提供免费试用版，完整版需要作者提供的许可密钥。几乎所有程序都提供 Windows 和 Linux 版本，包括 CentOS 7 这样的旧系统。唯一的例外是
 ListQC，它是这里最早的一个工具，只能在 Windows 下运行。大多数工具就是一个文件，下载后即可运行，无需安装；
 autocrop、seisboard 和 gPad 在 Windows 上使用安装程序，在 Linux 上是带安装脚本的压缩包，都不需要管理员权限。如果有程序
 无法启动，请参阅下面的[“如何运行”](#run)一节。
@@ -186,7 +186,7 @@ Astra Linux - 程序无法启动，并会显示消息 ``version `GLIBC_2.38' not
 命令查看 glibc 版本。
 
 对于旧系统，部分程序有单独的版本 - 程序页面上的“Linux（旧系统）”按钮。它在 CentOS 7（glibc 2.17）上用 Qt5
-构建，可以在该系统及所有更新的系统上运行。autocrop、lmoToXY、polygon 和 histogram_for_reg 有这种版本。
+构建，可以在该系统及所有更新的系统上运行。gPad、autocrop、lmoToXY、polygon 和 histogram_for_reg 有这种版本。
 
 在使用 Wayland 的新系统（KDE、GNOME）上，旧系统版本的窗口标题中可能显示通用图标而不是程序图标。这是 Qt5 在
 Wayland 下的工作方式，不影响程序使用。如果介意，可以通过 X11 运行：

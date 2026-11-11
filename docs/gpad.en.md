@@ -19,6 +19,7 @@ RP database to fill SPS files with them later.
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
+[:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
 The current version is 3.0.4. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
@@ -29,9 +30,14 @@ For Linux there is an archive: unpack it and run `install.sh`, and the program a
 the applications menu and as the `gpad` command; no administrator rights are needed. To
 remove it, run `uninstall.sh` in the program folder `~/.local/share/gpad`. The Linux
 version is meant for systems with glibc 2.38 or newer: Ubuntu 24.04 and newer, Debian 13,
-Fedora 39 and newer, RHEL, Rocky and Alma 10 ([more](index.md#run)). It tells you about
-a new version itself, but the new version is installed by hand, with the same archive over
-the old one.
+Fedora 39 and newer, RHEL, Rocky and Alma 10 ([more](index.md#run)). Like on Windows, it
+installs a new version itself with one button.
+
+For older systems - CentOS 7, RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra
+Linux - there is the "Linux (older systems)" build: it is built with Qt5 and runs on any
+system with glibc 2.17 or newer. It is installed the same way, from the `gpad-legacy.tar.xz`
+archive, and updates itself too. It has no choice of theme: windows always follow the
+system theme.
 
 ```bash
 tar -xJf gpad.tar.xz
@@ -44,9 +50,8 @@ To try the editor, you can download a sample 3D survey in SPS Rev 2.1 -
 
 ### Version 2.0 for old systems
 
-For old systems the previous version 2.0 stays on the site: for Linux such as CentOS 7,
-RHEL, Rocky and Alma 8 and 9, Ubuntu 22.04, Debian 12, Astra Linux, where 3.0 does not
-run, and for Windows older than 10. No installation is needed: the program is a single
+For Windows older than 10, where 3.0 does not run, the previous version 2.0 stays on the
+site, along with its Linux version. No installation is needed: the program is a single
 file. Version 2.0 is no longer developed, and it lacks what appeared in 3.0. Its
 interface is in Russian only.
 

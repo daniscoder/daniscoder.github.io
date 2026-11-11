@@ -15,6 +15,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
+[:material-linux: Linux（旧系统）](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
 当前版本为 3.0.4。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
@@ -22,7 +23,11 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
 卸载 - 运行程序文件夹 `~/.local/share/gpad` 中的 `uninstall.sh`。Linux 版适用于 glibc 2.38 及更新版本的系统：
 Ubuntu 24.04 及更新版本、Debian 13、Fedora 39 及更新版本、RHEL、Rocky 和 Alma 10（[详细说明](index.md#run)）。
-它会自动提示新版本，但新版本需要手动安装：用同样的压缩包覆盖安装在旧版本之上。
+和 Windows 版一样，它只需一个按钮即可自动安装新版本。
+
+对于更旧的系统 - CentOS 7、RHEL、Rocky 和 Alma 8 和 9、Ubuntu 22.04、Debian 12、Astra Linux - 有“Linux（旧系统）”版本：
+它用 Qt5 构建，可以在任何 glibc 2.17 或更新版本的系统上运行。安装方式相同，使用压缩包 `gpad-legacy.tar.xz`，同样会自动更新。
+该版本没有主题选择：窗口始终使用系统主题。
 
 ```bash
 tar -xJf gpad.tar.xz
@@ -34,8 +39,7 @@ tar -xJf gpad.tar.xz
 
 ### 用于旧系统的 2.0 版
 
-本站为旧系统保留以前的 2.0 版：用于无法运行 3.0 的 Linux，例如 CentOS 7、RHEL、Rocky 和 Alma 8 和 9、Ubuntu 22.04、
-Debian 12、Astra Linux，以及 Windows 10 以前的 Windows。无需安装：程序就是一个文件。2.0 版已不再开发，
+对于无法运行 3.0 的 Windows 10 以前的 Windows，本站保留以前的 2.0 版，也有它的 Linux 版。无需安装：程序就是一个文件。2.0 版已不再开发，
 没有 3.0 中新增的功能，界面只有俄文。
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }

@@ -37,21 +37,12 @@ tar -xJf gpad.tar.xz
 要试用编辑器，可以下载 SPS Rev 2.1 格式的三维工区示例 - [Demo3D.rps](examples/gpad/Demo3D.rps)、
 [Demo3D.sps](examples/gpad/Demo3D.sps) 和 [Demo3D.xps](examples/gpad/Demo3D.xps)；上面的截图就是用它制作的。
 
-### 用于旧系统的 2.0 版
+### 用于 Windows 10 以前版本的 2.0 版
 
-对于无法运行 3.0 的 Windows 10 以前的 Windows，本站保留以前的 2.0 版，也有它的 Linux 版。无需安装：程序就是一个文件。2.0 版已不再开发，
+对于无法运行 3.0 的 Windows 10 以前的 Windows，本站保留以前的 2.0 版。无需安装：程序就是一个文件。2.0 版已不再开发，
 没有 3.0 中新增的功能，界面只有俄文。
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
-[:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
-
-2.0 的 Linux 版需要 GTK2 库。有桌面环境的计算机通常已经有了；如果没有，可以这样安装：
-
-```bash
-sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
-sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
-sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
-```
 
 ## 普通文本
 

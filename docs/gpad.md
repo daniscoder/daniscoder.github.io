@@ -47,23 +47,13 @@ tar -xJf gpad.tar.xz
 [Demo3D.rps](examples/gpad/Demo3D.rps), [Demo3D.sps](examples/gpad/Demo3D.sps) и
 [Demo3D.xps](examples/gpad/Demo3D.xps), на нем сделан снимок экрана выше.
 
-### Версия 2.0 для старых систем
+### Версия 2.0 для Windows ниже 10
 
-Для Windows ниже 10, где 3.0 не запускается, на сайте остается прежняя версия 2.0, есть
-и ее Linux-версия. Установка не нужна: программа - один файл. Версия 2.0 больше не
-развивается, и в ней нет того, что появилось в 3.0.
+Для Windows ниже 10, где 3.0 не запускается, на сайте остается прежняя версия 2.0.
+Установка не нужна: программа - один файл. Версия 2.0 больше не развивается, и в ней нет
+того, что появилось в 3.0.
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
-[:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
-
-Linux-версии 2.0 нужна библиотека GTK2. На компьютере с рабочим столом она обычно уже
-установлена, а если нет, ее можно поставить так:
-
-```bash
-sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
-sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
-sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
-```
 
 ## Обычный текст
 

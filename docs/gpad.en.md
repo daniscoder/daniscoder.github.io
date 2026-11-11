@@ -48,24 +48,13 @@ To try the editor, you can download a sample 3D survey in SPS Rev 2.1 -
 [Demo3D.rps](examples/gpad/Demo3D.rps), [Demo3D.sps](examples/gpad/Demo3D.sps) and
 [Demo3D.xps](examples/gpad/Demo3D.xps); the screenshot above is made from it.
 
-### Version 2.0 for old systems
+### Version 2.0 for Windows older than 10
 
 For Windows older than 10, where 3.0 does not run, the previous version 2.0 stays on the
-site, along with its Linux version. No installation is needed: the program is a single
-file. Version 2.0 is no longer developed, and it lacks what appeared in 3.0. Its
-interface is in Russian only.
+site. No installation is needed: the program is a single file. Version 2.0 is no longer
+developed, and it lacks what appeared in 3.0. Its interface is in Russian only.
 
 [:material-microsoft-windows: Windows (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad.exe){ .md-button }
-[:material-linux: Linux (2.0)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gPad){ .md-button }
-
-The Linux version 2.0 needs the GTK2 library. A desktop computer usually has it already;
-if not, it can be installed like this:
-
-```bash
-sudo apt install libgtk2.0-0t64   # Ubuntu 24.04, Debian 13
-sudo apt install libgtk2.0-0      # Ubuntu 22.04, Debian 12
-sudo yum install gtk2             # CentOS, RHEL, Rocky, Alma
-```
 
 ## Plain text
 

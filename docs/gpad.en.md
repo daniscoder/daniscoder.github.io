@@ -20,7 +20,7 @@ RP database to fill SPS files with them later.
 [:material-microsoft-windows: Windows](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-setup.exe){ .md-button .md-button--primary }
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 
-The current version is 3.0.3. For Windows there is an installer: by default it installs
+The current version is 3.0.4. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -68,11 +68,14 @@ For plain text the editor offers the standard set of features:
 
 - several files in tabs, recent files, appending another file to the end of a page,
   splitting a large file into parts;
+- at startup the previous files open at the same place in the text; a file changed by
+  another program is reloaded by itself, and with unsaved edits the program asks first;
 - files of millions of lines open in the background in seconds and edit without delays;
 - the UTF-8, UTF-16, Windows-1251, DOS-866, KOI8-R and Windows-1252 encodings and
   Windows, Unix and Mac line endings are detected on opening, and the file is saved in
   them;
-- find and replace, including regular expressions and within a selection;
+- find and replace, including regular expressions and within a selection; search in all
+  pages at once with a list of the results;
 - bookmarks: ten numbered ones and free ones; all lines with a bookmark or, the other way
   round, without one can be deleted;
 - a changed-lines bar next to the line numbers: yellow - changed and not saved, green -
@@ -161,7 +164,8 @@ keep the old one, replace it with the new one or fill in only the empty fields.
 
 SPS pages are updated from the database: the checked fields are taken by the point key,
 and empty values in the database overwrite nothing. The database can be exported to SPS,
-text, the clipboard and Excel.
+text, the clipboard and Excel. The "Information" summary shows the number of records and
+lines, repeated keys and how full the fields are.
 
 ## Velocities
 
@@ -184,14 +188,14 @@ the topic about it. The interface and help are in English and Russian, the langu
 chosen in "View" - "Language".
 
 On startup, no more than once a day, the program checks for a new version and shows
-what is new in all the skipped versions. On Windows a new version installs over the old
-one with one button, on Linux - with the archive from the release page; settings and
-files are left untouched.
+what is new in all the skipped versions. A new version installs over the old one with one
+button on Windows and, starting with 3.0.4, on Linux; settings and files are left untouched.
 
 ## Version history
 
 | Version | What's new |
 |---|---|
+| 3.0.4 | Tracking of files changed by another program; previous files at startup; search in all pages; "Information" and "Clear all" in the SP and RP database; one-button update on Linux |
 | 3.0.3 | Code and settings file highlighting; the "SPS formats" window with field positions; different icons for import and export; on Linux windows open where they were closed |
 | 3.0.2 | Update check fixed: 3.0.1 offered an update to itself |
 | 3.0.1 | Table and velocity highlighting with error checks; highlighting can be turned off in "View" - "Highlighting"; window fields no longer stretch |

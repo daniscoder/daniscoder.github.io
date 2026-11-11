@@ -241,3 +241,5 @@ date,tag,asset,asset_id,count
 2026-11-11 11:13,gPad,gpad-setup.exe,735207708,0
 2026-11-11 11:13,gPad,gpad-version.json,735207710,0
 2026-11-11 11:13,gPad,gpad.tar.xz,735207729,0
+2026-11-11 11:24,gPad,gpad-legacy.tar.xz,735207728,2
+2026-11-11 11:24,gPad,gpad-version.json,735207710,4

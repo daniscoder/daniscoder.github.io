@@ -21,7 +21,7 @@ RP database to fill SPS files with them later.
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-The current version is 3.0.4. For Windows there is an installer: by default it installs
+The current version is 3.0.5. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -90,6 +90,10 @@ For plain text the editor offers the standard set of features:
 
 Each kind of highlighting - tables, code, SPS and velocities - can be turned off in "View" -
 "Highlighting".
+
+Windows follow the system theme or one of the themes: light, dark, gray, warm or high contrast.
+Text colors are chosen separately in "View" - "Text colors": the windows can be light while the
+text is on a dark background.
 
 ## Columns
 
@@ -189,6 +193,7 @@ button on Windows and, starting with 3.0.4, on Linux; settings and files are lef
 
 | Version | What's new |
 |---|---|
+| 3.0.5 | Gray, warm and high contrast window themes; text colors separate from the theme; choosing the theme works on Linux again; settings are stored in the gPad folder, settings of earlier versions are not carried over |
 | 3.0.4 | Tracking of files changed by another program; previous files at startup; search in all pages; "Information" and "Clear all" in the SP and RP database; one-button update on Linux |
 | 3.0.3 | Code and settings file highlighting; the "SPS formats" window with field positions; different icons for import and export; on Linux windows open where they were closed |
 | 3.0.2 | Update check fixed: 3.0.1 offered an update to itself |

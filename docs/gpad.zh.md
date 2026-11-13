@@ -17,7 +17,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux（旧系统）](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-当前版本为 3.0.4。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
+当前版本为 3.0.5。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
 
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
@@ -66,6 +66,9 @@ tar -xJf gpad.tar.xz
   JSON、YAML、TOML、INI、XML、Markdown、Makefile、.gitignore、diff 比较文件，共近四十种语言和格式。
 
 每种高亮（表格、代码、SPS 和速度）都可以在“View” - “Highlighting”（视图 - 高亮）中关闭。
+
+窗口可以使用系统主题，也可以使用以下主题之一：浅色、深色、灰色、暖色或高对比度。文本颜色在“View” - “Text colors”
+（视图 - 文本颜色）中单独选择：例如窗口是浅色的，而文本在深色背景上。
 
 ## 列
 
@@ -136,6 +139,7 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 
 | 版本 | 新内容 |
 |---|---|
+| 3.0.5 | 灰色、暖色和高对比度窗口主题；文本颜色与主题分开设置；Linux 上选择主题重新可用；设置保存在 gPad 文件夹中，早期版本的设置不会迁移 |
 | 3.0.4 | 跟踪被其他程序修改的文件；启动时打开上次的文件；在所有页面中查找；炮点和检波点数据库中的“Information”（信息）和“Clear all”（全部清除）；Linux 上一键更新 |
 | 3.0.3 | 代码和配置文件高亮；列出字段位置的“SPS formats”（SPS 格式）窗口；导入和导出使用不同的图标；在 Linux 上窗口在关闭时的位置打开 |
 | 3.0.2 | 修正了更新检查：3.0.1 会提示更新到它自己 |

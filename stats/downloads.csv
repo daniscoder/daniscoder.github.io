@@ -270,3 +270,12 @@ date,tag,asset,asset_id,count
 2026-11-14 18:14,seisboard,seisboard-version.json,694613729,39
 2026-11-14 22:35,seisboard,seisboard-version.json,694613729,40
 2026-11-15 06:45,gPad,gpad-version.json,743149131,6
+2026-11-15 18:56,seisboard,seisboard-demo-setup.exe,694613286,1
+2026-11-15 18:56,seisboard,seisboard-setup.exe,694613276,2
+2026-11-15 18:56,seisboard,seisboard-version.json,694613729,44
+2026-11-15 18:56,autocrop,autocrop-setup.exe,640196012,5
+2026-11-15 18:56,polygon,polygon.exe,735086712,1
+2026-11-15 18:56,lmoToXY,lmoToXY.exe,640559817,2
+2026-11-15 18:56,gPad,gpad-setup.exe,743149130,2
+2026-11-15 18:56,gPad,gpad-version.json,743149131,7
+2026-11-15 18:56,gPad,gpad.tar.xz,743149140,1

@@ -279,3 +279,6 @@ date,tag,asset,asset_id,count
 2026-11-15 18:56,gPad,gpad-setup.exe,743149130,2
 2026-11-15 18:56,gPad,gpad-version.json,743149131,7
 2026-11-15 18:56,gPad,gpad.tar.xz,743149140,1
+2026-11-16 06:44,seisboard,seisboard-version.json,694613729,47
+2026-11-16 06:44,gPad,gpad-legacy.tar.xz,743149138,2
+2026-11-16 06:44,gPad,gpad-version.json,743149131,8

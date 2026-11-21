@@ -17,7 +17,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux（旧系统）](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-当前版本为 3.0.5。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
+当前版本为 3.0.6。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
 
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
@@ -73,7 +73,7 @@ tar -xJf gpad.tar.xz
 ## 列
 
 在处理按列排列的格式时，块选择和列模式扩展了编辑器的标准功能。块可以按住 Alt 用鼠标选择，也可以用 Alt 加方向键选择。
-对列可以进行以下操作：
+Shift+Alt+单击会把块从原来的光标位置延伸到新位置。对列可以进行以下操作：
 
 - 直接在列中用键盘输入文本：输入的内容以及 Backspace 和 Delete 会同时作用于光标下方该列所有行的同一位置；
 - 插入、删除、剪切和移动列；左对齐、右对齐或居中；
@@ -94,6 +94,8 @@ SPS 文件有以下功能：
 - 排序，包括按 SPS 字段的任意多级排序，在 S 和 X 文件中查找当前炮点，删除重复的点；
 - 处理文件头和记录：删除注释，插入附加信息 - 索引、代码、儒略日、时间；
 - 检查 X：统一记录号，显示缺失的编号，删除炮点的重复放炮；
+- 检查所有打开的 SPS 页面：必填字段、炮点重复放炮和 X 公共字段不一致。检查结果汇总在一个 Markdown 报告中，
+  相关行用自由书签标记；
 - 根据 SPS X 生成 SPS R 和 S，对于二维 - 根据测线拐点坐标生成。“Tie to SPS X”（与 SPS X 关联）按 X 中点的顺序排列 R 或 S，
   并标出缺失的点；
 - 从文本、剪贴板和 Excel（.xlsx 和 .xls）按表格导入，按表头和数据自动识别列；导出到文本、剪贴板和 Excel；
@@ -139,6 +141,7 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 
 | 版本 | 新内容 |
 |---|---|
+| 3.0.6 | 用 Shift+Alt+单击从光标位置进行块选择；统一检查 SPS 并生成 Markdown 报告；检查必填字段、重复放炮和 X 公共字段 |
 | 3.0.5 | 灰色、暖色和高对比度窗口主题；文本颜色与主题分开设置；Linux 上选择主题重新可用；设置保存在 gPad 文件夹中，早期版本的设置不会迁移 |
 | 3.0.4 | 跟踪被其他程序修改的文件；启动时打开上次的文件；在所有页面中查找；炮点和检波点数据库中的“Information”（信息）和“Clear all”（全部清除）；Linux 上一键更新 |
 | 3.0.3 | 代码和配置文件高亮；列出字段位置的“SPS formats”（SPS 格式）窗口；导入和导出使用不同的图标；在 Linux 上窗口在关闭时的位置打开 |

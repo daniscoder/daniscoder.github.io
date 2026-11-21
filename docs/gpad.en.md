@@ -21,7 +21,7 @@ RP database to fill SPS files with them later.
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-The current version is 3.0.5. For Windows there is an installer: by default it installs
+The current version is 3.0.6. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -99,7 +99,8 @@ text is on a dark background.
 
 Block selection and column mode extend the standard features of the editor when working
 with column formats. A block is selected with the mouse with Alt or with Alt and the
-arrow keys. The following operations are available for a column:
+arrow keys. Shift+Alt+click extends the block from the original cursor position to the new one.
+The following operations are available for a column:
 
 - typing text from the keyboard right into a column: what you type, Backspace and Delete
   act on all lines of the column below the cursor at once, at the same position;
@@ -133,6 +134,9 @@ offers only the items that fit the page. For SPS files there are:
 - working with the header and records: remove comments, insert extra information -
   index, code, Julian day, time;
 - checking X: unify record numbers, show missing ones, remove reshoots of shot points;
+- checking all open SPS pages: required fields, shot point reshoots and mismatches in common
+  X fields. Findings are collected in one Markdown report, and the corresponding lines are
+  marked with free bookmarks;
 - building SPS R and S from SPS X, and for 2D - from the coordinates of line bend points.
   "Tie to SPS X" arranges R or S in the order of the X points and marks the missing ones;
 - table import from text, the clipboard and Excel (.xlsx and .xls) with columns detected
@@ -193,6 +197,7 @@ button on Windows and, starting with 3.0.4, on Linux; settings and files are lef
 
 | Version | What's new |
 |---|---|
+| 3.0.6 | Block selection with Shift+Alt+click from the cursor; common SPS check with a Markdown report; checks for required fields, reshoots and common X fields |
 | 3.0.5 | Gray, warm and high contrast window themes; text colors separate from the theme; choosing the theme works on Linux again; settings are stored in the gPad folder, settings of earlier versions are not carried over |
 | 3.0.4 | Tracking of files changed by another program; previous files at startup; search in all pages; "Information" and "Clear all" in the SP and RP database; one-button update on Linux |
 | 3.0.3 | Code and settings file highlighting; the "SPS formats" window with field positions; different icons for import and export; on Linux windows open where they were closed |

@@ -297,3 +297,7 @@ date,tag,asset,asset_id,count
 2026-11-20 20:29,seisboard,seisboard-version.json,694613729,73
 2026-11-20 20:29,gPad,gpad-version.json,743149131,14
 2026-11-21 09:36,histogram_for_reg,histogram_for_reg,732381243,2
+2026-11-21 19:25,gPad,gpad-legacy.tar.xz,775079317,0
+2026-11-21 19:25,gPad,gpad-setup.exe,775079318,1
+2026-11-21 19:25,gPad,gpad-version.json,775079324,3
+2026-11-21 19:25,gPad,gpad.tar.xz,775079327,0

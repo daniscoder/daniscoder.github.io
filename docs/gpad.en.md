@@ -21,7 +21,7 @@ RP database to fill SPS files with them later.
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-The current version is 3.0.6. For Windows there is an installer: by default it installs
+The current version is 3.1.0. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -75,6 +75,8 @@ For plain text the editor offers the standard set of features:
 - a changed-lines bar next to the line numbers: yellow - changed and not saved, green -
   saved;
 - sorting lines, including sorting by columns with any number of levels;
+- line indentation with Tab and Shift+Tab; the "Smart tabs" option detects from the text
+  whether to insert a tab or spaces and how many spaces to use;
 - removing empty lines, duplicates and lines by a mask, keeping every N-th line,
   changing case;
 - text cleanup: replacing characters (for example, a decimal comma with a dot), Cyrillic
@@ -137,6 +139,8 @@ offers only the items that fit the page. For SPS files there are:
 - checking all open SPS pages: required fields, shot point reshoots and mismatches in common
   X fields. Findings are collected in one Markdown report, and the corresponding lines are
   marked with free bookmarks;
+- comparison of two R or S versions by line, point and index: added and removed records
+  and changes to coordinates and elevations are collected in a Markdown report with bookmarks;
 - building SPS R and S from SPS X, and for 2D - from the coordinates of line bend points.
   "Tie to SPS X" arranges R or S in the order of the X points and marks the missing ones;
 - table import from text, the clipboard and Excel (.xlsx and .xls) with columns detected
@@ -183,6 +187,9 @@ increase within a function, a time without a velocity, a velocity outside 300-10
 a function that already appeared above. The status bar shows the function key and the time -
 velocity pair under the cursor.
 
+The function graph shows its time - velocity pairs, follows the cursor and updates after text
+edits. Clicking a point selects the pair and takes the editor to its source line.
+
 ## Help and updates
 
 Detailed help with contents, search and pictures opens with F1; in any window - right at
@@ -197,6 +204,7 @@ button on Windows and, starting with 3.0.4, on Linux; settings and files are lef
 
 | Version | What's new |
 |---|---|
+| 3.1.0 | Velocity function graph; SPS version comparison; smart indentation with Tab and Shift+Tab; column keyboard shortcuts |
 | 3.0.6 | Block selection with Shift+Alt+click from the cursor; common SPS check with a Markdown report; checks for required fields, reshoots and common X fields |
 | 3.0.5 | Gray, warm and high contrast window themes; text colors separate from the theme; choosing the theme works on Linux again; settings are stored in the gPad folder, settings of earlier versions are not carried over |
 | 3.0.4 | Tracking of files changed by another program; previous files at startup; search in all pages; "Information" and "Clear all" in the SP and RP database; one-button update on Linux |

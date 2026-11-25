@@ -334,3 +334,5 @@ date,tag,asset,asset_id,count
 2026-11-25 08:47,histogram_for_reg,histogram_for_reg-legacy,732381245,3
 2026-11-25 08:47,gPad,gpad-legacy.tar.xz,779840520,2
 2026-11-25 08:47,gPad,gpad.tar.xz,779840532,3
+2026-11-25 21:48,seisboard,seisboard-version.json,694613729,94
+2026-11-25 21:48,gPad,gpad-version.json,779840519,9

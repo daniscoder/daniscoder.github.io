@@ -366,3 +366,11 @@ date,tag,asset,asset_id,count
 2026-11-27 08:45,gPad,gpad.tar.xz,797321092,3
 2026-11-27 16:01,seisboard,seisboard-version.json,694613729,105
 2026-11-27 16:01,gPad,gpad-version.json,797321091,5
+2026-11-27 21:26,seisboard,seisboard-demo-legacy.tar.xz,801116091,0
+2026-11-27 21:26,seisboard,seisboard-demo-setup.exe,801115700,2
+2026-11-27 21:26,seisboard,seisboard-demo.tar.xz,801115685,0
+2026-11-27 21:26,seisboard,seisboard-legacy.tar.xz,801115691,1
+2026-11-27 21:26,seisboard,seisboard-setup.exe,801115690,3
+2026-11-27 21:26,seisboard,seisboard-version.json,801116172,7
+2026-11-27 21:26,seisboard,seisboard.tar.xz,801115684,0
+2026-11-27 21:26,gPad,gpad-version.json,797321091,6

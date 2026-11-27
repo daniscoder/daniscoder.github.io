@@ -21,7 +21,7 @@ RP database to fill SPS files with them later.
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux (older systems)](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-The current version is 3.1.0. For Windows there is an installer: by default it installs
+The current version is 3.1.1. For Windows there is an installer: by default it installs
 the program for you only, without administrator rights, with a shortcut in the Start menu
 (on the desktop - optionally); for all users - by a choice in the first window. The
 program checks for updates itself and installs a new version with one button.
@@ -106,6 +106,8 @@ The following operations are available for a column:
 
 - typing text from the keyboard right into a column: what you type, Backspace and Delete
   act on all lines of the column below the cursor at once, at the same position;
+- when typing and inserting, empty and short lines are padded to the cursor column with
+  spaces or tabs, like the indentation at the cursor, so the text lands in the same column;
 - inserting, deleting, cutting and shifting a column; aligning it left, right or center;
 - inserting numbering with a given first number, step and leading zeros;
 - column arithmetic (add, subtract, multiply, divide, set a value) and a summary: number
@@ -204,6 +206,7 @@ button on Windows and, starting with 3.0.4, on Linux; settings and files are lef
 
 | Version | What's new |
 |---|---|
+| 3.1.1 | Column mode and column insertion edit every line: empty and short lines are padded to the cursor column with spaces or tabs |
 | 3.1.0 | Velocity function graph; SPS version comparison; smart indentation with Tab and Shift+Tab; column keyboard shortcuts |
 | 3.0.6 | Block selection with Shift+Alt+click from the cursor; common SPS check with a Markdown report; checks for required fields, reshoots and common X fields |
 | 3.0.5 | Gray, warm and high contrast window themes; text colors separate from the theme; choosing the theme works on Linux again; settings are stored in the gPad folder, settings of earlier versions are not carried over |

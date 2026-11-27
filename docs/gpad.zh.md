@@ -17,7 +17,7 @@ LVI、Handvel、V5 等）、静校正量和坐标。这类文件中的字段绑�
 [:material-linux: Linux](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad.tar.xz){ .md-button }
 [:material-linux: Linux（旧系统）](https://github.com/daniscoder/daniscoder.github.io/releases/download/gPad/gpad-legacy.tar.xz){ .md-button }
 
-当前版本为 3.1.0。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
+当前版本为 3.1.1。Windows 版使用安装程序：默认只为当前用户安装，不需要管理员权限，并在“开始”菜单中创建快捷方式
 （桌面快捷方式可选）；为所有用户安装可在第一个窗口中选择。程序会自动检查更新，只需一个按钮即可安装新版本。
 
 Linux 版是一个压缩包：解压后运行 `install.sh`，程序就会出现在应用程序菜单中，也可以用 `gpad` 命令启动，不需要管理员权限。
@@ -77,6 +77,7 @@ tar -xJf gpad.tar.xz
 Shift+Alt+单击会把块从原来的光标位置延伸到新位置。对列可以进行以下操作：
 
 - 直接在列中用键盘输入文本：输入的内容以及 Backspace 和 Delete 会同时作用于光标下方该列所有行的同一位置；
+- 输入和插入时，空行和较短的行会按光标处的缩进用空格或制表符补齐到光标所在列，使文本落在同一列；
 - 插入、删除、剪切和移动列；左对齐、右对齐或居中；
 - 按给定的起始号、步长和前导零插入编号；
 - 列算术运算（加、减、乘、除、写入数值）和汇总：数值个数、最小值、最大值、总和和平均值；
@@ -145,6 +146,7 @@ Hampson-Russell、Shell V5 / Charisma 和 Charisma VL_B 可以读写，SeisBase 
 
 | 版本 | 新内容 |
 |---|---|
+| 3.1.1 | 列模式和插入列会编辑所有行：空行和较短的行用空格或制表符补齐到光标所在列 |
 | 3.1.0 | 速度函数图；SPS 版本比较；Tab 和 Shift+Tab 智能缩进；列操作快捷键 |
 | 3.0.6 | 用 Shift+Alt+单击从光标位置进行块选择；统一检查 SPS 并生成 Markdown 报告；检查必填字段、重复放炮和 X 公共字段 |
 | 3.0.5 | 灰色、暖色和高对比度窗口主题；文本颜色与主题分开设置；Linux 上选择主题重新可用；设置保存在 gPad 文件夹中，早期版本的设置不会迁移 |
